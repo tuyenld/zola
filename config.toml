@@ -2,7 +2,7 @@
 base_url = "https://circuitlover.com"
 #base_url = "/home/jieiku/.dev/abridge/public/" # for locally usable build directly from disk, also set in [extra] section uglyurls = true
 title = "CircuitLover"
-description = "Embedded Systems, Power Electronics and some boring things."
+description = "Power Electronics, Embedded Systems and lot of boring things."
 default_language = "en"
 output_dir = "public"
 compile_sass = true
