@@ -142,11 +142,17 @@ Pending
 
 ## 6. References
 
-- [^fn1]: David Perreault. *6.334 Power Electronics Ch. 7.* Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, [https://ocw.mit.edu](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-334-power-electronics-spring-2007). License: [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-- [^lt_transf]: [LTspice: Simple Steps for Simulating Transformers](https://www.analog.com/en/technical-articles/ltspice-basic-steps-for-simulating-transformers.html)
-- [^4191A]: Operation manual Model 4191A network/spectrum Analyzer page 141/356 [Online](https://xdevs.com/doc/HP_Agilent_Keysight/HP%204195A%20Operation.pdf)
-- [^erickson2007]: Erickson, R. W. & Maksimovic, D. 2007. Fundamentals of power electronics, Springer Science & Business Media.
-- [^dragan]: Current-Mode Control, Dr. Dragan Maksimovic - University of Colorado Boulder [Online](https://www.coursera.org/lecture/current-modecontrol/introduction-to-peak-current-mode-control-nbIZQ)
-- [^slope]: Slope compensation for current control - NPTEL [Online](https://youtu.be/b3e0RTWt4W0)
-- [^ti_flyback]: AC Modeling of Power Stage in Flyback Converter - Texas Instruments [Online](https://www.ti.com/lit/an/slva589/slva589.pdf)
+[^fn1]: David Perreault. *6.334 Power Electronics Ch. 7.* Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, [https://ocw.mit.edu](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-334-power-electronics-spring-2007). License: [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+[^lt_transf]: [LTspice: Simple Steps for Simulating Transformers](https://www.analog.com/en/technical-articles/ltspice-basic-steps-for-simulating-transformers.html)
+
+[^4191A]: Operation manual Model 4191A network/spectrum Analyzer page 141/356 [Online](https://xdevs.com/doc/HP_Agilent_Keysight/HP%204195A%20Operation.pdf)
+
+[^erickson2007]: Erickson, R. W. & Maksimovic, D. 2007. Fundamentals of power electronics, Springer Science & Business Media.
+
+[^dragan]: Current-Mode Control, Dr. Dragan Maksimovic - University of Colorado Boulder [Online](https://www.coursera.org/lecture/current-modecontrol/introduction-to-peak-current-mode-control-nbIZQ)
+
+[^slope]: Slope compensation for current control - NPTEL [Online](https://youtu.be/b3e0RTWt4W0)
+
+[^ti_flyback]: AC Modeling of Power Stage in Flyback Converter - Texas Instruments [Online](https://www.ti.com/lit/an/slva589/slva589.pdf)
   
