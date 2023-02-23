@@ -182,4 +182,4 @@ After use CH341A to program new flash chip, you can re-solder new flash chip on 
 
 ![Software with new flash chip (8MB)](images/software_status.jpg)
 
-👉 I used image come from **TL-WR841N v13.x**, except for LED will not working, everything work well (Wi-Fi, Ethernet, Router feature).
+👉 I used the firmware from **TL-WR841N v13.x**. Except for LED ,everything work well (Wi-Fi, Ethernet, Router feature).
