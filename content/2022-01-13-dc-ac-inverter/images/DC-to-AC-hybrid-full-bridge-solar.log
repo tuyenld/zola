@@ -1,0 +1,61 @@
+Circuit: * E:\github.io\circuitlover\images\posts\dc-ac-inverter\DC-to-AC-hybrid-full-bridge-solar.asc
+
+Direct Newton iteration for .op point succeeded.
+N-Period=1
+Fourier components of V(ac_l)
+DC component:-36.6523
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	5.000e+01	3.464e+02	1.000e+00	    0.00°	    0.00°
+    2   	1.000e+02	3.310e+01	9.555e-02	  -90.03°	  -90.03°
+    3   	1.500e+02	3.774e+01	1.089e-01	    0.04°	    0.04°
+    4   	2.000e+02	6.636e+00	1.916e-02	  -90.16°	  -90.16°
+    5   	2.500e+02	2.261e+01	6.527e-02	    0.09°	    0.09°
+    6   	3.000e+02	2.913e+00	8.409e-03	  -90.09°	  -90.09°
+    7   	3.500e+02	1.619e+01	4.673e-02	    0.21°	    0.21°
+    8   	4.000e+02	1.630e+00	4.705e-03	  -90.26°	  -90.26°
+    9   	4.500e+02	1.255e+01	3.623e-02	    0.12°	    0.12°
+Total Harmonic Distortion: 17.092564%(49.689859%)
+
+N-Period=1
+Fourier components of I(r1)
+DC component:-0.378639
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	5.000e+01	3.579e+00	1.000e+00	    0.00°	    0.00°
+    2   	1.000e+02	3.420e-01	9.555e-02	  -90.03°	  -90.03°
+    3   	1.500e+02	3.899e-01	1.089e-01	    0.04°	    0.04°
+    4   	2.000e+02	6.856e-02	1.916e-02	  -90.16°	  -90.16°
+    5   	2.500e+02	2.336e-01	6.527e-02	    0.09°	    0.09°
+    6   	3.000e+02	3.009e-02	8.409e-03	  -90.09°	  -90.09°
+    7   	3.500e+02	1.672e-01	4.673e-02	    0.21°	    0.21°
+    8   	4.000e+02	1.684e-02	4.705e-03	  -90.26°	  -90.26°
+    9   	4.500e+02	1.297e-01	3.623e-02	    0.12°	    0.12°
+Total Harmonic Distortion: 17.092564%(49.689859%)
+
+
+
+_r1: r1=96.8
+_m: m=0.888934
+i_leakage: RMS(i(c1))=2.92037 FROM 0 TO 0.04
+
+
+Date: Sat May 14 22:46:53 2022
+Total elapsed time: 0.445 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 99755
+traniter = 99750
+tranpoints = 34073
+accept = 25846
+rejected = 8227
+matrix size = 18
+fillins = 3
+solver = Normal
+Matrix Compiler1: 584 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 974 bytes object code size  0.1/0.2/[0.1]
+

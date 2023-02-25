@@ -1,0 +1,44 @@
+Circuit: * E:\github.io\circuitlover\images\posts\dc-ac-inverter\DC-to-AC-bipolar-full-bridge.asc
+
+WARNING: Less than two connections to node C.  This node is used by E:U1:1.
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u1:x)
+Ignoring empty pin current: Ix(u1:y)
+Ignoring empty pin current: Ix(u1:x)
+Ignoring empty pin current: Ix(u1:y)
+N-Period=1
+Fourier components of V(c)
+DC component:-9.6633e-005
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	5.000e+01	9.547e-01	1.000e+00	   -0.07°	    0.00°
+    2   	1.000e+02	5.886e-03	6.165e-03	  121.51°	  121.58°
+    3   	1.500e+02	4.120e-03	4.315e-03	   21.01°	   21.08°
+    4   	2.000e+02	1.050e-03	1.100e-03	  -54.68°	  -54.61°
+    5   	2.500e+02	9.582e-03	1.004e-02	 -174.32°	 -174.24°
+    6   	3.000e+02	7.986e-03	8.365e-03	  180.00°	  180.07°
+    7   	3.500e+02	3.564e-03	3.733e-03	  -78.13°	  -78.06°
+    8   	4.000e+02	9.826e-03	1.029e-02	  133.81°	  133.88°
+    9   	4.500e+02	2.875e-03	3.011e-03	   13.70°	   13.78°
+Total Harmonic Distortion: 1.890679%(257.266250%)
+
+
+
+Date: Wed May 04 11:34:09 2022
+Total elapsed time: 0.508 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 193931
+traniter = 193927
+tranpoints = 57596
+accept = 46836
+rejected = 10760
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 438 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 738 bytes object code size  0.1/0.1/[0.1]
+
