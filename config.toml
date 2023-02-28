@@ -49,7 +49,7 @@ title_separator = "|"  # Separator between title and title_addition, set as |, -
 # To always set the page title exactly eg "Abridge" then comment out the below line (not recommend, bad for SEO)
 title_addition = "Tuyen's blog" # a default value for title addition
 recent = true # TOC / index
-recent_items = 9
+recent_items = 6
 author = "Tuyen D. Le" # Put Your Name here
 
 title_size_index = "s85" # size: s95, s90, s85, s80, s75, s70, false(full size)
