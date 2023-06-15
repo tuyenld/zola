@@ -13,9 +13,62 @@ math = true
 math_auto_render = true
 +++
 
-Raspi Zero (not W) have neither Wi-Fi nor Ethernet, so how could we want to update your raspbian without remove the microSD card?
+
+
+Raspi Zero (not W) have neither Wi-Fi nor Ethernet, so how could update the raspbian distro?
 
 Well, you can create a virtual Ethernet interface. This method is tested on **Window 10**, you could get the same idea when using Linux/Mac computer.
+
+### Updated June 15, 2023
+If you have an USB WiFi dongle (TP-Link-WN725N Nano USB Wifi like I have), the process is much more simpler.
+
+Fisrt, downloading raspberry pi OS (kernel 5.10+) is required, for example  [2023-05-03-raspios-buster-armhf-lite](https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-05-03/2023-05-03-raspios-buster-armhf-lite.img.xz)
+
+Second, a small configuration needs to be added (thanks to [
+MBing/install_wlan_dongle.sh](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31))
+
+#### STEP 1: Setup wifi settings
+
+```bash
+# Add wifi settings
+sudo vi /etc/network/interfaces
+
+# Search for `auto wlan0` at the start, if it's not there, add it and keep the file open
+# Make sure it knows where to find the wpa config
+# Add these lines to the bottom of the same file:
+
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet dhcp
+```
+
+#### STEP 2: Connect to wifi
+
+```bash
+sudo vi /etc/wpa_supplicant/wpa_supplicant.conf
+# The file `wpa_supplicant.conf` might already exist and might have some lines, add these below:
+
+network={
+  ssid="YOUR_NETWORK_NAME"
+  psk="YOUR_NETWORK_PASSWORD"
+  proto=RSN
+  key_mgmt=WPA-PSK
+  pairwise=CCMP
+  auth_alg=OPEN
+}
+
+# Replace `YOUR_NETWORK_NAME` & `YOUR_NETWORK_PASSWORD` with your own credentials.
+
+# Reboot and connect
+sudo reboot
+
+# To test after reboot if your wifi is working, you can open the browser or go to the terminal
+ifconfig -a
+# This will now have an ip-address next to `wlan0` which you can use for ssh or whatever.
+```
+
+### Preparing
 
 I am testing [2022-01-28-raspios-bullseye-armhf-lite image](https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2022-01-28/2022-01-28-raspios-bullseye-armhf-lite.zip) version.
 
