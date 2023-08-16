@@ -2,7 +2,7 @@
 base_url = "https://circuitlover.com"
 #base_url = "/home/jieiku/.dev/abridge/public/" # for locally usable build directly from disk, also set in [extra] section uglyurls = true
 title = "CircuitLover"
-description = "Can't stop questioning."
+description = "Can't stop questioning!"
 default_language = "en"
 output_dir = "public"
 compile_sass = true
@@ -21,7 +21,7 @@ theme = "abridge"
 build_search_index = true
 [search]                # Options specific to elasticlunr search.
 include_title = true        # include title of page/section in index
-include_description = false # include description of page/section in index
+include_description = true # include description of page/section in index
 include_content = true      # include rendered content of page/section in index
 # Truncate content at nth character. Useful if index size significantly slows down the site.
 # truncate_content_length = 100
