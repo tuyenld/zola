@@ -60,7 +60,7 @@ service tftp
 }
 ```
 
-2. On Ubuntu 14.04, `tftp` need to be disable from the `inetd.conf` file
+2. On Ubuntu 14.04, `tftp` needs to be disabled from the `inetd.conf` file
 
 ```bash
 # comment out this line: tftp           dgram   udp     wait    nobody  /usr/sbin/tcpd  /usr/sbin/in.tftpd /srv/tftp

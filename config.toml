@@ -51,6 +51,7 @@ title_addition = "Tuyen's blog" # a default value for title addition
 recent = true # TOC / index
 recent_items = 6
 author = "Tuyen D. Le" # Put Your Name here
+# To change the number of items per page edit: abridge/content/_index.md and change the value for paginate_by
 
 title_size_index = "s85" # size: s95, s90, s85, s80, s75, s70, false(full size)
 meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, categories_tags=true, divider=" " }
