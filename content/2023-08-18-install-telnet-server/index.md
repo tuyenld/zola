@@ -1,7 +1,7 @@
 +++
 title = "Install Telnet Server on Ubuntu"
 description = "Using telnetd package"
-date = 2023-08-17T09:19:42+01:00
+date = 2023-08-18T09:19:42+01:00
 
 [taxonomies]
 categories = ["Server"]
