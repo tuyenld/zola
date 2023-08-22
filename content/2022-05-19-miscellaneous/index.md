@@ -37,6 +37,11 @@ Using crimping tool to join wire to the connector.
 | :----------------------------------------: |
 |               Crimping tool                |
 
+### RJ45 pinout and connection
+
+- Refer to [Ethernet Wiring](https://www.practicalnetworking.net/stand-alone/ethernet-wiring/)
+- Only two couple wires 1-2,3-6 are enough for 100 Mb/s transmission.
+
 ## Power factor
 
 | ![Decreased_power_factor](images/Decreased_power_factor.jpg) |
