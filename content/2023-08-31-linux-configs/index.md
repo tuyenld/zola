@@ -1,11 +1,11 @@
 +++
 title = "Linux configurations"
-description = "Some Linux-related configurations"
-date = 2023-08-30T09:19:42+01:00
+description = "Some useful command lines for your day-to-day tasks"
+date = 2023-08-31T09:19:42+01:00
 
 [taxonomies]
 categories = ["Server"]
-tags = ["dhcp, ipv6"]
+tags = ["Linux"]
 
 [extra]
 toc = true
