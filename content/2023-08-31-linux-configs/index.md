@@ -133,6 +133,7 @@ sed 's/^.*bbb //; s/ddd.*$//' <<< "aaa bbb ccc ddd eee"
 ```
 
 ## View CSV Data from the Command Line
+
 ```bash
 cat file.csv | sed -e 's/,,/, ,/g' | column -s, -t | less -#5 -N -S
 ```
@@ -140,6 +141,7 @@ cat file.csv | sed -e 's/,,/, ,/g' | column -s, -t | less -#5 -N -S
 ## Redirect output to file
 
 [How do I save terminal output to a file?](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)
+
 ```
           || visible in terminal ||   visible in file   || existing
   Syntax  ||  StdOut  |  StdErr  ||  StdOut  |  StdErr  ||   file   
@@ -234,6 +236,7 @@ $ sudo update-grub
 ```
 
 ## nginx
+
 ```bash
 nginx -t -c /etc/nginx/nginx.conf
 sudo tail -n 20 /var/log/nginx/error.log
@@ -260,6 +263,7 @@ net.ipv4.ip_forward = 1
 ```
 
 ## KVM
+
 - Install
 
 ```bash
@@ -287,9 +291,9 @@ virt-manager
 - List all KVM
 
 ```bash
-$ virsh list --all
+virsh list --all
 
-$ virsh start ubuntu16.04
+virsh start ubuntu16.04
 Domain ubuntu16.04 started
 ```
 - Clone a machine
@@ -322,9 +326,9 @@ virsh net-autostart NETNAME
 
 - Share network on kvm
 
-- br0 work as a swith
-- eno1 is only physical port
-- any machine which use br0 network will see eno1
+- `br0` work as a swith
+- `eno1` is only physical port
+- any machine which use `br0` network will see `eno1`
 
 ```
   +---------+    +---------+
@@ -584,7 +588,7 @@ If your PDF file is user password protected, change step 4 to `qpdf --decrypt --
 
 [How can I reduce the file size of a scanned PDF file?](https://askubuntu.com/a/113547)
 
-> No.1
+Method 1:
 
 ```bash
 http://www.alfredklomp.com/programming/shrinkpdf/
@@ -595,17 +599,15 @@ http://www.alfredklomp.com/programming/shrinkpdf/
 ./shrinkpdf.sh file.pdf out.pdf 120
 
 ```
-> No.2
 
-34.44″
-38.74″
+Method 2:
 
 ```bash
     I use LibreOffice Draw to open the pdf.
     I then "export as pdf"
     And set "jpeg compression quality" to 10% and "image resolution" to 150 dpi
 
-    High-school-transcript-Tuyen-Le.pdf from 36 MB to 2.6 MB
+    my-document.pdf from 36 MB to 2.6 MB
 ```
 
 ## How to resize page to fit drawing contents in Open office/Libre Office Draw
@@ -627,8 +629,8 @@ You also need to show panel: View > Page Pane
 
 cd DEBS/
 sudo dpkg -i *.deb
-
 ```
+
 ## extract-img-from-pdf
 
 ```python
@@ -672,7 +674,9 @@ sudo apt-get install libimage-exiftool-perl
 exiftool -all= inputfile
 
 ```
+
 ## Split one pdf page into two pages
+
 E.g. ![](images/split-onepage-pdf.png)
 
 ```bash
@@ -681,7 +685,9 @@ E.g. ![](images/split-onepage-pdf.png)
 sudo apt-get install mupdf-tools
 mutool poster -x 2 input.pdf output.pdf
 ```
+
 ## Make a sound once process is complete
+
 ```bash
 make; spd-say done
 ```
@@ -702,8 +708,6 @@ apt-get install -y nodejs
 rm -rf node_modules
 npm cache clean 
 npm install node-sass
-
-
 ```
 
 ## Find USB version is using on some port
