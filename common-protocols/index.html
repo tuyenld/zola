@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>ARP, SNMP, UPnP, NTP | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Address Resolution Protocol, Simple Network Management Protocol" />
+  <link rel="canonical" href="https://circuitlover.com/common-protocols/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/common-protocols/" />
+  <meta name="twitter:url" content="https://circuitlover.com/common-protocols/" />
+  <meta property="og:description" content="Address Resolution Protocol, Simple Network Management Protocol" />
+  <meta name="twitter:description" content="Address Resolution Protocol, Simple Network Management Protocol" />
+  <meta property="og:title" content="ARP, SNMP, UPnP, NTP | CircuitLover" />
+  <meta name="twitter:title" content="ARP, SNMP, UPnP, NTP | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-09-03" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/common-protocols/">ARP, SNMP, UPnP, NTP</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> September 03, 2023<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/server/">Server</a>] #<a href="https://circuitlover.com/tags/ip/">ip</a>  #<a href="https://circuitlover.com/tags/routing/">routing</a> </span>
+
+    <h2 id="arp"><a class="zola-anchor" href="#arp" aria-label="Anchor link for: arp">ARP</a></h2>
+<ol>
+<li>TTL: in ARP is the rental period (after this time, the entry will be deleted)</li>
+<li>If the switch does not know which port to send the message to, it will forward to all ports</li>
+</ol>
+<h2 id="snmp"><a class="zola-anchor" href="#snmp" aria-label="Anchor link for: snmp">SNMP</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wget</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> https://sourceforge.net/projects/net-snmp/files/net-snmp/5.7.3/net-snmp-5.7.3.zip/download</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"> download net-snmp-5.7.3.zip</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">unzip</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-snmp-5.7.3.zip </span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-snmp-5.7.3/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">./configure</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install libperl-dev</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">make</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell">  make install</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> perl/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">perl</span></span><span class="z-meta z-function-call z-arguments z-shell"> Makefile.PL</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">make</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mib2c</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>help</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mib2c</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> mib2c.scalar.conf bfcMgmt</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/test</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/test/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-storage z-modifier z-shell">export</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">LD_LIBRARY_PATH</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">/usr/local/lib:/usr/lib</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mib2c</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> mib2c.scalar.conf myScalar</span>
+</span></code></pre>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install libperl-dev<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wget</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> https://nchc.dl.sourceforge.net/project/net-snmp/net-snmp/5.8/net-snmp-5.8.tar.gz</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tar</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>xzvf</span> net-snmp-5.8.tar.gz </span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-snmp-5.8/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">./configure</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">make</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell">  make install</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> May be not need</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ln<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> /usr/local/lib/libnetsnmp.so.35 /usr/lib/libnetsnmp.so.35</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">snmpget</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>v</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> perl/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">perl</span></span><span class="z-meta z-function-call z-arguments z-shell"> Makefile.PL</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">make</span></span>    <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> make</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mib2c</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>help</span></span>
+</span></code></pre>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">snmptranslate</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">  -</span>M</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>/test/snmp/all<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> ALL<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>Ir</span> 1.3.6.1.4.1.2.0 </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">snmptranslate</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">   -</span>m</span> ALL<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>Ir</span> 1.3.6.1.4.1.1.2.0 </span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-storage z-modifier z-shell">export</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">MIBDIRS</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">/test/snmp/all</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-storage z-modifier z-shell">export</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">MIBS</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">ALL</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mib2c</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> mib2c.scalar.conf telnetUserName</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">snmptranslate</span></span><span class="z-meta z-function-call z-arguments z-shell"> .1.3.6.1.4.1.4002.1.7.5.6.0</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">snmptranslate</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>Ir</span> 1.3.6.1.4.1.2.2.2.1.1.1.2.0  </span>
+</span></code></pre>
+<h2 id="upnp"><a class="zola-anchor" href="#upnp" aria-label="Anchor link for: upnp">UPNP</a></h2>
+<p>There are two types of UPnP:</p>
+<ol>
+<li>Upnp on a Router
+<ul>
+<li>When enabled: allow devices to open ports themselves without configuring the router</li>
+<li>dynamically add port formally</li>
+<li>functions like <code>port forwarding</code> but no need to go to web router to configure</li>
+</ul>
+</li>
+<li>Upnp is often referred to as <code>UPnP IGD</code> for listening to music, watching movies</li>
+</ol>
+<h2 id="ntp-network-time-protocol"><a class="zola-anchor" href="#ntp-network-time-protocol" aria-label="Anchor link for: ntp-network-time-protocol">NTP (Network Time Protocol)</a></h2>
+<p>There are two commonly used time standards:</p>
+<ol>
+<li>GMT: Greenwitch Mean Time: take the movement of the sun as a standard, according to which 1 day has 86,400s</li>
+<li>UTC: based on SI system using quantum clock, according to which 1 day has 86,400,002s
+--&gt; Nowadays, UTC is used, and GMT is used to refer to timezone</li>
+</ol>
+<p>Some countries have daylight saving time <strong>DST</strong> (Daily Saving Time)</p>
+<ul>
+<li>On summer days, the clock will be turned <em>backward</em> 1-2 hours earlier, at a fixed time and for a fixed period of the year (until the end of summer for example)</li>
+<li>The purpose of this is to save sunlight, get up early to go to work.</li>
+<li>For example: At exactly 2 am on the 2nd Sunday of July, the clock in the US will be <strong>turned back</strong> to 3am and people need to get up 1 hour earlier if they don't want to be late for work. At 2 a.m. on the 3rd Sunday of April, the clock will be turned counterclockwise to 1 o'clock. Everything is back to normal.</li>
+</ul>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/common-protocols/#arp">ARP</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/common-protocols/#snmp">SNMP</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/common-protocols/#upnp">UPNP</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/common-protocols/#ntp-network-time-protocol">NTP (Network Time Protocol)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

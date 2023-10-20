@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - Capacitor</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/capacitor/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-04T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/capacitor/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Lifetime calculation of Electrolytic Capacitors</title>
+		<published>2020-11-04T09:19:42+01:00</published>
+		<updated>2020-11-04T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/capacitor-life-time-cal/" type="text/html"/>
+		<id>https://circuitlover.com/capacitor-life-time-cal/</id>
+		<content type="html">&lt;p&gt;On the process of making new inverter&#x2F;converter products, we are talking about what type of topology will be used, power losses and cost estimation. It is easy to forgot about the &lt;strong&gt;Lifetime of capacitors&lt;&#x2F;strong&gt;. This article is quick note how to estimate lifetime of electrolytic capacitor (elcap) provided by &lt;strong&gt;JIANGHAI&lt;&#x2F;strong&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. Other manufactures may have different ways to estimate lifetime of these capacitors. Please look up manufacturer application note for more detail.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lifetime-model&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#lifetime-model&quot; aria-label=&quot;Anchor link for: lifetime-model&quot;&gt;Lifetime model&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The lifetime $L$ of the electrolytic capacitor can be estimated by using numerical lifetime model:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+L = L_0 \cdot K_T \cdot K_R \cdot K_V
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$L_0$ is specified lifetime from the datasheet of given capacitor at norminal ripple.&lt;&#x2F;li&gt;
+&lt;li&gt;$K_T$ temperature factor (ambient temperature)&lt;&#x2F;li&gt;
+&lt;li&gt;$K_R$ ripple current factor (self-heating)&lt;&#x2F;li&gt;
+&lt;li&gt;$K_V$ voltage factor (operating voltage)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;temperature-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#temperature-factor&quot; aria-label=&quot;Anchor link for: temperature-factor&quot;&gt;Temperature factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Temperature factor $K_T$ can be calculated based on &amp;quot;10-Kelvin-rule&amp;quot; that is: a drop of the ambient temperature by $10K$ double the lifetime of capacitor.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+K_T = 2^{\cfrac {T_O - T_A}{10K}}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$T_0$ rated temperature&lt;&#x2F;li&gt;
+&lt;li&gt;$T_A$ ambient temperature&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ripple-current-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ripple-current-factor&quot; aria-label=&quot;Anchor link for: ripple-current-factor&quot;&gt;Ripple current factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Ripple current factor $K_R$ is calculated as following.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+K_R = K_i^{A \cdot \cfrac{\Delta T_0}{10K}}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$A = 1 - (\frac{I_A}{I_R})^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$I_A$ ripple current in the application&lt;&#x2F;li&gt;
+&lt;li&gt;$I_R$ rated ripple current&lt;&#x2F;li&gt;
+&lt;li&gt;$\Delta T_0$ core temperature increase of the elcap
+&lt;ul&gt;
+&lt;li&gt;$T_0=105 ^{\circ}C$ typ. 3.5~5K&lt;&#x2F;li&gt;
+&lt;li&gt;$T_0 = 85 ^\circ C$ typ. 3.5~10K&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;$K_i$ empirical safety factor
+&lt;ul&gt;
+&lt;li&gt;$T_0=105 ^{\circ}C$ if ($I&amp;gt;I_R$) then $K_i = 4$ else $K_i = 2$&lt;&#x2F;li&gt;
+&lt;li&gt;$T_0 = 85 ^\circ C \rightarrow K_i = 2$&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;voltage-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#voltage-factor&quot; aria-label=&quot;Anchor link for: voltage-factor&quot;&gt;Voltage factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;There are two cases need to take into account when calculate voltage factor $K_V$.&lt;&#x2F;p&gt;
+&lt;p&gt;If $0.6 \le \cfrac{U_A}{U_R} \le 1$ then
+$$
+K_V = \left( \cfrac{U_A}{U_R} \right) ^{-2.5}
+$$
+else
+$$
+K_V = 3.59
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$U_R$ rated voltage&lt;&#x2F;li&gt;
+&lt;li&gt;$U_A$ actual operating voltage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Albertsen, A. 2010. Electrolytic capacitor lifetime estimation [Online]. JIANGHAI Eur. GmbH. Available: https:&#x2F;&#x2F;jianghai-europe.com&#x2F;wp-content&#x2F;uploads&#x2F;Jianghai-Europe-E-Cap-Lifetime-Estimation-long-AAL-2018-09-18.pdf [Accessed March 3, 2022].&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+</feed>

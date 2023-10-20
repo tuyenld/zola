@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - dhcp, ipv6</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/dhcp-ipv6/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-08-30T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/dhcp-ipv6/atom.xml</id>
+	<entry xml:lang="en">
+		<title>IPv6 and DHCP</title>
+		<published>2023-08-30T09:19:42+01:00</published>
+		<updated>2023-08-30T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/ipv6-dhcp/" type="text/html"/>
+		<id>https://circuitlover.com/ipv6-dhcp/</id>
+		<content type="html">&lt;h2 id=&quot;ipv6&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ipv6&quot; aria-label=&quot;Anchor link for: ipv6&quot;&gt;IPv6&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;redirect-ipv6&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#redirect-ipv6&quot; aria-label=&quot;Anchor link for: redirect-ipv6&quot;&gt;Redirect IPv6&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;cpp&quot; class=&quot;language-cpp z-code&quot;&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;z-source z-c++&quot;&gt;&lt;span class=&quot;z-comment z-block z-c&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-c&quot;&gt;&#x2F;*&lt;&#x2F;span&gt;
+  +-------------+         +------------+
+  |             |   3     |            |
+  |             |---------|            |
+  |   R1        |         |    R2      |
+  |             |         |            |
+  +-------------+         +------------+
+          ---                &#x2F;
+            2\----         -&#x2F; 4
+                  \--     &#x2F;
+              +-------------+
+              |             |
+              |             |
+              |   Switch    |
+              |             |
+              |             |
+            --+-------------+-
+          -&#x2F;                  \-                          -
+        -&#x2F;  1               5   \-
+      -&#x2F;               +------------+
++------------+         |            |
+|            |         |            |
+|            |         |            |
+|   PC1      |         |   PC2      |
+|            |         |            |
++------------+         +------------+
+ &lt;span class=&quot;z-punctuation z-definition z-comment z-c&quot;&gt;*&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Normal scenario: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5&lt;&#x2F;li&gt;
+&lt;li&gt;Redirect IPv4: 1-&amp;gt;4-&amp;gt;5&lt;&#x2F;li&gt;
+&lt;li&gt;Redirect IPv6: 1-&amp;gt;5&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Tunnel vs NAT64&lt;&#x2F;strong&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ipv6-dhcp&#x2F;images&#x2F;tunnel-vs-NAT64.svg&quot; alt=&quot;tunnel-vs-NAT64&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;dhcpv6&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#dhcpv6&quot; aria-label=&quot;Anchor link for: dhcpv6&quot;&gt;DHCPv6&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DHCPv6 runs basically in 4 steps (SARR)
+&lt;ul&gt;
+&lt;li&gt;Solict -&amp;gt; Advertise -&amp;gt; Request -&amp;gt; Reply&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Router Advertise contains information about Prefix Length and Prefix address&lt;&#x2F;li&gt;
+&lt;li&gt;Configure ISC DHCPv6 server on Centos
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;prefix-length&lt;&#x2F;code&gt; in the PD message sent by the server depends on the &lt;code&gt;prefix-len&lt;&#x2F;code&gt; that the client sends in the DHCPv6 Solicit message&lt;&#x2F;li&gt;
+&lt;li&gt;If the client request prefix is different from the one configured on the server, the PD will return &lt;code&gt;Not available&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Configure DHCPv6 server running on Cisco IOS
+&lt;ul&gt;
+&lt;li&gt;Ignore &lt;code&gt;prefix-length&lt;&#x2F;code&gt; sent by the client --&amp;gt; returns the PD configured on the server.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Notice the difference between the two messages: Router Adv (RA) and DHCPv6 Adv (although both are Advertise).&lt;&#x2F;li&gt;
+&lt;li&gt;Rapid commit:
+&lt;ul&gt;
+&lt;li&gt;Advertise -&amp;gt; Reply now&lt;&#x2F;li&gt;
+&lt;li&gt;The DHCPv6 server&#x27;s Reply message must have a &lt;code&gt;rapid-commit&lt;&#x2F;code&gt; field (the DHCPv6 Jagonet server does not have this field)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dhcp&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#dhcp&quot; aria-label=&quot;Anchor link for: dhcp&quot;&gt;DHCP&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;DHCP works basically in 4 steps: Discover-Offer-Request-ACK (abbreviated as DORA for easy remembering)
+&lt;ul&gt;
+&lt;li&gt;DHCP Discover gives the options that the client wants to get.&lt;&#x2F;li&gt;
+&lt;li&gt;DHCP Offer is based on the options requested by the client and the options it is configured to respond to to the client.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;DHCP uses ARP to determine if that IP address is already in use by a host.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the BSD Redhat library, all system calls call the &lt;code&gt;sosend&lt;&#x2F;code&gt; function&lt;&#x2F;li&gt;
+&lt;li&gt;DHCP Server differentiates to grant IP to CPE, CM, eMTA based on
+&lt;ul&gt;
+&lt;li&gt;option 60 &lt;code&gt;vendor-class-identifier&lt;&#x2F;code&gt; in DHCP Discover message&lt;&#x2F;li&gt;
+&lt;li&gt;docsis -&amp;gt; CM; pktc -&amp;gt; MTA; eRouter -&amp;gt; CPE&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;For DOCSIS DHCP server:&lt;&#x2F;strong&gt; &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;DHCP Offer and DHCP ACK need to have some specific fields (see more &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;volpefirm.com&#x2F;wp-content&#x2F;uploads&#x2F;2017&#x2F;01&#x2F;CM-SP-MULPIv3.1-I10-170111.pdf&quot;&gt;CM-SP-MULPIv3.1&lt;&#x2F;a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yiaddr&lt;&#x2F;code&gt;: your IP address&lt;&#x2F;li&gt;
+&lt;li&gt;IP of TFTP server&lt;&#x2F;li&gt;
+&lt;li&gt;Config file name on TFTP server&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CMTS relies on X&#x2F;Y downstream&#x2F;upstream channel to determine which DHCP request is coming from CM or CPE then change the Gateway IP address &lt;code&gt;GIADDR&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Notes:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;file name&lt;&#x2F;code&gt; located in the header is &lt;strong&gt;boot file name&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;option &lt;code&gt;file name&lt;&#x2F;code&gt;: located in the option &lt;em&gt;option 67&lt;&#x2F;em&gt; - suboption.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;dhcp-relay-agent&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#dhcp-relay-agent&quot; aria-label=&quot;Anchor link for: dhcp-relay-agent&quot;&gt;DHCP Relay agent&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;cpp&quot; class=&quot;language-cpp z-code&quot;&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;z-source z-c++&quot;&gt;&lt;span class=&quot;z-comment z-block z-c&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-c&quot;&gt;&#x2F;*&lt;&#x2F;span&gt;
+                     ┌──────────────┐
+                     │  DHCP Server │
+     ┌─────────┐     │              │
+     │ Router  ├─────┴──────────────┘
+     │    R1   │
+     └─┬────┬──┘
+       │    │
+┌──────┤    ├───────┐
+│      │    │  PC2  │
+│  PC1 │    │       │
+└──────┘    └───────┘
+ &lt;span class=&quot;z-punctuation z-definition z-comment z-c&quot;&gt;*&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;In this mode Router R1 does not directly assign IPs to PC1 and PC2, but it will forward this DHCP message to the dedicated DHCP Server.&lt;&#x2F;li&gt;
+&lt;li&gt;PC1 and PC2 do not need to know the address of the DHCP Server.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;255.255.255.255&lt;&#x2F;code&gt; is a broadcast message from the client, if the Router is not configured as a Relay Agent, it will discard this message.
+&lt;ul&gt;
+&lt;li&gt;Discover-Request messages have the same &lt;code&gt;transaction ID&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;The Request-ACK message has the same &lt;code&gt;transaction ID&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Time Release is the Rebinding time when Renew fails.
+&lt;ul&gt;
+&lt;li&gt;Default: Renew 30s; Rebinding 60s&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - AC-DC</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/ac-dc/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-31T00:00:00+00:00</updated>
+	<id>https://circuitlover.com/tags/ac-dc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>AC&#x2F;DC to DC converter</title>
+		<published>2022-03-31T00:00:00+00:00</published>
+		<updated>2022-03-31T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/ac-dc-converter/" type="text/html"/>
+		<id>https://circuitlover.com/ac-dc-converter/</id>
+		<content type="html">&lt;p&gt;If you don&#x27;t know what is &lt;code&gt;K1 L1 L2 1&lt;&#x2F;code&gt; transformer directive means, you should check &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#lt_transf&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1-forward-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-forward-converter&quot; aria-label=&quot;Anchor link for: 1-forward-converter&quot;&gt;1. Forward converter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot; aria-label=&quot;Anchor link for: 1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;1.1. One-switch sigle-ended forward converter (isolated buck converter)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;forward-basic-topology.png&quot; alt=&quot;forward converter topology&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is essentially a buck converter with transformer inserted.&lt;&#x2F;p&gt;
+&lt;p&gt;We want to operate in Continuous Conduction Mode.
+$I_{Lout}$ never reach zero.&lt;&#x2F;p&gt;
+&lt;p&gt;In DCM we may have &lt;code&gt;peak detect&lt;&#x2F;code&gt; phenomina, we $V_{out}^{&#x27;} = (3-4) \times V_{out}$&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; \text{- switch on: } V_{D2} = \frac{N2}{N1} V_{in} \\
+&amp; \text{- switch off: } V_{D2} = 0; \\
+&amp; \frac{V_{OUT}}{V_{IN}} = \frac{N2}{N1} D
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\text{Output voltage ripple } V_{ripple} = ESR * \Delta I
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;ESR is from $C_{OUT}$, and $\Delta I$ is effected by the design of $L_{out}$.
+Rule of thumb is $\Delta I$ = 10% to 40% of full load.&lt;&#x2F;p&gt;
+&lt;p&gt;Refer &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot; aria-label=&quot;Anchor link for: 1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;1.2. Two-switch sigle-ended forward converter (isolated buck converter)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;also called asymmetrical half bridge forward&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-flyback-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-flyback-converter&quot; aria-label=&quot;Anchor link for: 2-flyback-converter&quot;&gt;2. Flyback converter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Transfer function &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ti_flyback&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; is&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  \frac{V_{out}}{V_{in}} = n \times \frac{D}{1 - D}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;where $n$ is turn ration, and $D$ is duty cycle.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-1-rcd-clamp&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-1-rcd-clamp&quot; aria-label=&quot;Anchor link for: 2-1-rcd-clamp&quot;&gt;2.1. RCD Clamp&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;See more at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;rmMYgnJ1oqE&quot;&gt;RCD Clamp&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3-peak-current-control-mode-current-programmed-control&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-peak-current-control-mode-current-programmed-control&quot; aria-label=&quot;Anchor link for: 3-peak-current-control-mode-current-programmed-control&quot;&gt;3. Peak current control mode (Current-Programmed Control)&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;UCC28C42 from TI using this control method.&lt;&#x2F;p&gt;
+&lt;p&gt;Refer to chapter 18 of &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#erickson2007&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;, and &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#dragan&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-intro.jpg&quot; alt=&quot;peak-current-mode-intro&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-operation.jpg&quot; alt=&quot;peak-current-mode-operation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-in-voltage-regulator.jpg&quot; alt=&quot;peak-current-mode-in-voltage-regulator&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-slope-compensation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-slope-compensation&quot; aria-label=&quot;Anchor link for: 4-slope-compensation&quot;&gt;4. Slope compensation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#slope&quot;&gt;6&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more information.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-d-lt-50.jpg&quot; alt=&quot;Slope compensation&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;D&amp;lt;50% turburlance is faded out&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;If Duty cycle $D&amp;gt;50%$, $I_L$ with turburlance is not stable.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-d-gt-50.jpg&quot; alt=&quot;Slope compensation with d&amp;gt;0.5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Using new $I_{Lref}$ to solve the problem.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-using-new-I_l.jpg&quot; alt=&quot;Solve slope compensation problem&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;How to generate the new $I_{Lref}$?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-gen-new-I_l.jpg&quot; alt=&quot;generate the new I-ref&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;5-practical-consideration&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-practical-consideration&quot; aria-label=&quot;Anchor link for: 5-practical-consideration&quot;&gt;5. Practical consideration&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;5-1-how-to-use-impedance-analyzer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-1-how-to-use-impedance-analyzer&quot; aria-label=&quot;Anchor link for: 5-1-how-to-use-impedance-analyzer&quot;&gt;5.1. How to use Impedance Analyzer&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The table is adapted from &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#4191A&quot;&gt;7&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;equivalent-circuit-impedance.png&quot; alt=&quot;Equivalent circuit model selection&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Equi. circuit&lt;&#x2F;th&gt;&lt;th&gt;Type of DUTs&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;A&lt;&#x2F;td&gt;&lt;td&gt;(1) Coils with high core loss; (2) To measure magnetizing inductance $L_M$, you need to open the secondary side. Only $L_M,C_1,R_{core}$ were left.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;B&lt;&#x2F;td&gt;&lt;td&gt;(1) coils in general; (2) resistors; (3) Measuring leakage inductance $L_{leakage}$, you need to short the secondary side.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;C&lt;&#x2F;td&gt;&lt;td&gt;High value resistors&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;D&lt;&#x2F;td&gt;&lt;td&gt;Capacitors&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;E&lt;&#x2F;td&gt;&lt;td&gt;Resonators (crystal, ceramic, ferrite)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Pending&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;course.html&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;courses&#x2F;108&#x2F;101&#x2F;108101126&#x2F;&quot;&gt;NOC:Fundamental of Power Electronics (Video)&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Week 12
+&lt;ul&gt;
+&lt;li&gt;Intro for close loop control&lt;&#x2F;li&gt;
+&lt;li&gt;Close looping dc-dc converters&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of close loop control&lt;&#x2F;li&gt;
+&lt;li&gt;Current control for battery charger application&lt;&#x2F;li&gt;
+&lt;li&gt;Instability in current control and slope compensation&lt;&#x2F;li&gt;
+&lt;li&gt;Slope compensated current control&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of current control&lt;&#x2F;li&gt;
+&lt;li&gt;Single phase inverter with sinusoidal pwm&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of sinusoidal PWM&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;courses&#x2F;108&#x2F;105&#x2F;108105180&#x2F;&quot;&gt;NOC:Control and Tuning Methods in Switched Mode Power Converters&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Week 02
+&lt;ul&gt;
+&lt;li&gt;Lecture 12 : Interactive MATLAB Simulation and Case Studies&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;6-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-references&quot; aria-label=&quot;Anchor link for: 6-references&quot;&gt;6. References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;David Perreault. &lt;em&gt;6.334 Power Electronics Ch. 7.&lt;&#x2F;em&gt; Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-334-power-electronics-spring-2007&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;lt_transf&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.analog.com&#x2F;en&#x2F;technical-articles&#x2F;ltspice-basic-steps-for-simulating-transformers.html&quot;&gt;LTspice: Simple Steps for Simulating Transformers&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;4191A&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;7&lt;&#x2F;sup&gt;
+&lt;p&gt;Operation manual Model 4191A network&#x2F;spectrum Analyzer page 141&#x2F;356 &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xdevs.com&#x2F;doc&#x2F;HP_Agilent_Keysight&#x2F;HP%204195A%20Operation.pdf&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;erickson2007&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
+&lt;p&gt;Erickson, R. W. &amp;amp; Maksimovic, D. 2007. Fundamentals of power electronics, Springer Science &amp;amp; Business Media.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;dragan&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;5&lt;&#x2F;sup&gt;
+&lt;p&gt;Current-Mode Control, Dr. Dragan Maksimovic - University of Colorado Boulder &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.coursera.org&#x2F;lecture&#x2F;current-modecontrol&#x2F;introduction-to-peak-current-mode-control-nbIZQ&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;slope&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;6&lt;&#x2F;sup&gt;
+&lt;p&gt;Slope compensation for current control - NPTEL &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;b3e0RTWt4W0&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ti_flyback&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;AC Modeling of Power Stage in Flyback Converter - Texas Instruments &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ti.com&#x2F;lit&#x2F;an&#x2F;slva589&#x2F;slva589.pdf&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+</feed>

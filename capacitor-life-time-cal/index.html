@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Lifetime calculation of Electrolytic Capacitors | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="An example of calculation lifetime of JIANGHAI electrolytic capacitor." />
+  <link rel="canonical" href="https://circuitlover.com/capacitor-life-time-cal/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/capacitor-life-time-cal/" />
+  <meta name="twitter:url" content="https://circuitlover.com/capacitor-life-time-cal/" />
+  <meta property="og:description" content="An example of calculation lifetime of JIANGHAI electrolytic capacitor." />
+  <meta name="twitter:description" content="An example of calculation lifetime of JIANGHAI electrolytic capacitor." />
+  <meta property="og:title" content="Lifetime calculation of Electrolytic Capacitors | CircuitLover" />
+  <meta name="twitter:title" content="Lifetime calculation of Electrolytic Capacitors | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2020-11-04" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/capacitor-life-time-cal/">Lifetime calculation of Electrolytic Capacitors</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> November 04, 2020<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/power-electronics/">Power-Electronics</a>] #<a href="https://circuitlover.com/tags/capacitor/">Capacitor</a> </span>
+
+    <p>On the process of making new inverter/converter products, we are talking about what type of topology will be used, power losses and cost estimation. It is easy to forgot about the <strong>Lifetime of capacitors</strong>. This article is quick note how to estimate lifetime of electrolytic capacitor (elcap) provided by <strong>JIANGHAI</strong> <sup class="footnote-reference"><a href="#fn1">1</a></sup>. Other manufactures may have different ways to estimate lifetime of these capacitors. Please look up manufacturer application note for more detail.</p>
+<h2 id="lifetime-model"><a class="zola-anchor" href="#lifetime-model" aria-label="Anchor link for: lifetime-model">Lifetime model</a></h2>
+<p>The lifetime $L$ of the electrolytic capacitor can be estimated by using numerical lifetime model:</p>
+<p>$$
+L = L_0 \cdot K_T \cdot K_R \cdot K_V
+$$</p>
+<p>where</p>
+<ul>
+<li>$L_0$ is specified lifetime from the datasheet of given capacitor at norminal ripple.</li>
+<li>$K_T$ temperature factor (ambient temperature)</li>
+<li>$K_R$ ripple current factor (self-heating)</li>
+<li>$K_V$ voltage factor (operating voltage)</li>
+</ul>
+<h3 id="temperature-factor"><a class="zola-anchor" href="#temperature-factor" aria-label="Anchor link for: temperature-factor">Temperature factor</a></h3>
+<p>Temperature factor $K_T$ can be calculated based on &quot;10-Kelvin-rule&quot; that is: a drop of the ambient temperature by $10K$ double the lifetime of capacitor.</p>
+<p>$$
+K_T = 2^{\cfrac {T_O - T_A}{10K}}
+$$</p>
+<p>Where</p>
+<ul>
+<li>$T_0$ rated temperature</li>
+<li>$T_A$ ambient temperature</li>
+</ul>
+<h3 id="ripple-current-factor"><a class="zola-anchor" href="#ripple-current-factor" aria-label="Anchor link for: ripple-current-factor">Ripple current factor</a></h3>
+<p>Ripple current factor $K_R$ is calculated as following.</p>
+<p>$$
+K_R = K_i^{A \cdot \cfrac{\Delta T_0}{10K}}
+$$</p>
+<p>where</p>
+<ul>
+<li>$A = 1 - (\frac{I_A}{I_R})^2$</li>
+<li>$I_A$ ripple current in the application</li>
+<li>$I_R$ rated ripple current</li>
+<li>$\Delta T_0$ core temperature increase of the elcap
+<ul>
+<li>$T_0=105 ^{\circ}C$ typ. 3.5~5K</li>
+<li>$T_0 = 85 ^\circ C$ typ. 3.5~10K</li>
+</ul>
+</li>
+<li>$K_i$ empirical safety factor
+<ul>
+<li>$T_0=105 ^{\circ}C$ if ($I&gt;I_R$) then $K_i = 4$ else $K_i = 2$</li>
+<li>$T_0 = 85 ^\circ C \rightarrow K_i = 2$</li>
+</ul>
+</li>
+</ul>
+<h3 id="voltage-factor"><a class="zola-anchor" href="#voltage-factor" aria-label="Anchor link for: voltage-factor">Voltage factor</a></h3>
+<p>There are two cases need to take into account when calculate voltage factor $K_V$.</p>
+<p>If $0.6 \le \cfrac{U_A}{U_R} \le 1$ then
+$$
+K_V = \left( \cfrac{U_A}{U_R} \right) ^{-2.5}
+$$
+else
+$$
+K_V = 3.59
+$$</p>
+<p>where</p>
+<ul>
+<li>$U_R$ rated voltage</li>
+<li>$U_A$ actual operating voltage</li>
+</ul>
+<h2 id="references"><a class="zola-anchor" href="#references" aria-label="Anchor link for: references">References</a></h2>
+<div class="footnote-definition" id="fn1"><sup class="footnote-definition-label">1</sup>
+<p>Albertsen, A. 2010. Electrolytic capacitor lifetime estimation [Online]. JIANGHAI Eur. GmbH. Available: https://jianghai-europe.com/wp-content/uploads/Jianghai-Europe-E-Cap-Lifetime-Estimation-long-AAL-2018-09-18.pdf [Accessed March 3, 2022].</p>
+</div>
+
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/capacitor-life-time-cal/#lifetime-model">Lifetime model</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/capacitor-life-time-cal/#temperature-factor"><small>- Temperature factor</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/capacitor-life-time-cal/#ripple-current-factor"><small>- Ripple current factor</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/capacitor-life-time-cal/#voltage-factor"><small>- Voltage factor</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/capacitor-life-time-cal/#references">References</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

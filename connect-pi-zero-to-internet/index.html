@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Connecting Raspberry Pi Zero (not W) to the Internet | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="How to connect Pi Zero to the Internet without using any extra components." />
+  <link rel="canonical" href="https://circuitlover.com/connect-pi-zero-to-internet/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/connect-pi-zero-to-internet/" />
+  <meta name="twitter:url" content="https://circuitlover.com/connect-pi-zero-to-internet/" />
+  <meta property="og:description" content="How to connect Pi Zero to the Internet without using any extra components." />
+  <meta name="twitter:description" content="How to connect Pi Zero to the Internet without using any extra components." />
+  <meta property="og:title" content="Connecting Raspberry Pi Zero (not W) to the Internet | CircuitLover" />
+  <meta name="twitter:title" content="Connecting Raspberry Pi Zero (not W) to the Internet | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2020-12-11" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/connect-pi-zero-to-internet/">Connecting Raspberry Pi Zero (not W) to the Internet</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> December 11, 2020<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/raspberry-pi/">Raspberry-Pi</a>] #<a href="https://circuitlover.com/tags/pi-zero/">Pi-Zero</a> </span>
+
+    <p>Raspi Zero (not W) have neither Wi-Fi nor Ethernet, so how could update the raspbian distro?</p>
+<p>Well, you can create a virtual Ethernet interface. This method is tested on <strong>Window 10</strong>, you could get the same idea when using Linux/Mac computer.</p>
+<h3 id="updated-june-15-2023"><a class="zola-anchor" href="#updated-june-15-2023" aria-label="Anchor link for: updated-june-15-2023">Updated June 15, 2023</a></h3>
+<p>If you have an USB WiFi dongle (TP-Link-WN725N Nano USB Wifi like I have), the process is much more simpler.</p>
+<p>Fisrt, downloading raspberry pi OS (kernel 5.10+) is required, for example  <a rel="noopener" target="_blank" href="https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-05-03/2023-05-03-raspios-buster-armhf-lite.img.xz">2023-05-03-raspios-buster-armhf-lite</a></p>
+<p>Second, a small configuration needs to be added (thanks to <a rel="noopener" target="_blank" href="https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31">
+MBing/install_wlan_dongle.sh</a>)</p>
+<h4 id="step-1-setup-wifi-settings"><a class="zola-anchor" href="#step-1-setup-wifi-settings" aria-label="Anchor link for: step-1-setup-wifi-settings">STEP 1: Setup wifi settings</a></h4>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Add wifi settings</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> vi /etc/network/interfaces</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Search for `auto wlan0` at the start, if it&#39;s not there, add it and keep the file open</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Make sure it knows where to find the wpa config</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Add these lines to the bottom of the same file:</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">allow-hotplug</span></span><span class="z-meta z-function-call z-arguments z-shell"> wlan0</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iface</span></span><span class="z-meta z-function-call z-arguments z-shell"> wlan0 inet dhcp</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wpa-conf</span></span><span class="z-meta z-function-call z-arguments z-shell"> /etc/wpa_supplicant/wpa_supplicant.conf</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iface</span></span><span class="z-meta z-function-call z-arguments z-shell"> default inet dhcp</span>
+</span></code></pre>
+<h4 id="step-2-connect-to-wifi"><a class="zola-anchor" href="#step-2-connect-to-wifi" aria-label="Anchor link for: step-2-connect-to-wifi">STEP 2: Connect to wifi</a></h4>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> vi /etc/wpa_supplicant/wpa_supplicant.conf</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> The file `wpa_supplicant.conf` might already exist and might have some lines, add these below:</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">network</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-brace z-shell"><span class="z-punctuation z-section z-expansion z-brace z-begin z-shell">{</span>
+  ssid=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>YOUR_NETWORK_NAME<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>
+  psk=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>YOUR_NETWORK_PASSWORD<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>
+  proto=RSN
+  key_mgmt=WPA-PSK
+  pairwise=CCMP
+  auth_alg=OPEN
+<span class="z-punctuation z-section z-expansion z-brace z-end z-shell">}</span></span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Replace `YOUR_NETWORK_NAME` &amp; `YOUR_NETWORK_PASSWORD` with your own credentials.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Reboot and connect</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> reboot</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> To test after reboot if your wifi is working, you can open the browser or go to the terminal</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ifconfig</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>a</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> This will now have an ip-address next to `wlan0` which you can use for ssh or whatever.</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></code></pre>
+<h3 id="preparing"><a class="zola-anchor" href="#preparing" aria-label="Anchor link for: preparing">Preparing</a></h3>
+<p>I am testing <a rel="noopener" target="_blank" href="https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2022-01-28/2022-01-28-raspios-bullseye-armhf-lite.zip">2022-01-28-raspios-bullseye-armhf-lite image</a> version.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pi@raspberrypi:<span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> $ uname<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>a</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Linux</span></span><span class="z-meta z-function-call z-arguments z-shell"> raspberrypi 5.10.92+ <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">1514 Mon Jan 17 17:35:21 GMT 2022 armv6l GNU/Linux</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pi@raspberrypi:<span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> $ cat /proc/device-tree/model</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Raspberry</span></span><span class="z-meta z-function-call z-arguments z-shell"> Pi Zero Rev 1.3</span>
+</span></code></pre>
+<p>The network topology I'm going to deploy it as follows.</p>
+<p><img src="https://circuitlover.com/connect-pi-zero-to-internet/images/Pi-Zero-internet.png" alt="Pi Zero Internet" /></p>
+<h3 id="1-update-cmdline-txt-and-config-txt-settings"><a class="zola-anchor" href="#1-update-cmdline-txt-and-config-txt-settings" aria-label="Anchor link for: 1-update-cmdline-txt-and-config-txt-settings">1. Update cmdline.txt and config.txt settings</a></h3>
+<p>This method is using <code>libcomposite</code>, so you need to include <code>libcomposite</code> in the <code>modules-load</code> directive as the following. For other methods, please visit <a rel="noopener" target="_blank" href="https://gist.github.com/gbaman">gbaman</a>/<a rel="noopener" target="_blank" href="https://gist.github.com/gbaman/50b6cca61dd1c3f88f41">HowToOTG.md</a>.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">root@raspberrypi:/home/pi#</span></span><span class="z-meta z-function-call z-arguments z-shell"> cat /boot/cmdline.txt</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">console</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">serial0,115200</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">console</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">tty1</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">root</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">PARTUUID=22e47bc0-02</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">rootfstype</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">ext4</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">fsck.repair</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">yes</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rootwait</span></span><span class="z-meta z-function-call z-arguments z-shell"> modules-load=dwc2,libcomposite</span>
+</span></code></pre>
+<p>Add <code>dtoverlay=dwc2</code> at the end of <code>/boot/config.txt</code></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">root@raspberrypi:/home/pi#</span></span><span class="z-meta z-function-call z-arguments z-shell"> cat /boot/config.txt</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Omitted</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[cm4]</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable host mode on the 2711 built-in XHCI USB controller.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> This line should be removed if the legacy DWC2 controller is required</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> (e.g. for USB device mode) or if USB support is not required.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">otg_mode</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">1</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[all]</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[pi4]</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Run as fast as firmware / board allows</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">arm_boost</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">1</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[all]</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable UART</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">enable_uart</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">1</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">dtoverlay</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">dwc2</span>
+</span></code></pre>
+<h3 id="2-script-to-create-a-virtual-udc-ethernet-interface"><a class="zola-anchor" href="#2-script-to-create-a-virtual-udc-ethernet-interface" aria-label="Anchor link for: 2-script-to-create-a-virtual-udc-ethernet-interface">2. Script to create a virtual UDC ethernet interface</a></h3>
+<p>The script below will create a virtual UDC ethernet interface.</p>
+<p>{{&lt; alert icon=&quot;👉&quot; text=&quot;In order to make Pi Zero to become plug-and-play as much as possible, I am faking IBM Corporation RNDIS Driver on Window because of lacking the Linux Driver on the Window 7. If you are using MacOS/Linux, you should change OS_CONFIG to macos/linux accordingly.&quot; /&gt;}}</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">!/bin/sh</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Thanks to</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">   wismna: http://github.com/wismna/raspberry-pi/hackpi</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">   RoganDawes: https://github.com/RoganDawes/P4wnP1</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/enumeration-of-the-composite-parent-device</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">OS_CONFIG</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>window<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">IP_SELF</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>192.168.137.2<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">IP_HOST</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>192.168.137.1<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+
+<span class="z-variable z-other z-readwrite z-assignment z-shell">MAC_HOST</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>48:6f:73:74:50:43<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &quot;Mac address for host PC&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">MAC_SELF</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>42:61:64:55:53:42<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &quot;MAC address for PiZero&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">CONFIG</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">/sys/kernel/config/usb_gadget/PiZero</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">CONFIG</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">CONFIG</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-keyword z-operator z-logical z-or z-shell">||</span> <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-exit z-shell">exit</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1</span>
+
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 0x04b3 = 1203</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> {</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">     &quot;name&quot;: &quot;IBM Corporation&quot;,</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">     &quot;field_vid&quot;: &quot;1203&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> },</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-conditional z-case z-shell"><span class="z-keyword z-control z-conditional z-case z-shell">case</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">OS_CONFIG</span></span> <span class="z-keyword z-control z-in z-shell">in</span>
+  </span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">window<span class="z-meta z-conditional z-case z-shell"><span class="z-keyword z-control z-conditional z-patterns z-end z-shell">)</span></span></span><span class="z-meta z-conditional z-case z-clause z-commands z-shell">
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> wismna hack for Window</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> IBM Corporation RNDIS Driver will be loaded</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x04b3 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> idVendor</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x4010 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> idProduct</span>
+    </span><span class="z-meta z-conditional z-case z-clause z-commands z-shell"><span class="z-punctuation z-terminator z-case z-clause z-shell">;;</span></span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">
+  </span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell"><span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell"><span class="z-keyword z-control z-conditional z-patterns z-end z-shell">)</span></span></span><span class="z-meta z-conditional z-case z-clause z-commands z-shell">
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x1d6b <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> idVendor   <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Linux Foundation</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    echo 0x0104 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> idProduct  <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Multifunction Composite Gadget</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    </span><span class="z-meta z-conditional z-case z-clause z-commands z-shell"><span class="z-punctuation z-terminator z-case z-clause z-shell">;;</span></span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">
+
+<span class="z-keyword z-control z-conditional z-end z-shell">esac</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x0100 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bcdDevice</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x0200 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bcdUSB</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Mandatory for Multiple Gadgets</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0xEF <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bDeviceClass</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x02 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bDeviceSubClass</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x01 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bDeviceProtocol</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0x40 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> bMaxPacketSize0</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> strings/0x409</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> configs/c.1/strings/0x409</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 100000000d2386db         <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> strings/0x409/serialnumber</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>PiZero Project<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> strings/0x409/manufacturer</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>PiZero <span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>              <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> strings/0x409/product</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 250                      <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> configs/c.1/MaxPower</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>PiZero<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>               <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> configs/c.1/strings/0x409/configuration</span>
+
+<span class="z-meta z-function z-shell"><span class="z-entity z-name z-function z-shell">config_acm</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span><span class="z-punctuation z-section z-braces z-begin z-shell">{</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> functions/acm.usb0</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ln</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> functions/acm.usb0 configs/c.1/acm.usb0</span>
+<span class="z-punctuation z-section z-braces z-end z-shell">}</span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Ethernet Adapter</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">-------------------------------------------</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function z-shell"><span class="z-entity z-name z-function z-shell">config_rndis</span> <span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span> <span class="z-punctuation z-section z-braces z-begin z-shell">{</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> functions/rndis.usb0</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">MAC_HOST</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/rndis.usb0/host_addr</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">MAC_SELF</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/rndis.usb0/dev_addr</span>
+
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> os_desc</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>0x80<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>     <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> configs/c.1/bmAttributes</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>1<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>        <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> os_desc/use</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>0xbc<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>     <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> os_desc/b_vendor_code</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>MSFT100<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>  <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> os_desc/qw_sign</span>
+
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> functions/rndis.usb0/os_desc/interface.rndis</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>RNDIS<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>    <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/rndis.usb0/os_desc/interface.rndis/compatible_id</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>5162001<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span>  <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/rndis.usb0/os_desc/interface.rndis/sub_compatible_id</span>
+
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ln</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> functions/rndis.usb0 configs/c.1/</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ln</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> configs/c.1/ os_desc</span>
+<span class="z-punctuation z-section z-braces z-end z-shell">}</span></span>
+
+<span class="z-meta z-function z-shell"><span class="z-entity z-name z-function z-shell">config_ecm</span> <span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span> <span class="z-punctuation z-section z-braces z-begin z-shell">{</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> functions/ecm.usb0</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">MAC_HOST</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/ecm.usb0/host_addr</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">MAC_SELF</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> functions/ecm.usb0/dev_addr</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ln</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> functions/ecm.usb0 configs/c.1/</span>
+<span class="z-punctuation z-section z-braces z-end z-shell">}</span></span>
+
+<span class="z-meta z-conditional z-case z-shell"><span class="z-keyword z-control z-conditional z-case z-shell">case</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">OS_CONFIG</span></span> <span class="z-keyword z-control z-in z-shell">in</span>
+  </span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">window<span class="z-meta z-conditional z-case z-shell"><span class="z-keyword z-control z-conditional z-patterns z-end z-shell">)</span></span></span><span class="z-meta z-conditional z-case z-clause z-commands z-shell">
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">config_rndis</span></span>
+    </span><span class="z-meta z-conditional z-case z-clause z-commands z-shell"><span class="z-punctuation z-terminator z-case z-clause z-shell">;;</span></span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">
+  </span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">macos <span class="z-keyword z-operator z-logical z-shell">|</span> linux<span class="z-meta z-conditional z-case z-clause z-patterns z-shell"><span class="z-keyword z-control z-conditional z-patterns z-end z-shell">)</span></span></span><span class="z-meta z-conditional z-case z-clause z-commands z-shell">
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">config_ecm</span></span>
+    </span><span class="z-meta z-conditional z-case z-clause z-commands z-shell"><span class="z-punctuation z-terminator z-case z-clause z-shell">;;</span></span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">
+  </span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell"><span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell"><span class="z-keyword z-control z-conditional z-patterns z-end z-shell">)</span></span></span><span class="z-meta z-conditional z-case z-clause z-commands z-shell">
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">config_acm</span></span>
+    </span><span class="z-meta z-conditional z-case z-clause z-commands z-shell"><span class="z-punctuation z-terminator z-case z-clause z-shell">;;</span></span><span class="z-meta z-conditional z-case z-clause z-patterns z-shell">
+<span class="z-keyword z-control z-conditional z-end z-shell">esac</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">udevadm</span></span><span class="z-meta z-function-call z-arguments z-shell"> settle<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>t</span> 5</span> <span class="z-keyword z-operator z-logical z-or z-shell">||</span> <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-colon z-shell">:</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ls</span></span><span class="z-meta z-function-call z-arguments z-shell"> /sys/class/udc <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> UDC</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ifconfig</span></span><span class="z-meta z-function-call z-arguments z-shell"> usb0 <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">IP_SELF</span></span> netmask 255.255.255.252 up</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">route</span></span><span class="z-meta z-function-call z-arguments z-shell"> add<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>net</span> default gw <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">IP_HOST</span></span></span>
+
+</span></code></pre>
+<p>{{&lt; alert icon=&quot;👉&quot; text=&quot;I am using 192.168.137.2 address because when I enable Internet Connection Sharing (ICS) on my Wi-Fi adapter, the second NIC get shared Internet will get 192.168.137.1 as you can see in the following steps. You should change the IP address accordingly to your situation.&quot; /&gt;}}</p>
+<p>Save the file as <code>runme.sh</code>, and don't forget to change its permission to executable file.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">root@raspberrypi:/home/pi#</span></span><span class="z-meta z-function-call z-arguments z-shell"> chmod +x runme.sh</span>
+</span></code></pre>
+<p>In order to get the script run at boot up, one simple way is adding this script into <code>rc.local</code>. See more ways to do this at <a rel="noopener" target="_blank" href="https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all">How to Run a Raspberry Pi Program on Startup</a>.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">root@raspberrypi:/home/pi#</span></span><span class="z-meta z-function-call z-arguments z-shell"> cat /etc/rc.local</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">!/bin/sh -e</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Omitted</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Print the IP address</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">_IP</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hostname</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>I</span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span> <span class="z-meta z-function-call z-shell"></span><span class="z-keyword z-operator z-logical z-or z-shell">||</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">true</span></span>
+<span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-support z-function z-test z-begin z-shell">[</span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">_IP</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-support z-function z-test z-end z-shell">]</span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-keyword z-control z-conditional z-then z-shell">then</span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-printf z-shell">printf</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>My IP address is %s\n<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">_IP</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-keyword z-control z-conditional z-end z-shell">fi</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">/home/pi/runme.sh</span></span> <span class="z-keyword z-operator z-logical z-job z-shell">&amp;</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-exit z-shell">exit</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0</span>
+</span></code></pre>
+<p>If you want to ssh to your PiZero, you could enable SSHD for later use.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> systemctl enable ssh</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> systemctl start ssh</span>
+</span></code></pre>
+<p>It is time to reboot your PI to apply these settings.</p>
+<h3 id="3-window-settings-for-internet-connection-sharing"><a class="zola-anchor" href="#3-window-settings-for-internet-connection-sharing" aria-label="Anchor link for: 3-window-settings-for-internet-connection-sharing">3. Window settings for Internet Connection Sharing</a></h3>
+<p>Go to <code>Control Panel\Network and Internet\Network Connections</code>. If everything is good, you should see a new Ethernet Adapter (i.e., Ethernet 4 in my case).</p>
+<p><img src="https://circuitlover.com/connect-pi-zero-to-internet/images/window-setting-new-NIC.png" alt="Window IP setting" /></p>
+<p>Now, you need to share the Internet from your main NIC to the new created NIC by PiZero.</p>
+<p><img src="https://circuitlover.com/connect-pi-zero-to-internet/images/window-setting-sharing.png" alt="Window network sharing" /></p>
+<ol>
+<li>Right click on NIC icon choose <code>Properties</code>, go to <code>Properties</code> one more and then <code>Sharing</code> tab.</li>
+<li>Check the <code>Allow Other Network Users ...</code> check box.</li>
+<li>Under <code>Home networking connection</code>, choose the new NIC (i.e., <code>Ethernet 4</code> in my case)</li>
+<li>Click <code>OK</code></li>
+</ol>
+<p>You will see a pop-up states that <strong>Ethernet 4</strong> IP address will be changed to <code>19.268.137.1</code>. That is why I used this IP address in the above <code>runme.sh</code> script.</p>
+<p><img src="https://circuitlover.com/connect-pi-zero-to-internet/images/window-setting-IP-forwarding.png" alt="Window setting IP" /></p>
+<p>Try to connect from your PC to your Pi Zero. I am using SSH to connect because I already enabled SSHD service on PiZero.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">C:<span class="z-constant z-character z-escape z-shell">\W</span>indows<span class="z-constant z-character z-escape z-shell">\s</span>ystem32</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>ssh pi@192.168.137.2</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">The</span></span><span class="z-meta z-function-call z-arguments z-shell"> authenticity of host <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>192.168.137.2 (192.168.137.2)<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> can<span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>t be established.
+ECDSA key fingerprint is SHA256:LxSEz/DS/6u6EQQWI+rr.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added <span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span>192.168.137.2<span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span> (ECDSA) to the list of known hosts.
+pi@192.168.137.2<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span>s password:</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Linux</span></span><span class="z-meta z-function-call z-arguments z-shell"> raspberrypi 5.10.92+ <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">1514 Mon Jan 17 17:35:21 GMT 2022 armv6l</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pi@raspberrypi:<span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> $</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pi@raspberrypi:<span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> $ ping google.com</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">PING</span></span><span class="z-meta z-function-call z-arguments z-shell"> google.com (216.58.207.206</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">56</span></span><span class="z-meta z-function-call z-arguments z-shell">(84</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bytes</span></span><span class="z-meta z-function-call z-arguments z-shell"> of data.</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">64</span></span><span class="z-meta z-function-call z-arguments z-shell"> bytes from arn11s04-in-f14.1e100.net (216.58.207.206</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-colon z-shell">:</span></span><span class="z-meta z-function-call z-arguments z-shell"> icmp_seq=1 ttl=58 time=16.7 ms</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">64</span></span><span class="z-meta z-function-call z-arguments z-shell"> bytes from arn11s04-in-f14.1e100.net (216.58.207.206</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-colon z-shell">:</span></span><span class="z-meta z-function-call z-arguments z-shell"> icmp_seq=2 ttl=58 time=16.4 ms</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">^C</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">---</span></span><span class="z-meta z-function-call z-arguments z-shell"> google.com ping statistics ---</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">2</span></span><span class="z-meta z-function-call z-arguments z-shell"> packets transmitted, 2 received, 0<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span></span> packet loss, time 1002ms</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rtt</span></span><span class="z-meta z-function-call z-arguments z-shell"> min/avg/max/mdev = 16.397/16.525/16.654/0.128 ms</span>
+</span></code></pre>
+<p>In case you have problem with the DNS, try to change the DNS server on PiZero by editing <code>/etc/resolv.conf</code> file.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pi@raspberrypi:<span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> $ cat /etc/resolv.conf</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Generated by resolvconf</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">nameserver</span></span><span class="z-meta z-function-call z-arguments z-shell"> 8.8.8.8 </span>
+</span></code></pre>
+<p>{{&lt; alert icon=&quot;👉&quot; text=&quot;If it doesn't work, disable <strong> antivirus/firewall </strong> programs in your computer and try again. You may also need to disable and enable <strong>network sharing </strong> in your Window computer several times until it works.&quot; /&gt;}}</p>
+<p>Done! Now you could use the Internet on your Pi Zero.</p>
+<h3 id="4-references"><a class="zola-anchor" href="#4-references" aria-label="Anchor link for: 4-references">4. References</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/showmewebcam/showmewebcam/pull/76/files">showmewebcam #76</a></li>
+<li><a rel="noopener" target="_blank" href="https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup/all">How to Run a Raspberry Pi Program on Startup</a></li>
+<li><a rel="noopener" target="_blank" href="https://gist.github.com/gbaman">gbaman</a>/<a rel="noopener" target="_blank" href="https://gist.github.com/gbaman/50b6cca61dd1c3f88f41">HowToOTG.md</a></li>
+</ul>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#updated-june-15-2023">Updated June 15, 2023</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#step-1-setup-wifi-settings"><small>- STEP 1: Setup wifi settings</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#step-2-connect-to-wifi"><small>- STEP 2: Connect to wifi</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#preparing">Preparing</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#1-update-cmdline-txt-and-config-txt-settings">1. Update cmdline.txt and config.txt settings</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#2-script-to-create-a-virtual-udc-ethernet-interface">2. Script to create a virtual UDC ethernet interface</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#3-window-settings-for-internet-connection-sharing">3. Window settings for Internet Connection Sharing</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/connect-pi-zero-to-internet/#4-references">4. References</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

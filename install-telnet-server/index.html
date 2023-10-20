@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Install Telnet Server on Ubuntu | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Using telnetd package" />
+  <link rel="canonical" href="https://circuitlover.com/install-telnet-server/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/install-telnet-server/" />
+  <meta name="twitter:url" content="https://circuitlover.com/install-telnet-server/" />
+  <meta property="og:description" content="Using telnetd package" />
+  <meta name="twitter:description" content="Using telnetd package" />
+  <meta property="og:title" content="Install Telnet Server on Ubuntu | CircuitLover" />
+  <meta name="twitter:title" content="Install Telnet Server on Ubuntu | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-08-18" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/install-telnet-server/">Install Telnet Server on Ubuntu</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> August 18, 2023<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/server/">Server</a>] #<a href="https://circuitlover.com/tags/systemlog/">systemlog</a> </span>
+
+    <h2 id="1-install-telnet-server-telnetd"><a class="zola-anchor" href="#1-install-telnet-server-telnetd" aria-label="Anchor link for: 1-install-telnet-server-telnetd">1. Install telnet server (telnetd)</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> sudo apt-get install xinetd telnetd</span>
+</span></code></pre>
+<h2 id="2-edit-configurations"><a class="zola-anchor" href="#2-edit-configurations" aria-label="Anchor link for: 2-edit-configurations">2. Edit configurations</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> vi /etc/xinetd.d/telnetd</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> paste the bellow configurations</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">service</span></span><span class="z-meta z-function-call z-arguments z-shell"> telnet</span>
+<span class="z-punctuation z-definition z-compound z-braces z-begin z-shell">{</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">disable</span></span><span class="z-meta z-function-call z-arguments z-shell">         = no</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">socket_type</span></span><span class="z-meta z-function-call z-arguments z-shell">     = stream</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">server</span></span><span class="z-meta z-function-call z-arguments z-shell">          = /usr/sbin/in.telnetd</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">protocol</span></span><span class="z-meta z-function-call z-arguments z-shell">        = tcp</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-wait z-shell">wait</span></span><span class="z-meta z-function-call z-arguments z-shell">            = no</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">user</span></span><span class="z-meta z-function-call z-arguments z-shell">            = root</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">flags</span></span><span class="z-meta z-function-call z-arguments z-shell">           = IPv6</span>
+<span class="z-punctuation z-definition z-compound z-braces z-end z-shell">}</span>
+</span></code></pre>
+<h2 id="3-restart-xinetd-service-and-verify-that-port-23-is-open"><a class="zola-anchor" href="#3-restart-xinetd-service-and-verify-that-port-23-is-open" aria-label="Anchor link for: 3-restart-xinetd-service-and-verify-that-port-23-is-open">3. Restart xinetd service and verify that port 23 is open</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> service xinetd restart</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> you should see that port 23 is open</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> netstat<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>taplun</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> 23</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcp</span></span><span class="z-meta z-function-call z-arguments z-shell">        0      0 0.0.0.0:23              0.0.0.0:<span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span>               LISTEN      19755/xinetd</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Get server log</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cat</span></span><span class="z-meta z-function-call z-arguments z-shell"> /var/log/syslog</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> xinetd</span>
+</span></code></pre>
+
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/install-telnet-server/#1-install-telnet-server-telnetd">1. Install telnet server (telnetd)</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/install-telnet-server/#2-edit-configurations">2. Edit configurations</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/install-telnet-server/#3-restart-xinetd-service-and-verify-that-port-23-is-open">3. Restart xinetd service and verify that port 23 is open</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

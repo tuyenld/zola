@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - Utility</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/utility/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-02-10T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/utility/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Complex number and its application in AC analysist</title>
+		<published>2022-02-10T09:19:42+01:00</published>
+		<updated>2022-02-10T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/sinusoidal-and-complex-number/" type="text/html"/>
+		<id>https://circuitlover.com/sinusoidal-and-complex-number/</id>
+		<content type="html">&lt;h2 id=&quot;1-sinusoidal-time-functions-and-complex-number&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-sinusoidal-time-functions-and-complex-number&quot; aria-label=&quot;Anchor link for: 1-sinusoidal-time-functions-and-complex-number&quot;&gt;1. Sinusoidal time functions and complex number&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-complex-number-recap&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-complex-number-recap&quot; aria-label=&quot;Anchor link for: 1-1-complex-number-recap&quot;&gt;1.1. Complex number recap&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;representation-of-the-complex-number.png&quot; alt=&quot;represenation of the complex number&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Magnitude and phase angle of the complex number $\vec{z}$ is &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;⚠️ Note:⚠️ The author was used $\underline{z}$ to denote a vector. However, I am using $\vec{z}$ to do this because of my personal preference.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+|\vec{z}|=\sqrt{x^{2}+y^{2}} \qquad
+\phi=\arctan \left(\frac{y}{x}\right)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;code&gt;Euler&lt;&#x2F;code&gt; relation&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+e^{j \phi}=\cos (\phi)+j \sin (\phi) \qquad
+\vec{z}=x+j y=|\vec{z}| e^{j \phi}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;The product and the ratio of two complex numbers are&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{z}_{1}=\left|\vec{z}_{1}\right| e^{j \phi_{1}} \qquad
+\vec{z}_{2}=\left|\vec{z}_{2}\right| e^{j \phi_{2}}
+\qquad
+\vec{z}_{1} \vec{z}_{2}=\left|\vec{z}_{1}\right|\left|\vec{z}_{2}\right| e^{j\left(\phi_{1}+\phi_{2}\right)}
+\qquad
+\frac{\vec{z}_{1}}{\vec{z}_{2}}=\frac{\left|\vec{z}_{1}\right|}{\left|\vec{z}_{2}\right|} e^{j\left(\phi_{1}-\phi_{2}\right)}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;The complex conjugate of a complex number is given by&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+\vec{z}=x+j y \quad \vec{z}^{*}=x-j y \qquad
+\vec{z}+\vec{z}^{*}=2 \operatorname{Re}(\vec{z})=2 x \qquad
+\vec{z}-\vec{z}^{*}=2 j \operatorname{Im}(\vec{z})=2 j y
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-2-sinusoidal-time-functions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-sinusoidal-time-functions&quot; aria-label=&quot;Anchor link for: 1-2-sinusoidal-time-functions&quot;&gt;1.2. Sinusoidal Time Functions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A sinusoidal function of time might be written in three ways&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+f(t)=A \cos (\omega t+\phi) \qquad (1) \\
+f(t)=B \cos (\omega t)+C \sin (\omega t) \qquad (2) \\
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \qquad (3)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Equation &lt;code&gt;(3)&lt;&#x2F;code&gt; makes sure that that the resulting function is real. Now, let find out the relationship between equation &lt;code&gt;(1) and (3)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Let say&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{X}=|\vec{X}| e^{j \psi}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;then&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+f(t) =|\vec{X}| e^{j \psi} e^{j \omega t}+|\vec{X}|^{*} e^{-j \psi} e^{-j \omega t} =|\vec{X}| e^{j(\psi+\omega t)}+|\vec{X}|^{*} e^{-j(\psi+\omega t)} \\
+f(t)=2|\vec{X}| \cos (\omega t+\psi)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;so we have&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+|\vec{X}| =\frac{A}{2} \qquad \psi =\phi
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Next, finding the relationship between equation &lt;code&gt;(2) and (3)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Alternatively, we could write&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{X}=x+j y
+\qquad \text{where} \quad
+x=|\vec{X}| \cos (\psi)
+\qquad
+y=|\vec{X}| \sin (\psi)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;thus&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} = x\left(e^{j \omega t}+e^{-j \omega t}\right)+j y\left(e^{j \omega t}-e^{-j \omega t}\right) \\
+f(t) =2 x \cos (\omega t)-2 y \sin (\omega t)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Finally, we get&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+B = 2x \qquad C = -2y \qquad \vec{X} = \frac{B}{2} - j \frac{C}{2}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-3-summary&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-summary&quot; aria-label=&quot;Anchor link for: 1-3-summary&quot;&gt;1.3. Summary&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Since&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+(\vec{X} e^{j \omega t})^{*} = \vec{X}^{*} e^{-j \omega t}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;expression &lt;code&gt;(3) and (4)&lt;&#x2F;code&gt; are equivalent. It is advantageous to use one or the other of them, according to circumstances.&lt;br &#x2F;&gt;
+It&#x27;s easy to notice that $\vec{X}$ is time-independent. This conclusion is used when forming the relationship between voltage and current of inductor and capacitor elements.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sinusoidal form&lt;&#x2F;th&gt;&lt;th&gt;Complex number form&lt;&#x2F;th&gt;&lt;th&gt;$\vec{X}$&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;$f(t)=A \cos (\omega t+\phi)$&lt;&#x2F;td&gt;&lt;td&gt;$f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \quad (3)$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{X}={A}&#x2F;{2} \angle \phi$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$f(t)=B \cos (\omega t)+C \sin (\omega t)$&lt;&#x2F;td&gt;&lt;td&gt;$f(t)=Re(2\vec{X} e^{j \omega t}) = Re(A e^{j \phi} e^{j \omega t})\quad (4)$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{X} = {B}&#x2F;{2} - j {C}&#x2F;{2}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;strong&gt;Strategy&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Transform the input &lt;code&gt;In&lt;&#x2F;code&gt; into complex polar form $In \angle \phi$&lt;&#x2F;li&gt;
+&lt;li&gt;Calculate impedance complex number $Z$&lt;&#x2F;li&gt;
+&lt;li&gt;Transform output &lt;code&gt;Out&lt;&#x2F;code&gt; into polar form $O \angle \alpha$&lt;&#x2F;li&gt;
+&lt;li&gt;Using expression &lt;code&gt;(4)&lt;&#x2F;code&gt; to find out $Out(t)$&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;2-impedance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-impedance&quot; aria-label=&quot;Anchor link for: 2-impedance&quot;&gt;2. Impedance&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Consider two elements, inductances and capacitances.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Inducatance    (L)&lt;&#x2F;th&gt;&lt;th&gt;Capacitance (C)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;Leading_lagging.jpg&quot; alt=&quot;inductor&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;Leading_lagging.jpg&quot; alt=&quot;capacitor&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Current is &lt;code&gt;lagging&lt;&#x2F;code&gt; voltage. (&lt;code&gt;L&lt;&#x2F;code&gt; means &lt;em&gt;Lower&lt;&#x2F;em&gt; :arrow_lower_right:)&lt;&#x2F;td&gt;&lt;td&gt;Current is &lt;code&gt;leading&lt;&#x2F;code&gt; voltage&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$v_L = L {di}&#x2F;{dt}$&lt;&#x2F;td&gt;&lt;td&gt;$i = C ; {dV_C}&#x2F;{dt}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$v = \vec{V}e^{j \omega t} + \vec{V}^{*} e^{-j \omega t}$&lt;&#x2F;td&gt;&lt;td&gt;$i = \vec{I}e^{j \omega t} + \vec{I}^{*} e^{-j \omega t}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$\vec{V}=j \omega L \vec{I} = \vec{Z}_L ; \vec{I} \quad \text{where } \vec{Z}_L = j \omega L$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{I}=j \omega C \vec{V} = \vec{V} &#x2F; \vec{Z}_C \quad \text{where } \vec{Z}_C = 1 &#x2F; (j \omega C)$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;The inverse of impedance is &lt;strong&gt;admittance&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{Y} = 1&#x2F; \vec{Z}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;example&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example&quot; aria-label=&quot;Anchor link for: example&quot;&gt;Example&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Suppose we are to find the voltage $v(t)$ in the network, in which $i(t) = I cos(\omega t)$
+&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;complex-circuit-ex.png&quot; alt=&quot;complex number in circuit example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 1.&lt;&#x2F;code&gt; Transform the input &lt;code&gt;In&lt;&#x2F;code&gt; into complex polar form $In \angle \phi$&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+i(t) = Re(I e^{\omega t})
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;code&gt;Step 2.&lt;&#x2F;code&gt; Calculate impedance complex number
+$$
+Z _| = \frac{R j \omega L}{R + j \omega L} = \frac{R \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;complex-circuit-ex-phasor.jpg&quot; alt=&quot;phasor&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 3.&lt;&#x2F;code&gt; We found the output voltage in the polar-exponential form&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+V = Z_| I = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 4.&lt;&#x2F;code&gt; Using expression &lt;code&gt;(4)&lt;&#x2F;code&gt; to find out $v(t)$&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+v(t) = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} cos ( \omega t + arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ref1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;James Kirtley Jr.. &lt;em&gt;6.061 Introduction to Electric Power Systems.&lt;&#x2F;em&gt; Spring 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-061-introduction-to-electric-power-systems-spring-2011&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+</feed>

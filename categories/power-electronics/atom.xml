@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - Power-Electronics</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/categories/power-electronics/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-05-19T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/categories/power-electronics/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Miscellaneous</title>
+		<published>2022-05-19T09:19:42+01:00</published>
+		<updated>2022-05-19T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/miscellaneous/" type="text/html"/>
+		<id>https://circuitlover.com/miscellaneous/</id>
+		<content type="html">&lt;h1 id=&quot;general-information&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#general-information&quot; aria-label=&quot;Anchor link for: general-information&quot;&gt;General information&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;connector&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#connector&quot; aria-label=&quot;Anchor link for: connector&quot;&gt;Connector&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Blade connectors (lower half of photo). Ring and spade terminals (upper half). Bullet terminals, male and female (right-center, with blue wires)&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;blade-connectors.jpg&quot; alt=&quot;blade-connector&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Blade connector&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;split_ring_contacts.jpg&quot; alt=&quot;Split-ring terminals&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Split-ring or lugs terminals for 2.5 mm² wire.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Banana_Jack_Connector.jpg&quot; alt=&quot;Banana jack connector &quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Banana jack connector&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Using crimping tool to join wire to the connector.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;crimping_tool.jpg&quot; alt=&quot;Crimping tool&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Crimping tool&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;rj45-pinout-and-connection&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rj45-pinout-and-connection&quot; aria-label=&quot;Anchor link for: rj45-pinout-and-connection&quot;&gt;RJ45 pinout and connection&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Refer to &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.practicalnetworking.net&#x2F;stand-alone&#x2F;ethernet-wiring&#x2F;&quot;&gt;Ethernet Wiring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Only two couple wires 1-2,3-6 are enough for 100 Mb&#x2F;s transmission.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;power-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#power-factor&quot; aria-label=&quot;Anchor link for: power-factor&quot;&gt;Power factor&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Decreased_power_factor.jpg&quot; alt=&quot;Decreased_power_factor&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Apparent power, reactive power and real power&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;The picture shows the relationship between &amp;quot;Apparent Power&amp;quot;, &amp;quot;Reactive Power&amp;quot; and &amp;quot;Real Power&amp;quot;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reactive power is an AC power flow through the operation of the inductors and capacitors. This kind of power doesn&#x27;t contribute to the&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;See more at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;askscience&#x2F;comments&#x2F;90q7i7&#x2F;comment&#x2F;e2sc27o&#x2F;?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;What is the role of reactive power in transmission networks?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;interfacing-matlab-simulink-with-plexim-plecs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#interfacing-matlab-simulink-with-plexim-plecs&quot; aria-label=&quot;Anchor link for: interfacing-matlab-simulink-with-plexim-plecs&quot;&gt;Interfacing Matlab Simulink with Plexim PLECS&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;{{&amp;lt; youtube JnEJ63qEOqc &amp;gt;}}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;potentiometers&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#potentiometers&quot; aria-label=&quot;Anchor link for: potentiometers&quot;&gt;Potentiometers&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.mouser.dk&#x2F;ProductDetail&#x2F;Vishay-Sfernice&#x2F;P16NP504KAB15?qs=sGAEpiMZZMtC25l1F4XBU4GDvGXyUw%2BkUqAGoVe0N3c%3D&quot;&gt;P16NP504KAB15 Vishay &#x2F; Sfernice | Mouser Denmark&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s a &lt;em&gt;LOT&lt;&#x2F;em&gt; of files on the official LTwiki.&lt;&#x2F;p&gt;
+&lt;p&gt;For potentiometers look in (&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eevblog.com&#x2F;forum&#x2F;eda&#x2F;is-there-an-updated-massive-open-source-style-library-for-ltspice&#x2F;&quot;&gt;source&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;lib&#x2F;sym&#x2F;Pot&amp;amp;Sw&#x2F; for the symbols, and&lt;&#x2F;li&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;lib&#x2F;sub&#x2F;Pote.lib is the associated library, (including both potentiometer_standard.lib and potentiometer_tapped.lib with documentation and sample files at&lt;&#x2F;li&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;examples&#x2F;LtSpicePlus&#x2F;Discretos&#x2F;Sw&amp;amp;Pote&#x2F;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;mosfet&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#mosfet&quot; aria-label=&quot;Anchor link for: mosfet&quot;&gt;MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;n-channel-mosfet&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#n-channel-mosfet&quot; aria-label=&quot;Anchor link for: n-channel-mosfet&quot;&gt;N-channel MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;physical-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#physical-view&quot; aria-label=&quot;Anchor link for: physical-view&quot;&gt;Physical view&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Current flows between diffusion terminals if the voltage on the &lt;code&gt;Gate&lt;&#x2F;code&gt; large enough to create a &lt;strong&gt;conducting channel&lt;&#x2F;strong&gt;, otherwise the MOSFET is off and the diffusion terminals are not connected. &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;nmosfet-physical-view.png&quot; alt=&quot;physical view&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;electrical-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#electrical-view&quot; aria-label=&quot;Anchor link for: electrical-view&quot;&gt;Electrical view&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The four terminals of a Field Effect Transitor are &lt;code&gt;Gate&lt;&#x2F;code&gt;, &lt;code&gt;Source&lt;&#x2F;code&gt;, &lt;code&gt;Drain&lt;&#x2F;code&gt; and &lt;code&gt;Bulk&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;nmosfet-electrical-view.png&quot; alt=&quot;electrical view&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;circuit-symbol&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#circuit-symbol&quot; aria-label=&quot;Anchor link for: circuit-symbol&quot;&gt;Circuit symbol&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;MOSFET and JFET circuit symbols&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;P-channel&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;JFET_P-Channel_Labelled.svg&quot; alt=&quot;s&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Enh_Labelled.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Enh_Labelled_simplified.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Mosfet_P-Ch_Sedra.svg&quot; alt=&quot;f&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Dep_Labelled.svg&quot; alt=&quot;f&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;N-channel&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;JFET_N-Channel_Labelled.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Enh_Labelled.svg&quot; alt=&quot;e&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Enh_Labelled_simplified.svg&quot; alt=&quot;e&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Mosfet_N-Ch_Sedra.svg&quot; alt=&quot;r&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Dep_Labelled.svg&quot; alt=&quot;r&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;JFET (they are only in depletion mode)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode (no bulk)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode (no bulk)&lt;&#x2F;td&gt;&lt;td&gt;MOSFET depletion mode (switched on)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;{% include tldr.html box=&amp;quot;TRICK&amp;quot; tldr=&amp;quot;The arrow forms the pn junction from the &#x27;buck&#x27; to the &#x27;gate&#x27; in the symbol of MOSFET&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;When a channel exists in a MOSFET, current can flow from source to drain as well as from drain to source - it&#x27;s just a matter of how the device is connected in the circuit &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. Conventional current flows from Drain to Source in an N Channel MOSFET.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;n-channel-mosfet-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#n-channel-mosfet-1&quot; aria-label=&quot;Anchor link for: n-channel-mosfet-1&quot;&gt;N-channel MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;When a channel exists in a MOSFET, current can flow from &lt;strong&gt;drain to source&lt;&#x2F;strong&gt; &lt;em&gt;or&lt;&#x2F;em&gt; from &lt;strong&gt;source to drain&lt;&#x2F;strong&gt; - it&#x27;s a function of how the device is connected in the circuit. The conduction channel has no intrinsic polarity - it&#x27;s kind of like a resistor in that regard.&lt;&#x2F;p&gt;
+&lt;p&gt;The intrinsic body diode inside the MOSFET is in parallel with the conduction channel, however. When the conduction channel is present, the diode is shunted and current flows through the path of least resistance (the channel). When the channel is off, the diode is in circuit and will either conduct or block depending on the drain-source current polarity.&lt;&#x2F;p&gt;
+&lt;p&gt;As your picture shows, there are both N-channel and P-channel devices, as well as enhancement mode and depletion mode devices. In all of these cases, current can flow from &lt;strong&gt;source to drain&lt;&#x2F;strong&gt; as well as from &lt;strong&gt;drain to source&lt;&#x2F;strong&gt; - it&#x27;s just a matter of how the device is connected in the circuit.&lt;&#x2F;p&gt;
+&lt;p&gt;Your picture does &lt;em&gt;not&lt;&#x2F;em&gt; show the intrinsic diode in the devices - the arrow point towards or away from the gate is an indication of the channel type (N-channel points towards the gate, P-channel points away from the gate).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;n-channel-MOSFET.png&quot; alt=&quot;n-channel enhancement MOSFET&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This symbol shows you the inherent diode between drain and source.&lt;&#x2F;p&gt;
+&lt;p&gt;N-channel enhancement devices need a voltage on the gate &lt;em&gt;higher&lt;&#x2F;em&gt; than the source in order to create a conduction channel. (Enhancement devices don&#x27;t have a channel automatically, and need gate voltage to create one - because it&#x27;s N-channel Vgate&amp;gt;Vsource for this to happen.)&lt;&#x2F;p&gt;
+&lt;p&gt;P-channel enhancement devices need a voltage on the gate &lt;em&gt;lower&lt;&#x2F;em&gt; than the source in order to create a conduction channel. (Enhancement devices don&#x27;t have a channel automatically, and need gate voltage to create one - because it&#x27;s P-channel Vgate&amp;lt;Vsource for this to happen.)&lt;&#x2F;p&gt;
+&lt;p&gt;N-channel delpetion devices have a channel by default, and need a voltage on the gate &lt;em&gt;lower&lt;&#x2F;em&gt; than the source in order to turn the channel &lt;em&gt;off&lt;&#x2F;em&gt;. The channel can be widened to a certain extent by increasing the gate-to-source voltage above 0.&lt;&#x2F;p&gt;
+&lt;p&gt;P-channel depletion devices also have a channel by default, and need a voltage on the gate &lt;em&gt;higher&lt;&#x2F;em&gt; than the source in order to turn the channel &lt;em&gt;off&lt;&#x2F;em&gt;. The channel can be widened to a certain extent by decreasing the gate-to-source voltage below 0.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ref1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Chris Terman. &lt;em&gt;6.004 Computation Structures.&lt;&#x2F;em&gt; Spring 2017. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-004-computation-structures-spring-2017&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
+&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;users&#x2F;1293&#x2F;adam-lawrence&quot;&gt;Adam Lawrence&lt;&#x2F;a&gt;, In an NMOS, does current flow from source to drain or vice-versa?, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;q&#x2F;48671&quot;&gt;URL&lt;&#x2F;a&gt; (version: 2012-11-11)&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;magnetic-core&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#magnetic-core&quot; aria-label=&quot;Anchor link for: magnetic-core&quot;&gt;Magnetic core&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Ferrite Power Materials Summary&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;F&lt;&#x2F;th&gt;&lt;th&gt;P&lt;&#x2F;th&gt;&lt;th&gt;R&lt;&#x2F;th&gt;&lt;th&gt;J&lt;&#x2F;th&gt;&lt;th&gt;W+&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;µi (20 gauss)&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;3,000&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;td&gt;2,300&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;10,000&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;µp (2000 gauss)&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;4,600&lt;&#x2F;td&gt;&lt;td&gt;6,500&lt;&#x2F;td&gt;&lt;td&gt;6,500&lt;&#x2F;td&gt;&lt;td&gt;5,500&lt;&#x2F;td&gt;&lt;td&gt;12,000&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Saturation Flux Density ($B_{max}$ Gauss)&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;4,900&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;4,300&lt;&#x2F;td&gt;&lt;td&gt;4,300&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;3,700&lt;&#x2F;td&gt;&lt;td&gt;3,900&lt;&#x2F;td&gt;&lt;td&gt;3,700&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Core Loss (mw&#x2F;cm3)&lt;br&gt;(Typical)&lt;br&gt;@100 kHz, 1000 Gauss&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;100&lt;&#x2F;td&gt;&lt;td&gt;125&lt;&#x2F;td&gt;&lt;td&gt;140&lt;&#x2F;td&gt;&lt;td&gt;low-level power transf.&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;60˚C&lt;&#x2F;td&gt;&lt;td&gt;180&lt;&#x2F;td&gt;&lt;td&gt;80*&lt;&#x2F;td&gt;&lt;td&gt;100&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;225&lt;&#x2F;td&gt;&lt;td&gt;125&lt;&#x2F;td&gt;&lt;td&gt;70&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Core Geometries&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Core Geometries&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;Core Geometries&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Classical E&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;E_core.png&quot; alt=&quot;RM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;ETD&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;ETD_core.png&quot; alt=&quot;ETD core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;EFD&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;EFD_core.png&quot; alt=&quot;EFD core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;EP&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;EP_core.png&quot; alt=&quot;EP core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Pot core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;POT_CORE.jpg&quot; alt=&quot;Pot core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;RM core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;rm_core.jpg&quot; alt=&quot;RM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;PQ core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;PQ_core.png&quot; alt=&quot;PQ core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;PM core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;PM_core.png&quot; alt=&quot;PM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;core-selection&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#core-selection&quot; aria-label=&quot;Anchor link for: core-selection&quot;&gt;Core selection&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+A_p = A_E A_W = \frac{P_{out}}{K_c K_t B_{max} F_{SW} J} 10^4
+$$&lt;&#x2F;script&gt;
+&lt;ul&gt;
+&lt;li&gt;$A_P$: product of window area and core area, $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$A_E$: effective cross section of the core, $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$A_W$: window area (or winding area), $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;At: surface area of the transformer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Ae-Aw.png&quot; alt=&quot;calculate Wa and Ac&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; A_e = 20 \times 27.4 = 540 \; mm^2 \\
+&amp; A_W \text{ (often referred in datasheets as )} A_N = 4.35 \; cm^2\\
+&amp; A_P = A_E × A_W = 5.4 \times 3.24 = 5.4 × 4.35 = 23.5 \; cm^4
+\end{align*}
+
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;References&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Magnetic_core&lt;&#x2F;li&gt;
+&lt;li&gt;https:&#x2F;&#x2F;e-magnetica.pl&#x2F;list_of_ferrite_core_types&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;users&#x2F;73158&#x2F;transistor&quot;&gt;Transistor&lt;&#x2F;a&gt;, SMPS Transformer Area of Product, URL (version: 2020-06-11): https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;q&#x2F;504104&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Materials, Reliability and Failure Analysis</title>
+		<published>2022-05-11T09:19:42+01:00</published>
+		<updated>2022-05-11T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/materials-reliability-and-failure-analysis/" type="text/html"/>
+		<id>https://circuitlover.com/materials-reliability-and-failure-analysis/</id>
+		<content type="html">&lt;p&gt;Kinetic thermal energy
+$$
+K_{kin} = \frac{m}{2}v_{th}^2 = \frac{3}{2}kT
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;When an electric field $E$ is applied, each carrier (i.e. electrons and holes) experiences a force $± q \times E$ and is accelerated. These velocities caused by the external electrical field $E$ are called &lt;strong&gt;drift velocities&lt;&#x2F;strong&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-drift&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The current density $J$, or the current flow of electrons per unit volume, is given by the following:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\begin{align*}
+J_n &amp;amp;= nqv_d \newline
+J_n &amp;amp;= nq\dfrac{1}{2} \dfrac{q\tau}{m^{2}}E
+\end{align*}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Electron mobility $\mu_n$ is the ratio of drift velocity to the electric field strength.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\mu_n = \dfrac{\nu_d}{E} = \dfrac{q \tau}{m^*}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hight-voltage-shottky-diode&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#hight-voltage-shottky-diode&quot; aria-label=&quot;Anchor link for: hight-voltage-shottky-diode&quot;&gt;Hight voltage Shottky diode&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anisotropic: Sic, GaN. Mobility are different in parallel $\mu_{\parallel}$ and perpendicular $\mu_{\perp}$ direction.&lt;&#x2F;li&gt;
+&lt;li&gt;Phonons: lattice vibration&lt;&#x2F;li&gt;
+&lt;li&gt;Scattering: small amount of things spread over an area.&lt;&#x2F;li&gt;
+&lt;li&gt;More dopping --&amp;gt; more phonons --&amp;gt; $\mu_{n} \downarrow$ and desisty $\downarrow$. However, in combination with thickness and doping density --&amp;gt; Wide Bandgap semiconductors have lower conduction losses.&lt;&#x2F;li&gt;
+&lt;li&gt;Shottky diode: $E_{max}$ at the contact semiconductor and metal or P-N junction.
+&lt;ul&gt;
+&lt;li&gt;Merged PiN Schottky Diodes (MPS) structure: reduce electrical field stress&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&amp;quot;Trench Oxide Pin Schottky&amp;quot; (TOPS): reduce contact between metal and semiconductor --&amp;gt; prevent the migration of carriers at the anode (metal). The rest of structure is the same as MPS &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-luz&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Soft recovery. Soft factor $s = \cfrac{t_f}{t_s} \gt 0.8$&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;materials-reliability-and-failure-analysis&#x2F;images&#x2F;Cross-section-of-a-merged-pin-Schottky-diode-in-SiC.png&quot; alt=&quot;Cross section of a merged pin Schottky diode in SiC&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Cross section of a merged pin Schottky diode in SiC &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-ayalew&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-drift&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eng.libretexts.org&#x2F;Bookshelves&#x2F;Materials_Science&#x2F;Supplemental_Modules_(Materials_Science)&#x2F;Solar_Basics&#x2F;C._Semiconductors_and_Solar_Interactions&#x2F;II._Conduction_in_Semiconductors&#x2F;4:_Carrier_Drift_and_Mobility&quot;&gt;4: Carrier Drift and Mobility&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-luz&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;Lutz, J., Schlangenotto, H., Scheuermann, U. and De Doncker, R., 2011. Semiconductor power devices. Physics, characteristics, reliability, 2.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-ayalew&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.iue.tuwien.ac.at&#x2F;phd&#x2F;ayalew&#x2F;&quot;&gt;SiC Semiconductor Devices Technology, Modeling, and Simulation&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>AC&#x2F;DC to DC converter</title>
+		<published>2022-03-31T00:00:00+00:00</published>
+		<updated>2022-03-31T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/ac-dc-converter/" type="text/html"/>
+		<id>https://circuitlover.com/ac-dc-converter/</id>
+		<content type="html">&lt;p&gt;If you don&#x27;t know what is &lt;code&gt;K1 L1 L2 1&lt;&#x2F;code&gt; transformer directive means, you should check &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#lt_transf&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1-forward-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-forward-converter&quot; aria-label=&quot;Anchor link for: 1-forward-converter&quot;&gt;1. Forward converter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot; aria-label=&quot;Anchor link for: 1-1-one-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;1.1. One-switch sigle-ended forward converter (isolated buck converter)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;forward-basic-topology.png&quot; alt=&quot;forward converter topology&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is essentially a buck converter with transformer inserted.&lt;&#x2F;p&gt;
+&lt;p&gt;We want to operate in Continuous Conduction Mode.
+$I_{Lout}$ never reach zero.&lt;&#x2F;p&gt;
+&lt;p&gt;In DCM we may have &lt;code&gt;peak detect&lt;&#x2F;code&gt; phenomina, we $V_{out}^{&#x27;} = (3-4) \times V_{out}$&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; \text{- switch on: } V_{D2} = \frac{N2}{N1} V_{in} \\
+&amp; \text{- switch off: } V_{D2} = 0; \\
+&amp; \frac{V_{OUT}}{V_{IN}} = \frac{N2}{N1} D
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\text{Output voltage ripple } V_{ripple} = ESR * \Delta I
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;ESR is from $C_{OUT}$, and $\Delta I$ is effected by the design of $L_{out}$.
+Rule of thumb is $\Delta I$ = 10% to 40% of full load.&lt;&#x2F;p&gt;
+&lt;p&gt;Refer &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot; aria-label=&quot;Anchor link for: 1-2-two-switch-sigle-ended-forward-converter-isolated-buck-converter&quot;&gt;1.2. Two-switch sigle-ended forward converter (isolated buck converter)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;also called asymmetrical half bridge forward&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-flyback-converter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-flyback-converter&quot; aria-label=&quot;Anchor link for: 2-flyback-converter&quot;&gt;2. Flyback converter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Transfer function &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ti_flyback&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; is&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  \frac{V_{out}}{V_{in}} = n \times \frac{D}{1 - D}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;where $n$ is turn ration, and $D$ is duty cycle.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-1-rcd-clamp&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-1-rcd-clamp&quot; aria-label=&quot;Anchor link for: 2-1-rcd-clamp&quot;&gt;2.1. RCD Clamp&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;See more at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;rmMYgnJ1oqE&quot;&gt;RCD Clamp&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3-peak-current-control-mode-current-programmed-control&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-peak-current-control-mode-current-programmed-control&quot; aria-label=&quot;Anchor link for: 3-peak-current-control-mode-current-programmed-control&quot;&gt;3. Peak current control mode (Current-Programmed Control)&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;UCC28C42 from TI using this control method.&lt;&#x2F;p&gt;
+&lt;p&gt;Refer to chapter 18 of &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#erickson2007&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;, and &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#dragan&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-intro.jpg&quot; alt=&quot;peak-current-mode-intro&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-operation.jpg&quot; alt=&quot;peak-current-mode-operation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;peak-current-mode-in-voltage-regulator.jpg&quot; alt=&quot;peak-current-mode-in-voltage-regulator&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-slope-compensation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-slope-compensation&quot; aria-label=&quot;Anchor link for: 4-slope-compensation&quot;&gt;4. Slope compensation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#slope&quot;&gt;6&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more information.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-d-lt-50.jpg&quot; alt=&quot;Slope compensation&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;D&amp;lt;50% turburlance is faded out&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;If Duty cycle $D&amp;gt;50%$, $I_L$ with turburlance is not stable.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-d-gt-50.jpg&quot; alt=&quot;Slope compensation with d&amp;gt;0.5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Using new $I_{Lref}$ to solve the problem.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-using-new-I_l.jpg&quot; alt=&quot;Solve slope compensation problem&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;How to generate the new $I_{Lref}$?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;slope-comp-gen-new-I_l.jpg&quot; alt=&quot;generate the new I-ref&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;5-practical-consideration&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-practical-consideration&quot; aria-label=&quot;Anchor link for: 5-practical-consideration&quot;&gt;5. Practical consideration&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;5-1-how-to-use-impedance-analyzer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-1-how-to-use-impedance-analyzer&quot; aria-label=&quot;Anchor link for: 5-1-how-to-use-impedance-analyzer&quot;&gt;5.1. How to use Impedance Analyzer&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The table is adapted from &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#4191A&quot;&gt;7&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;ac-dc-converter&#x2F;images&#x2F;equivalent-circuit-impedance.png&quot; alt=&quot;Equivalent circuit model selection&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Equi. circuit&lt;&#x2F;th&gt;&lt;th&gt;Type of DUTs&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;A&lt;&#x2F;td&gt;&lt;td&gt;(1) Coils with high core loss; (2) To measure magnetizing inductance $L_M$, you need to open the secondary side. Only $L_M,C_1,R_{core}$ were left.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;B&lt;&#x2F;td&gt;&lt;td&gt;(1) coils in general; (2) resistors; (3) Measuring leakage inductance $L_{leakage}$, you need to short the secondary side.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;C&lt;&#x2F;td&gt;&lt;td&gt;High value resistors&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;D&lt;&#x2F;td&gt;&lt;td&gt;Capacitors&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;E&lt;&#x2F;td&gt;&lt;td&gt;Resonators (crystal, ceramic, ferrite)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Pending&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;course.html&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;courses&#x2F;108&#x2F;101&#x2F;108101126&#x2F;&quot;&gt;NOC:Fundamental of Power Electronics (Video)&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Week 12
+&lt;ul&gt;
+&lt;li&gt;Intro for close loop control&lt;&#x2F;li&gt;
+&lt;li&gt;Close looping dc-dc converters&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of close loop control&lt;&#x2F;li&gt;
+&lt;li&gt;Current control for battery charger application&lt;&#x2F;li&gt;
+&lt;li&gt;Instability in current control and slope compensation&lt;&#x2F;li&gt;
+&lt;li&gt;Slope compensated current control&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of current control&lt;&#x2F;li&gt;
+&lt;li&gt;Single phase inverter with sinusoidal pwm&lt;&#x2F;li&gt;
+&lt;li&gt;Simulation of sinusoidal PWM&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archive.nptel.ac.in&#x2F;courses&#x2F;108&#x2F;105&#x2F;108105180&#x2F;&quot;&gt;NOC:Control and Tuning Methods in Switched Mode Power Converters&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Week 02
+&lt;ul&gt;
+&lt;li&gt;Lecture 12 : Interactive MATLAB Simulation and Case Studies&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;6-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-references&quot; aria-label=&quot;Anchor link for: 6-references&quot;&gt;6. References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;David Perreault. &lt;em&gt;6.334 Power Electronics Ch. 7.&lt;&#x2F;em&gt; Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-334-power-electronics-spring-2007&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;lt_transf&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.analog.com&#x2F;en&#x2F;technical-articles&#x2F;ltspice-basic-steps-for-simulating-transformers.html&quot;&gt;LTspice: Simple Steps for Simulating Transformers&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;4191A&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;7&lt;&#x2F;sup&gt;
+&lt;p&gt;Operation manual Model 4191A network&#x2F;spectrum Analyzer page 141&#x2F;356 &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xdevs.com&#x2F;doc&#x2F;HP_Agilent_Keysight&#x2F;HP%204195A%20Operation.pdf&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;erickson2007&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
+&lt;p&gt;Erickson, R. W. &amp;amp; Maksimovic, D. 2007. Fundamentals of power electronics, Springer Science &amp;amp; Business Media.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;dragan&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;5&lt;&#x2F;sup&gt;
+&lt;p&gt;Current-Mode Control, Dr. Dragan Maksimovic - University of Colorado Boulder &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.coursera.org&#x2F;lecture&#x2F;current-modecontrol&#x2F;introduction-to-peak-current-mode-control-nbIZQ&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;slope&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;6&lt;&#x2F;sup&gt;
+&lt;p&gt;Slope compensation for current control - NPTEL &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;b3e0RTWt4W0&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ti_flyback&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;AC Modeling of Power Stage in Flyback Converter - Texas Instruments &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ti.com&#x2F;lit&#x2F;an&#x2F;slva589&#x2F;slva589.pdf&quot;&gt;Online&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Control of grid connected inverter</title>
+		<published>2022-02-24T09:19:42+00:00</published>
+		<updated>2022-02-24T09:19:42+00:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/control-of-grid-connected/" type="text/html"/>
+		<id>https://circuitlover.com/control-of-grid-connected/</id>
+		<content type="html">&lt;h2 id=&quot;1-fundamental-terminologies&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-fundamental-terminologies&quot; aria-label=&quot;Anchor link for: 1-fundamental-terminologies&quot;&gt;1. Fundamental terminologies&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-power&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-power&quot; aria-label=&quot;Anchor link for: 1-1-power&quot;&gt;1.1. Power&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The instantaneous electrical power P delivered to a component is given by&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+P(t)=I(t)\cdot V(t)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$P(t)$ is the instantaneous power, measured in watts (joules per second)&lt;&#x2F;li&gt;
+&lt;li&gt;$V(t)$ is the potential difference (or voltage drop) across the component, measured in volts&lt;&#x2F;li&gt;
+&lt;li&gt;$I(t)$ is the current through it, measured in amperes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The average power is&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+P_{\mathrm {avg}} = {\frac {1}{T}}\int_{0}^{T}p(t)\mathrm {d} t
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-2-what-is-postitive-negative-and-zero-sequence&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-what-is-postitive-negative-and-zero-sequence&quot; aria-label=&quot;Anchor link for: 1-2-what-is-postitive-negative-and-zero-sequence&quot;&gt;1.2. What is postitive, negative and zero sequence?&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;These components are so-called &lt;strong&gt;symmetrical components&lt;&#x2F;strong&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;⚠️ Note:⚠️ The author was used $\underline{z}$ to denote a vector. However, I am using $\vec{z}$ to do this because of my personal preference.&lt;&#x2F;p&gt;
+&lt;p&gt;Symmetrical components allow unbalanced phase quantities such as currents and voltages to be replaced by three separate balanced symmetrical components&lt;&#x2F;p&gt;
+&lt;p&gt;The transformation is defined as:&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{bmatrix}
+\vec{V}_+  \\
+\vec{V}_-  \\
+\vec{V}_0  \\
+\end{bmatrix}
+
+= \frac{1}{3}
+
+\begin{bmatrix}
+1 &amp; \vec{a} &amp; \vec{a}^2  \\
+1 &amp; \vec{a}^2 &amp; \vec{a} \\
+1 &amp; 1 &amp; 1 \\
+\end{bmatrix}
+
+\begin{bmatrix}
+\vec{V}_a  \\
+\vec{V}_b  \\
+\vec{V}_c  \\
+\end{bmatrix}
+
+\qquad \text{ where } \vec{a} = e^{j 2 \pi &#x2F;3}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;The invert transformation is:&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{bmatrix}
+\vec{V}_a  \\
+\vec{V}_b  \\
+\vec{V}_c  \\
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+1 &amp; 1 &amp; 1  \\
+\vec{a}^2 &amp; \vec{a} &amp; 1 \\
+\vec{a} &amp; \vec{a}^2 &amp; 1 \\
+\end{bmatrix}
+
+\begin{bmatrix}
+\vec{V}_+  \\
+\vec{V}_-  \\
+\vec{V}_0  \\
+\end{bmatrix}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Let take an example. Obtain the symmetrical components of a set of unbalanced voltage.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{V_a} = 5 \angle 53 ^{\circ} \qquad \vec{V_b} = 7 \angle -164 ^{\circ} \qquad \vec{V_c} = 7 \angle 105 ^{\circ}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Run this Matlab script to get the result.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;matlab&quot; class=&quot;language-matlab z-code&quot;&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;z-source z-matlab&quot;&gt;&lt;span class=&quot;z-meta z-classdef z-matlab&quot;&gt;&lt;span class=&quot;z-keyword z-other z-oop z-matlab&quot;&gt;classdef&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-class z-matlab&quot;&gt;lib&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-keyword z-other z-matlab&quot;&gt;methods&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Static&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;true&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+        &lt;span class=&quot;z-keyword z-other z-matlab&quot;&gt;function&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-section z-brackets z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-output z-function z-matlab&quot;&gt;v_out_theta&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-matlab&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-output z-function z-matlab&quot;&gt;v_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-matlab&quot;&gt;]&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function z-parameters z-matlab&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-matlab&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-function z-matlab&quot;&gt;sym_components_theory&lt;&#x2F;span&gt;  &lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-input z-function z-matlab&quot;&gt;va&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-matlab&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-input z-function z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-matlab&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-input z-function z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-matlab&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-input z-function z-matlab&quot;&gt;isRadian&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+            &lt;span class=&quot;z-comment z-double z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%%&lt;&#x2F;span&gt; Symmetrical Components Theory
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; va: Unbalanced phase A voltage
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; vb: Unbalanced phase B voltage
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; vc: Unbalanced phase C voltage
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; v_out_theta_d: Output theta in degree&#x2F;radian (polar form)
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; v_out_rho: Output radius (polar form)
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; ┌─   ─┐       ┌─       ─┐ ┌─ ─┐
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; │V_pos│ = 1&#x2F;3 │1 α   α^2│ │V_a│
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; │V_neg│       │1 α^2 α  │ │V_b│
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; │V_0  │       │1 1   1  │ │V_c│
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; └─   ─┘       └─       ─┘ └─ ─┘
+&lt;&#x2F;span&gt;            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;arguments&lt;&#x2F;span&gt;
+                &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;
+                &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;
+                &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;
+                &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;isRadian&lt;&#x2F;span&gt; &lt;span class=&quot;z-storage z-type z-matlab&quot;&gt;uint8&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0&lt;&#x2F;span&gt;
+            &lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;end&lt;&#x2F;span&gt;
+         
+            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;theta&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;alpha&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;theta&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;a_tran&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;alpha&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;alpha&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;^&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;; &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;alpha&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;^&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;alpha&lt;&#x2F;span&gt;; &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+
+            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;a_tran&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;cart2pol&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;if&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;isRadian&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; == &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+                &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;180&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;* &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F; &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;;
+            &lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;end&lt;&#x2F;span&gt;
+        &lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;end&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;end&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-control z-matlab&quot;&gt;end&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;Matlab&quot; class=&quot;language-Matlab z-code&quot;&gt;&lt;code class=&quot;language-Matlab&quot; data-lang=&quot;Matlab&quot;&gt;&lt;span class=&quot;z-source z-matlab&quot;&gt;&lt;span class=&quot;z-comment z-double z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%%&lt;&#x2F;span&gt; symmetrical components
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-desktop z-matlab&quot;&gt;clc&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-keyword z-desktop z-matlab&quot;&gt;clear&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; Input
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;5&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;*&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;53&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;180&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;*&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;7&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;* &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;164&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;180&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;*&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;7&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;* &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;105&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;180&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; result is in Degree unit
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-storage z-control z-matlab&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Output in V+ V- Vzero order. \n&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta_d&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;lib&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;sym_components_theory  &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-storage z-control z-matlab&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Radius: \n&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;disp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-storage z-control z-matlab&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Phase [Degree]: \n&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;disp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta_d&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; Draw complex number
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_sym&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; .* &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_out_theta_d&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;180&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_zero&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_sym&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_sym&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_sym&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;t&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;tiledlayout&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;,&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+t&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Padding&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;compact&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+t&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;TileSpacing&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;compact&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; unbalanced voltage
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nexttile&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;compass&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;,&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Unbalanced voltage&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;text&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; + &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;va&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; + &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Va&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Color&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;b&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_b&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_b&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;g&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_b is green
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;text&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; - &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vb&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; + &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Vb&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Color&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;g&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_c&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_c&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;r&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_c is red
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;text&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; + &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;vc&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; + &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0.5&lt;&#x2F;span&gt;, &lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Vc&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Color&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;r&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; positive voltage sequence
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_pos&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F; &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;4&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F; &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nexttile&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;compass&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;,&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Positive voltage sequences&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_pos_b&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_pos_b&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;g&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_b is green
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_pos_c&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_pos&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_pos_c&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;r&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_c is red
+&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt;negative voltage sequency
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_neg&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;4&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F; &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; &#x2F; &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nexttile&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;compass&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;z_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;,&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Negative voltage sequences&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_neg_b&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_neg_b&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;g&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_b is green
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_neg_c&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_neg&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+c_neg_c&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;Color&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;r&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;; &lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; V_c is red
+&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt; Zero sequences
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nexttile&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;c_zero&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;compass&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;real&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_zero&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;, &lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;imag&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;v_zero&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-support z-function z-graphics z-matlab&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;nxt&lt;&#x2F;span&gt;,&lt;span class=&quot;z-string z-quoted z-single z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;Zero voltage sequences&lt;span class=&quot;z-punctuation z-definition z-string z-end z-matlab&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-comment z-line z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%&lt;&#x2F;span&gt;----------------------------------------------------
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-double z-percentage z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-matlab&quot;&gt;%%&lt;&#x2F;span&gt; Unbalanced current
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ia&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;10&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ib&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;10&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; * &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-mathematics z-matlab&quot;&gt;exp&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1i&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;* &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;2&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;*&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-language z-matlab&quot;&gt;pi&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ic&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0&lt;&#x2F;span&gt;;
+&lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;i_out_theta_d&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;i_out_rho&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt; = &lt;&#x2F;span&gt;lib&lt;span class=&quot;z-punctuation z-accessor z-dot z-matlab&quot;&gt;.&lt;&#x2F;span&gt;sym_components_theory  &lt;span class=&quot;z-meta z-parens z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-matlab&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ia&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ib&lt;&#x2F;span&gt;, &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;ic&lt;&#x2F;span&gt;, &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;0&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-matlab&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;control-of-grid-connected&#x2F;images&#x2F;symetrical-seq.svg&quot; alt=&quot;symetrical sequences&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We get $V_+, V_-, V_0$ magnitude and phase accordingly.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;matlab&quot; class=&quot;language-matlab z-code&quot;&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;z-source z-matlab&quot;&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Output&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;in&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;V&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;+ &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;V&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;- &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Vzero&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-toolbox z-design z-matlab&quot;&gt;order&lt;&#x2F;span&gt;. 
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Radius&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;: 
+&lt;&#x2F;span&gt;    &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;5.0156&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;1.9469&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;3.4718&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Phase&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-brackets z-matlab&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-begin z-matlab&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-variable z-other z-valid z-matlab&quot;&gt;Degree&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-brackets z-end z-matlab&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;: 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-symbols z-matlab&quot;&gt;  -&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;10.2643&lt;&#x2F;span&gt;
+   &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;92.4259&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-constant z-numeric z-matlab&quot;&gt;122.0788&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or, it could be written in the time domain form.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; v_a = 5.02 sin (\omega t - 10)      &amp; &amp;+ 1.95 sin (\omega t + 92)        &amp; &amp;+ 3.5 sin (\omega t + 122) \\
+&amp; v_b = 5.02 sin (\omega t - 10 - 120) &amp; &amp;+ 1.95 sin (\omega t + 92 - 240) &amp; &amp;+ 3.5 sin (\omega t + 122) \\
+&amp; v_c = \underbrace{5.02 sin (\omega t - 10 - 240)}_{\text{positive seq.}} &amp; &amp;+ \underbrace{ 1.95 sin (\omega t + 92 - 120)}_{\text{negative seq.}} &amp; &amp;+ \underbrace{3.5 sin (\omega t + 122)}_{\text{Zero seq.}} \\
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-3-differential-and-common-mode-signals&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-differential-and-common-mode-signals&quot; aria-label=&quot;Anchor link for: 1-3-differential-and-common-mode-signals&quot;&gt;1.3. Differential and Common Mode Signals&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;control-of-grid-connected&#x2F;images&#x2F;common-mode-vs-differential-mode.jpg&quot; alt=&quot;Differential mode and common mode&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;An other example.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;control-of-grid-connected&#x2F;images&#x2F;common-mode-vs-differential-mode-2.jpg&quot; alt=&quot;Differential mode and common mode&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-4-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-4-references&quot; aria-label=&quot;Anchor link for: 1-4-references&quot;&gt;1.4. References&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;: James Kirtley Jr.. &lt;em&gt;6.061 Introduction to Electric Power Systems.&lt;&#x2F;em&gt; Spring 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-061-introduction-to-electric-power-systems-spring-2011&#x2F;readings&#x2F;MIT6_061S11_ch4.pdf&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt; License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;nazarovsky.ru&#x2F;2015&#x2F;02&#x2F;25&#x2F;powers-according-to-ieee1459&#x2F;&quot;&gt;Calculate Powers in Non-sinusoidal Conditions According to IEEE 1459&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;s1_Siu3prRQ&quot;&gt;Differential and Common Mode Signals&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;2-filter-design&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-filter-design&quot; aria-label=&quot;Anchor link for: 2-filter-design&quot;&gt;2. Filter design&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;2-1-l-filter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-1-l-filter&quot; aria-label=&quot;Anchor link for: 2-1-l-filter&quot;&gt;2.1. L filter&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;control-of-grid-connected&#x2F;images&#x2F;L-filter.jpg&quot; alt=&quot;L filter&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;control-of-grid-connected&#x2F;images&#x2F;current-ripple-L-filter.jpg&quot; alt=&quot;L filter current ripple&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-2-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-2-references&quot; aria-label=&quot;Anchor link for: 2-2-references&quot;&gt;2.2. References&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nptel.ac.in&#x2F;courses&#x2F;108108034&quot;&gt;AC filters for grid connected inverters&lt;&#x2F;a&gt; in Power electronic design.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;rE-goTuAIvk&quot;&gt;Three-phase grid converter control: video 1 Grid tied inverters&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3-phase-locked-loop&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-phase-locked-loop&quot; aria-label=&quot;Anchor link for: 3-phase-locked-loop&quot;&gt;3. Phase-locked loop&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;dsp.stackexchange.com&#x2F;q&#x2F;75492&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bit.ly&#x2F;3LiT8bH&quot;&gt;Three-phase grid converter control: video 3 Phase lock loops&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Complex number and its application in AC analysist</title>
+		<published>2022-02-10T09:19:42+01:00</published>
+		<updated>2022-02-10T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/sinusoidal-and-complex-number/" type="text/html"/>
+		<id>https://circuitlover.com/sinusoidal-and-complex-number/</id>
+		<content type="html">&lt;h2 id=&quot;1-sinusoidal-time-functions-and-complex-number&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-sinusoidal-time-functions-and-complex-number&quot; aria-label=&quot;Anchor link for: 1-sinusoidal-time-functions-and-complex-number&quot;&gt;1. Sinusoidal time functions and complex number&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-complex-number-recap&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-complex-number-recap&quot; aria-label=&quot;Anchor link for: 1-1-complex-number-recap&quot;&gt;1.1. Complex number recap&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;representation-of-the-complex-number.png&quot; alt=&quot;represenation of the complex number&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Magnitude and phase angle of the complex number $\vec{z}$ is &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;⚠️ Note:⚠️ The author was used $\underline{z}$ to denote a vector. However, I am using $\vec{z}$ to do this because of my personal preference.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+|\vec{z}|=\sqrt{x^{2}+y^{2}} \qquad
+\phi=\arctan \left(\frac{y}{x}\right)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;code&gt;Euler&lt;&#x2F;code&gt; relation&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+e^{j \phi}=\cos (\phi)+j \sin (\phi) \qquad
+\vec{z}=x+j y=|\vec{z}| e^{j \phi}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;The product and the ratio of two complex numbers are&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{z}_{1}=\left|\vec{z}_{1}\right| e^{j \phi_{1}} \qquad
+\vec{z}_{2}=\left|\vec{z}_{2}\right| e^{j \phi_{2}}
+\qquad
+\vec{z}_{1} \vec{z}_{2}=\left|\vec{z}_{1}\right|\left|\vec{z}_{2}\right| e^{j\left(\phi_{1}+\phi_{2}\right)}
+\qquad
+\frac{\vec{z}_{1}}{\vec{z}_{2}}=\frac{\left|\vec{z}_{1}\right|}{\left|\vec{z}_{2}\right|} e^{j\left(\phi_{1}-\phi_{2}\right)}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;The complex conjugate of a complex number is given by&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+\vec{z}=x+j y \quad \vec{z}^{*}=x-j y \qquad
+\vec{z}+\vec{z}^{*}=2 \operatorname{Re}(\vec{z})=2 x \qquad
+\vec{z}-\vec{z}^{*}=2 j \operatorname{Im}(\vec{z})=2 j y
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-2-sinusoidal-time-functions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-sinusoidal-time-functions&quot; aria-label=&quot;Anchor link for: 1-2-sinusoidal-time-functions&quot;&gt;1.2. Sinusoidal Time Functions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;A sinusoidal function of time might be written in three ways&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+f(t)=A \cos (\omega t+\phi) \qquad (1) \\
+f(t)=B \cos (\omega t)+C \sin (\omega t) \qquad (2) \\
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \qquad (3)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Equation &lt;code&gt;(3)&lt;&#x2F;code&gt; makes sure that that the resulting function is real. Now, let find out the relationship between equation &lt;code&gt;(1) and (3)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Let say&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{X}=|\vec{X}| e^{j \psi}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;then&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+f(t) =|\vec{X}| e^{j \psi} e^{j \omega t}+|\vec{X}|^{*} e^{-j \psi} e^{-j \omega t} =|\vec{X}| e^{j(\psi+\omega t)}+|\vec{X}|^{*} e^{-j(\psi+\omega t)} \\
+f(t)=2|\vec{X}| \cos (\omega t+\psi)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;so we have&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+|\vec{X}| =\frac{A}{2} \qquad \psi =\phi
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Next, finding the relationship between equation &lt;code&gt;(2) and (3)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Alternatively, we could write&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{X}=x+j y
+\qquad \text{where} \quad
+x=|\vec{X}| \cos (\psi)
+\qquad
+y=|\vec{X}| \sin (\psi)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;thus&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} = x\left(e^{j \omega t}+e^{-j \omega t}\right)+j y\left(e^{j \omega t}-e^{-j \omega t}\right) \\
+f(t) =2 x \cos (\omega t)-2 y \sin (\omega t)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Finally, we get&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+B = 2x \qquad C = -2y \qquad \vec{X} = \frac{B}{2} - j \frac{C}{2}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-3-summary&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-summary&quot; aria-label=&quot;Anchor link for: 1-3-summary&quot;&gt;1.3. Summary&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Since&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+% &lt;!-- markdownlint-disable-next-line MD049 --&gt;
+(\vec{X} e^{j \omega t})^{*} = \vec{X}^{*} e^{-j \omega t}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;expression &lt;code&gt;(3) and (4)&lt;&#x2F;code&gt; are equivalent. It is advantageous to use one or the other of them, according to circumstances.&lt;br &#x2F;&gt;
+It&#x27;s easy to notice that $\vec{X}$ is time-independent. This conclusion is used when forming the relationship between voltage and current of inductor and capacitor elements.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sinusoidal form&lt;&#x2F;th&gt;&lt;th&gt;Complex number form&lt;&#x2F;th&gt;&lt;th&gt;$\vec{X}$&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;$f(t)=A \cos (\omega t+\phi)$&lt;&#x2F;td&gt;&lt;td&gt;$f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \quad (3)$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{X}={A}&#x2F;{2} \angle \phi$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$f(t)=B \cos (\omega t)+C \sin (\omega t)$&lt;&#x2F;td&gt;&lt;td&gt;$f(t)=Re(2\vec{X} e^{j \omega t}) = Re(A e^{j \phi} e^{j \omega t})\quad (4)$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{X} = {B}&#x2F;{2} - j {C}&#x2F;{2}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;&lt;strong&gt;Strategy&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Transform the input &lt;code&gt;In&lt;&#x2F;code&gt; into complex polar form $In \angle \phi$&lt;&#x2F;li&gt;
+&lt;li&gt;Calculate impedance complex number $Z$&lt;&#x2F;li&gt;
+&lt;li&gt;Transform output &lt;code&gt;Out&lt;&#x2F;code&gt; into polar form $O \angle \alpha$&lt;&#x2F;li&gt;
+&lt;li&gt;Using expression &lt;code&gt;(4)&lt;&#x2F;code&gt; to find out $Out(t)$&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;2-impedance&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-impedance&quot; aria-label=&quot;Anchor link for: 2-impedance&quot;&gt;2. Impedance&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Consider two elements, inductances and capacitances.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Inducatance    (L)&lt;&#x2F;th&gt;&lt;th&gt;Capacitance (C)&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;Leading_lagging.jpg&quot; alt=&quot;inductor&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;Leading_lagging.jpg&quot; alt=&quot;capacitor&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Current is &lt;code&gt;lagging&lt;&#x2F;code&gt; voltage. (&lt;code&gt;L&lt;&#x2F;code&gt; means &lt;em&gt;Lower&lt;&#x2F;em&gt; :arrow_lower_right:)&lt;&#x2F;td&gt;&lt;td&gt;Current is &lt;code&gt;leading&lt;&#x2F;code&gt; voltage&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$v_L = L {di}&#x2F;{dt}$&lt;&#x2F;td&gt;&lt;td&gt;$i = C ; {dV_C}&#x2F;{dt}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$v = \vec{V}e^{j \omega t} + \vec{V}^{*} e^{-j \omega t}$&lt;&#x2F;td&gt;&lt;td&gt;$i = \vec{I}e^{j \omega t} + \vec{I}^{*} e^{-j \omega t}$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;$\vec{V}=j \omega L \vec{I} = \vec{Z}_L ; \vec{I} \quad \text{where } \vec{Z}_L = j \omega L$&lt;&#x2F;td&gt;&lt;td&gt;$\vec{I}=j \omega C \vec{V} = \vec{V} &#x2F; \vec{Z}_C \quad \text{where } \vec{Z}_C = 1 &#x2F; (j \omega C)$&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;The inverse of impedance is &lt;strong&gt;admittance&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\vec{Y} = 1&#x2F; \vec{Z}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;example&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example&quot; aria-label=&quot;Anchor link for: example&quot;&gt;Example&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Suppose we are to find the voltage $v(t)$ in the network, in which $i(t) = I cos(\omega t)$
+&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;complex-circuit-ex.png&quot; alt=&quot;complex number in circuit example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 1.&lt;&#x2F;code&gt; Transform the input &lt;code&gt;In&lt;&#x2F;code&gt; into complex polar form $In \angle \phi$&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+i(t) = Re(I e^{\omega t})
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;&lt;code&gt;Step 2.&lt;&#x2F;code&gt; Calculate impedance complex number
+$$
+Z _| = \frac{R j \omega L}{R + j \omega L} = \frac{R \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;sinusoidal-and-complex-number&#x2F;images&#x2F;complex-circuit-ex-phasor.jpg&quot; alt=&quot;phasor&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 3.&lt;&#x2F;code&gt; We found the output voltage in the polar-exponential form&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+V = Z_| I = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Step 4.&lt;&#x2F;code&gt; Using expression &lt;code&gt;(4)&lt;&#x2F;code&gt; to find out $v(t)$&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+v(t) = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} cos ( \omega t + arctan \frac{R}{\omega L})
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ref1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;James Kirtley Jr.. &lt;em&gt;6.061 Introduction to Electric Power Systems.&lt;&#x2F;em&gt; Spring 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-061-introduction-to-electric-power-systems-spring-2011&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>The fundamental of DC-AC inverter</title>
+		<published>2022-01-13T09:19:42+01:00</published>
+		<updated>2022-01-13T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/dc-ac-inverter/" type="text/html"/>
+		<id>https://circuitlover.com/dc-ac-inverter/</id>
+		<content type="html">&lt;p&gt;Refer &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#getting-started&quot; aria-label=&quot;Anchor link for: getting-started&quot;&gt;Getting started&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Switch utilization&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{P_o}{P_T} = \frac{V_{o1,max} \times I_{o1,max}}{q \times V_T \times I_T}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$V_{o1,max}, I_{o1,max}$ are the maximum rated output voltage and current.&lt;&#x2F;li&gt;
+&lt;li&gt;$V_T, I_T$ are the peak voltage rating and peak current rating of a switching device.&lt;&#x2F;li&gt;
+&lt;li&gt;$q$ is the number of switches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;1-full-brige-inverters&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-full-brige-inverters&quot; aria-label=&quot;Anchor link for: 1-full-brige-inverters&quot;&gt;1. Full-brige inverters&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;TL;DR&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unipolar by definition: having or oriented in respect to a single pole.&lt;&#x2F;li&gt;
+&lt;li&gt;Bipolar by definiton: having or involving the use of two poles or polarities.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; \text{Control signal: } V_{control}(t) = 𝑀 \times sin(\omega t) \\
+&amp; \text{Carrier signal: } V_{tri}(t) =
+\left\{\begin{matrix}
+\cfrac{4}{T_{sw} t} \qquad t \in [0,\cfrac{T_{sw}}{4}] \cup [\cfrac{3T_{sw}}{4},T_{sw}] \\
+-\cfrac{4}{T_{sw} t} +2 \qquad  t \in [\cfrac{T_{sw}}{4},\cfrac{3T_{sw}}{2}]
+\end{matrix}\right. \\
+&amp; \text{Output peak voltage } V_{out} = M \times V_{DC}
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Where:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$M$ is mudulation index.&lt;&#x2F;li&gt;
+&lt;li&gt;$\omega$ is fundamental frequency.&lt;&#x2F;li&gt;
+&lt;li&gt;$f_{sw} = 1 &#x2F; T_{sw}$ is switching frequency.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#simu&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for LTspice simulation instruction.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-1-biploar-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-biploar-pwm&quot; aria-label=&quot;Anchor link for: 1-1-biploar-pwm&quot;&gt;1.1. Biploar PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;S1&lt;&#x2F;code&gt; and &lt;code&gt;S4&lt;&#x2F;code&gt; turn on and turn off at the same time.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;bipolar-PWM.png&quot; alt=&quot;bipolar-PWM&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Simulation result:
+&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;bipolar-PWM-waveform.png&quot; alt=&quot;bipolar-PWM-waveform&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-2-unipolar-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-unipolar-pwm&quot; aria-label=&quot;Anchor link for: 1-2-unipolar-pwm&quot;&gt;1.2. Unipolar PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The inverter output voltage switches between either between $0 \rightarrow +Vd$ during half cycle and $0 \rightarrow -Vd$ half cycle of the fundamental frequency thus this scheme is called unipolar modulation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;unipolar-PWM.png&quot; alt=&quot;Unipolar PWM schematic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;unipolar-PWM-waveform.png&quot; alt=&quot;Unipolar PWM waveform&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-3-hybrid-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-hybrid-pwm&quot; aria-label=&quot;Anchor link for: 1-3-hybrid-pwm&quot;&gt;1.3. Hybrid PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#hpwm&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#hpwm&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;: Lai, R.S. and Ngo, K.D., 1995. A PWM method for reduction of switching loss in a full-bridge inverter. &lt;em&gt;IEEE Transactions on Power Electronics&lt;&#x2F;em&gt;, &lt;em&gt;10&lt;&#x2F;em&gt;(3), pp.326-332.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;2-vector-space-and-three-phase-inverter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-vector-space-and-three-phase-inverter&quot; aria-label=&quot;Anchor link for: 2-vector-space-and-three-phase-inverter&quot;&gt;2. Vector space and three-phase inverter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot; aria-label=&quot;Anchor link for: 3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot;&gt;3. Power losses and heating design of an DC-AC inverter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Power losses of an inverter is defined as&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+P_{Loss} = P_{in} - P_{out}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;We could measure the losses in two ways.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Direct&lt;&#x2F;strong&gt; measure $P_{in}$ and $P_{out}$. The stability of this method is difficult to achieve. A small variant in input or output could lead to a large error.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Indrect&lt;&#x2F;strong&gt; by using Calorimetric methos. Highest accuracy is achieved, but it is complicate to operate.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;A alternative of measuring the losses is &lt;strong&gt;deriving the losses&lt;&#x2F;strong&gt;. The losses can be calculated by estimate of 4 types of power losses.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Switching losses&lt;&#x2F;li&gt;
+&lt;li&gt;Conducting Losses&lt;&#x2F;li&gt;
+&lt;li&gt;Blocking losses (neglecgable)&lt;&#x2F;li&gt;
+&lt;li&gt;Driving losses (neglecable)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The rule of thumb for a good design is 50% of switching losses and 50% of conducting losses. Let take a closer look at the three-phase inverter.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;three-phase-inverter.png&quot; alt=&quot;three phase inverter&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+P_{conduction} = \frac{1}{2 \pi} \int_{0}^{2 \pi} v (\omega t) i (\omega t) dt
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Power switch is only conducting for half of period.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+&amp; P_C^{IGBT} = \frac{1}{2 \pi} \int_{0}^{\pi} \left[ V_{CE,0} \cdot i_{IGBT}(\omega t) + R_{CE} \cdot i_{IGBT}^2 (\omega t) \right] dt \\
+  
+&amp; P_C^{MOSFET} = \frac{1}{2 \pi} \int_0^{\pi} \left [ r_{ds} \cdot i_{MOS}^2 (\omega t) \right ] dt \\
+
+&amp; P_C^{Diode} = \frac{1}{2 \pi} \int_0^{\pi} \left [ V_{Forward} \cdot i_{diode} (\omega t) + R_F \cdot i_{diode}^2 (\omega t) \right] dt
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;$$
+\text{Note: } V_{CE,0}, ; R_{CE}, ; R_{DS}, ;V_{F,0}, ; R_{F} \text{ are from the datasheets of Mosfet&#x2F;IGBT&#x2F;Diode.}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Using Kirchhoff&#x27;s current law, we have,&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+i_{IGBT} (\omega t) + i_{Diode} (\omega t) = \hat{i}_N ; sin(\omega t)
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where:&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+    &amp; i_{IGBT}(\omega t) = m_{IGBT} (\omega t) \cdot \hat{i}_N \; sin(\omega t) \qquad (1) \newline
+    &amp; i_{Diode}(\omega t) = m_{Diode} (\omega t) \cdot \hat{i}_N \; sin (\omega t)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;In case of Sine-triangle PWM modulation, modulation function $m = M \cdot sin(\omega t + \phi)$ with $M$ is modulation index.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  
+&amp; m_{IGBT} - m_{Diode} = m \qquad (2) \\
+&amp; m_{IGBT} + m_{Diode} = 1
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;we have,&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  
+&amp;m_{IGBT} = \frac{1+m}{2} = \frac{1}{2} \left( 1 + M \cdot sin(\omega t) \right) \qquad (3) \\
+
+&amp;m_{Diode} = \frac{1-m}{2} = \frac{1}{2} \left( 1 - M \cdot sin(\omega t) \right)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Replace equation &lt;code&gt;(1)&lt;&#x2F;code&gt; by equation &lt;code&gt;(3)&lt;&#x2F;code&gt; we get,&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+    i_{IGBT} (\omega t) = \frac{1}{2}  \left[ 1 + M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t) \newline
+
+    i_{Diode} (\omega t) = \frac{1}{2}  \left[ 1 - M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Finally, we get the important formular for conduction losses.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+    &amp; P^{IGBT}_{C} = \frac{\hat{i_N} \cdot V_{CE,0}}{2 \pi} \left( 1 + \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{CE} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \newline
+    &amp; P^{MOS}_C = \frac{R_{DS} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \qquad (V_{CE,0} = 0) \newline
+    &amp; P^{Diode}_C = \frac{\hat{i_N} \cdot V_{F,0}}{2 \pi} \left( 1 - \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{F} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} - \frac{2M}{3} cos\phi)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Since $R_{DS} \gg R_{CE}$, we could say that $P_C^{MOS}$ is not smaller than $P_C^{IBGT}$.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;switching-losses&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#switching-losses&quot; aria-label=&quot;Anchor link for: switching-losses&quot;&gt;Switching losses&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;$$
+\begin{align*}
+&amp;amp;  P_{SW,IGBT} = \frac{1}{\pi} f_{SW} (E_{on} + E_{off}) \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;amp;  P_{SW,Diode} = \frac{1}{\pi} f_{SW} E_{rec} \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;amp;  \text{ where } E_{rec} = \frac{1}{2} V_{rr} \times Q_{rr}
+\end{align*}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-references&quot; aria-label=&quot;Anchor link for: 4-references&quot;&gt;4. References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;David Perreault. &lt;em&gt;6.334 Power Electronics.&lt;&#x2F;em&gt; Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-334-power-electronics-spring-2007&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;simu&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;al6RyyJsOJo&quot;&gt;Simulation of Bridge Inverter in LTspice&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;application-notes.digchip.com&#x2F;070&#x2F;70-41484.pdf&quot;&gt;MOSFET Power Losses Calculation Using the DataSheet Parameters&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Lifetime calculation of Electrolytic Capacitors</title>
+		<published>2020-11-04T09:19:42+01:00</published>
+		<updated>2020-11-04T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/capacitor-life-time-cal/" type="text/html"/>
+		<id>https://circuitlover.com/capacitor-life-time-cal/</id>
+		<content type="html">&lt;p&gt;On the process of making new inverter&#x2F;converter products, we are talking about what type of topology will be used, power losses and cost estimation. It is easy to forgot about the &lt;strong&gt;Lifetime of capacitors&lt;&#x2F;strong&gt;. This article is quick note how to estimate lifetime of electrolytic capacitor (elcap) provided by &lt;strong&gt;JIANGHAI&lt;&#x2F;strong&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. Other manufactures may have different ways to estimate lifetime of these capacitors. Please look up manufacturer application note for more detail.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lifetime-model&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#lifetime-model&quot; aria-label=&quot;Anchor link for: lifetime-model&quot;&gt;Lifetime model&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The lifetime $L$ of the electrolytic capacitor can be estimated by using numerical lifetime model:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+L = L_0 \cdot K_T \cdot K_R \cdot K_V
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$L_0$ is specified lifetime from the datasheet of given capacitor at norminal ripple.&lt;&#x2F;li&gt;
+&lt;li&gt;$K_T$ temperature factor (ambient temperature)&lt;&#x2F;li&gt;
+&lt;li&gt;$K_R$ ripple current factor (self-heating)&lt;&#x2F;li&gt;
+&lt;li&gt;$K_V$ voltage factor (operating voltage)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;temperature-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#temperature-factor&quot; aria-label=&quot;Anchor link for: temperature-factor&quot;&gt;Temperature factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Temperature factor $K_T$ can be calculated based on &amp;quot;10-Kelvin-rule&amp;quot; that is: a drop of the ambient temperature by $10K$ double the lifetime of capacitor.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+K_T = 2^{\cfrac {T_O - T_A}{10K}}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$T_0$ rated temperature&lt;&#x2F;li&gt;
+&lt;li&gt;$T_A$ ambient temperature&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ripple-current-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ripple-current-factor&quot; aria-label=&quot;Anchor link for: ripple-current-factor&quot;&gt;Ripple current factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Ripple current factor $K_R$ is calculated as following.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+K_R = K_i^{A \cdot \cfrac{\Delta T_0}{10K}}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$A = 1 - (\frac{I_A}{I_R})^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$I_A$ ripple current in the application&lt;&#x2F;li&gt;
+&lt;li&gt;$I_R$ rated ripple current&lt;&#x2F;li&gt;
+&lt;li&gt;$\Delta T_0$ core temperature increase of the elcap
+&lt;ul&gt;
+&lt;li&gt;$T_0=105 ^{\circ}C$ typ. 3.5~5K&lt;&#x2F;li&gt;
+&lt;li&gt;$T_0 = 85 ^\circ C$ typ. 3.5~10K&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;$K_i$ empirical safety factor
+&lt;ul&gt;
+&lt;li&gt;$T_0=105 ^{\circ}C$ if ($I&amp;gt;I_R$) then $K_i = 4$ else $K_i = 2$&lt;&#x2F;li&gt;
+&lt;li&gt;$T_0 = 85 ^\circ C \rightarrow K_i = 2$&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;voltage-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#voltage-factor&quot; aria-label=&quot;Anchor link for: voltage-factor&quot;&gt;Voltage factor&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;There are two cases need to take into account when calculate voltage factor $K_V$.&lt;&#x2F;p&gt;
+&lt;p&gt;If $0.6 \le \cfrac{U_A}{U_R} \le 1$ then
+$$
+K_V = \left( \cfrac{U_A}{U_R} \right) ^{-2.5}
+$$
+else
+$$
+K_V = 3.59
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$U_R$ rated voltage&lt;&#x2F;li&gt;
+&lt;li&gt;$U_A$ actual operating voltage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Albertsen, A. 2010. Electrolytic capacitor lifetime estimation [Online]. JIANGHAI Eur. GmbH. Available: https:&#x2F;&#x2F;jianghai-europe.com&#x2F;wp-content&#x2F;uploads&#x2F;Jianghai-Europe-E-Cap-Lifetime-Estimation-long-AAL-2018-09-18.pdf [Accessed March 3, 2022].&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+</feed>

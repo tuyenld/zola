@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>IP and Routing in Linux | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Internet Protocol and how routing in Linux&#x2F;Window works" />
+  <link rel="canonical" href="https://circuitlover.com/route-ip/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/route-ip/" />
+  <meta name="twitter:url" content="https://circuitlover.com/route-ip/" />
+  <meta property="og:description" content="Internet Protocol and how routing in Linux&#x2F;Window works" />
+  <meta name="twitter:description" content="Internet Protocol and how routing in Linux&#x2F;Window works" />
+  <meta property="og:title" content="IP and Routing in Linux | CircuitLover" />
+  <meta name="twitter:title" content="IP and Routing in Linux | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-09-03" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/route-ip/">IP and Routing in Linux</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> September 03, 2023<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/server/">Server</a>] #<a href="https://circuitlover.com/tags/ip/">ip</a>  #<a href="https://circuitlover.com/tags/routing/">routing</a> </span>
+
+    <h2 id="ip"><a class="zola-anchor" href="#ip" aria-label="Anchor link for: ip">IP</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Assign static IP for Ubuntu 14, 16</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> sudo vim /etc/network/interfaces</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iface</span></span><span class="z-meta z-function-call z-arguments z-shell"> eno1 inet static</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">address</span></span><span class="z-meta z-function-call z-arguments z-shell"> 172.16.10.113</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">netmask</span></span><span class="z-meta z-function-call z-arguments z-shell"> 255.255.255.0</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gateway</span></span><span class="z-meta z-function-call z-arguments z-shell"> 172.16.10.1</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">dns-nameservers</span></span><span class="z-meta z-function-call z-arguments z-shell"> 8.8.8.8</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">up</span></span><span class="z-meta z-function-call z-arguments z-shell"> ip route add 10.10.1.0/24 via 172.16.10.1</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">up</span></span><span class="z-meta z-function-call z-arguments z-shell"> ip<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>6</span> addr add 2001::2/64 dev eno1</span>
+
+</span></code></pre>
+<p>Commonly used IP addresses:</p>
+<ul>
+<li>The last octet of a network address is 0, gateway address is 255</li>
+<li><code>127.0.0.1</code> loopback</li>
+<li><code>0.0.0.0</code> IP address does not exist</li>
+</ul>
+<h2 id="route-trong-linux"><a class="zola-anchor" href="#route-trong-linux" aria-label="Anchor link for: route-trong-linux">Route trong Linux</a></h2>
+<ul>
+<li>Routing table using <strong>Longest Prefix Match</strong>. For example
+<ul>
+<li><code>192.168.0.0/16 next-hop 10.0.0.1 IF1</code></li>
+<li><code>192.168.1.0/24 next-hop 11.0.0.1 IF2</code></li>
+<li><code>192.168.1.128/25 next-hop 12.0.0.1 IF3</code></li>
+<li>Thus, when you want to send a message to <code>192.168.1.129</code>, you will send it via <code>192.168.1.128/28 IF3</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="route-n"><a class="zola-anchor" href="#route-n" aria-label="Anchor link for: route-n">route -n</a></h3>
+<p>or <code>ip route show</code></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Kernel</span></span><span class="z-meta z-function-call z-arguments z-shell"> IP routing table</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Destination</span></span><span class="z-meta z-function-call z-arguments z-shell">     Gateway         Genmask         Flags Metric Ref    Use Iface</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">0.0.0.0</span></span><span class="z-meta z-function-call z-arguments z-shell">         192.168.1.254   0.0.0.0         UG    100    0        0 eno16777736</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">192.168.1.0</span></span><span class="z-meta z-function-call z-arguments z-shell">     0.0.0.0         255.255.255.0   U     100    0        0 eno16777736</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">192.168.122.0</span></span><span class="z-meta z-function-call z-arguments z-shell">   0.0.0.0         255.255.255.0   U     0      0        0 virbr0</span>
+</span></code></pre>
+<p>Flags:</p>
+<ul>
+<li>G: using gateway, the difference between with and without this flag is shown below.</li>
+<li>U: up - active status</li>
+</ul>
+<h3 id="route-add"><a class="zola-anchor" href="#route-add" aria-label="Anchor link for: route-add">route add</a></h3>
+<table><thead><tr><th>Indivisual host Destination</th><th>Subnet Destionation</th></tr></thead><tbody>
+<tr><td><code>route add -net 205.192.25.0 netmask 255.255.255.0 dev eth3</code></td><td><code>route add -net 205.192.25.0/24 gw 203.162.5.1</code></td></tr>
+<tr><td><code>route -n</code></td><td><code>route -n</code></td></tr>
+<tr><td><code>205.192.25.0 0.0.0.0 U eth3 </code></td><td><code>205.192.25.0 203.162.5.1 UG eth3</code></td></tr>
+<tr><td>When you want to send a package to IP <code>205.192.25.5</code>,</td><td></td></tr>
+<tr><td>Des. IP: 205.192.25.5</td><td>Des. IP: 205.192.25.5</td></tr>
+<tr><td>Des. Mac: ARP who is <code>205.192.25.5</code></td><td>Des. Mac: ARP who is <code>203.162.5.1</code></td></tr>
+</tbody></table>
+<h2 id="how-is-the-travel-packet-in-the-network"><a class="zola-anchor" href="#how-is-the-travel-packet-in-the-network" aria-label="Anchor link for: how-is-the-travel-packet-in-the-network">How is the travel packet in the network?</a></h2>
+<p><img src="https://circuitlover.com/route-ip/images/package-travel-in-network.svg" alt="goi-tin-travel-trong-mang" /></p>
+<table><thead><tr><th>No.</th><th>IP src.</th><th>IP des.</th><th>MAC src.</th><th>MAC des.</th></tr></thead><tbody>
+<tr><td>1</td><td>192.168.10.2</td><td>172.16.0.10</td><td>0E3</td><td>401</td></tr>
+<tr><td>2</td><td>192.168.10.2</td><td>172.16.0.10</td><td>402</td><td>B01</td></tr>
+<tr><td>3</td><td>192.168.10.2</td><td>172.16.0.10</td><td>B02</td><td>224</td></tr>
+</tbody></table>
+<p><strong>Conclude</strong></p>
+<ul>
+<li>IP address src. and IP des. unchanged when traversing the network (in the case of no NAT)</li>
+<li>MAC address src. and MAC des. is changed when passing through each Router</li>
+</ul>
+
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/route-ip/#ip">IP</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/route-ip/#route-trong-linux">Route trong Linux</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/route-ip/#route-n"><small>- route -n</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/route-ip/#route-add"><small>- route add</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/route-ip/#how-is-the-travel-packet-in-the-network">How is the travel packet in the network?</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

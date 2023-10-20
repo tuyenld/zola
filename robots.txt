@@ -1,0 +1,4 @@
+Sitemap: https://circuitlover.com/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://circuitlover.com

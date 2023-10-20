@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>The fundamental of DC-AC inverter | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Single-phase and three-phase PWM inverter." />
+  <link rel="canonical" href="https://circuitlover.com/dc-ac-inverter/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/dc-ac-inverter/" />
+  <meta name="twitter:url" content="https://circuitlover.com/dc-ac-inverter/" />
+  <meta property="og:description" content="Single-phase and three-phase PWM inverter." />
+  <meta name="twitter:description" content="Single-phase and three-phase PWM inverter." />
+  <meta property="og:title" content="The fundamental of DC-AC inverter | CircuitLover" />
+  <meta name="twitter:title" content="The fundamental of DC-AC inverter | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2022-01-13" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/dc-ac-inverter/">The fundamental of DC-AC inverter</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> January 13, 2022<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/power-electronics/">Power-Electronics</a>] #<a href="https://circuitlover.com/tags/dc-ac/">DC-AC</a> </span>
+
+    <p>Refer <sup class="footnote-reference"><a href="#fn1">1</a></sup> for more details.</p>
+<h2 id="getting-started"><a class="zola-anchor" href="#getting-started" aria-label="Anchor link for: getting-started">Getting started</a></h2>
+<p>Switch utilization</p>
+<p>$$
+\frac{P_o}{P_T} = \frac{V_{o1,max} \times I_{o1,max}}{q \times V_T \times I_T}
+$$</p>
+<p>Where</p>
+<ul>
+<li>$V_{o1,max}, I_{o1,max}$ are the maximum rated output voltage and current.</li>
+<li>$V_T, I_T$ are the peak voltage rating and peak current rating of a switching device.</li>
+<li>$q$ is the number of switches.</li>
+</ul>
+<h2 id="1-full-brige-inverters"><a class="zola-anchor" href="#1-full-brige-inverters" aria-label="Anchor link for: 1-full-brige-inverters">1. Full-brige inverters</a></h2>
+<p>TL;DR</p>
+<ul>
+<li>Unipolar by definition: having or oriented in respect to a single pole.</li>
+<li>Bipolar by definiton: having or involving the use of two poles or polarities.</li>
+</ul>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+& \text{Control signal: } V_{control}(t) = 𝑀 \times sin(\omega t) \\
+& \text{Carrier signal: } V_{tri}(t) =
+\left\{\begin{matrix}
+\cfrac{4}{T_{sw} t} \qquad t \in [0,\cfrac{T_{sw}}{4}] \cup [\cfrac{3T_{sw}}{4},T_{sw}] \\
+-\cfrac{4}{T_{sw} t} +2 \qquad  t \in [\cfrac{T_{sw}}{4},\cfrac{3T_{sw}}{2}]
+\end{matrix}\right. \\
+& \text{Output peak voltage } V_{out} = M \times V_{DC}
+
+\end{align*}
+$$</script>
+<p>Where:</p>
+<ul>
+<li>$M$ is mudulation index.</li>
+<li>$\omega$ is fundamental frequency.</li>
+<li>$f_{sw} = 1 / T_{sw}$ is switching frequency.</li>
+</ul>
+<p>Refer to <sup class="footnote-reference"><a href="#simu">2</a></sup> for LTspice simulation instruction.</p>
+<h3 id="1-1-biploar-pwm"><a class="zola-anchor" href="#1-1-biploar-pwm" aria-label="Anchor link for: 1-1-biploar-pwm">1.1. Biploar PWM</a></h3>
+<p><code>S1</code> and <code>S4</code> turn on and turn off at the same time.</p>
+<p><img src="https://circuitlover.com/dc-ac-inverter/images/bipolar-PWM.png" alt="bipolar-PWM" /></p>
+<p>Simulation result:
+<img src="https://circuitlover.com/dc-ac-inverter/images/bipolar-PWM-waveform.png" alt="bipolar-PWM-waveform" /></p>
+<h3 id="1-2-unipolar-pwm"><a class="zola-anchor" href="#1-2-unipolar-pwm" aria-label="Anchor link for: 1-2-unipolar-pwm">1.2. Unipolar PWM</a></h3>
+<p>The inverter output voltage switches between either between $0 \rightarrow +Vd$ during half cycle and $0 \rightarrow -Vd$ half cycle of the fundamental frequency thus this scheme is called unipolar modulation.</p>
+<p><img src="https://circuitlover.com/dc-ac-inverter/images/unipolar-PWM.png" alt="Unipolar PWM schematic" /></p>
+<p><img src="https://circuitlover.com/dc-ac-inverter/images/unipolar-PWM-waveform.png" alt="Unipolar PWM waveform" /></p>
+<h3 id="1-3-hybrid-pwm"><a class="zola-anchor" href="#1-3-hybrid-pwm" aria-label="Anchor link for: 1-3-hybrid-pwm">1.3. Hybrid PWM</a></h3>
+<p>Refer to <sup class="footnote-reference"><a href="#hpwm">3</a></sup></p>
+<h3 id="references"><a class="zola-anchor" href="#references" aria-label="Anchor link for: references">References</a></h3>
+<ul>
+<li><sup class="footnote-reference"><a href="#hpwm">3</a></sup>: Lai, R.S. and Ngo, K.D., 1995. A PWM method for reduction of switching loss in a full-bridge inverter. <em>IEEE Transactions on Power Electronics</em>, <em>10</em>(3), pp.326-332.</li>
+</ul>
+<h2 id="2-vector-space-and-three-phase-inverter"><a class="zola-anchor" href="#2-vector-space-and-three-phase-inverter" aria-label="Anchor link for: 2-vector-space-and-three-phase-inverter">2. Vector space and three-phase inverter</a></h2>
+<h2 id="3-power-losses-and-heating-design-of-an-dc-ac-inverter"><a class="zola-anchor" href="#3-power-losses-and-heating-design-of-an-dc-ac-inverter" aria-label="Anchor link for: 3-power-losses-and-heating-design-of-an-dc-ac-inverter">3. Power losses and heating design of an DC-AC inverter</a></h2>
+<p>Power losses of an inverter is defined as</p>
+<p>$$
+P_{Loss} = P_{in} - P_{out}
+$$</p>
+<p>We could measure the losses in two ways.</p>
+<ol>
+<li><strong>Direct</strong> measure $P_{in}$ and $P_{out}$. The stability of this method is difficult to achieve. A small variant in input or output could lead to a large error.</li>
+<li><strong>Indrect</strong> by using Calorimetric methos. Highest accuracy is achieved, but it is complicate to operate.</li>
+</ol>
+<p>A alternative of measuring the losses is <strong>deriving the losses</strong>. The losses can be calculated by estimate of 4 types of power losses.</p>
+<ol>
+<li>Switching losses</li>
+<li>Conducting Losses</li>
+<li>Blocking losses (neglecgable)</li>
+<li>Driving losses (neglecable)</li>
+</ol>
+<p>The rule of thumb for a good design is 50% of switching losses and 50% of conducting losses. Let take a closer look at the three-phase inverter.</p>
+<p><img src="https://circuitlover.com/dc-ac-inverter/images/three-phase-inverter.png" alt="three phase inverter" /></p>
+<p>$$
+P_{conduction} = \frac{1}{2 \pi} \int_{0}^{2 \pi} v (\omega t) i (\omega t) dt
+$$</p>
+<p>Power switch is only conducting for half of period.</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+
+& P_C^{IGBT} = \frac{1}{2 \pi} \int_{0}^{\pi} \left[ V_{CE,0} \cdot i_{IGBT}(\omega t) + R_{CE} \cdot i_{IGBT}^2 (\omega t) \right] dt \\
+  
+& P_C^{MOSFET} = \frac{1}{2 \pi} \int_0^{\pi} \left [ r_{ds} \cdot i_{MOS}^2 (\omega t) \right ] dt \\
+
+& P_C^{Diode} = \frac{1}{2 \pi} \int_0^{\pi} \left [ V_{Forward} \cdot i_{diode} (\omega t) + R_F \cdot i_{diode}^2 (\omega t) \right] dt
+
+\end{align*}
+$$</script>
+<p>$$
+\text{Note: } V_{CE,0}, ; R_{CE}, ; R_{DS}, ;V_{F,0}, ; R_{F} \text{ are from the datasheets of Mosfet/IGBT/Diode.}
+$$</p>
+<p>Using Kirchhoff's current law, we have,</p>
+<p>$$
+i_{IGBT} (\omega t) + i_{Diode} (\omega t) = \hat{i}_N ; sin(\omega t)
+$$</p>
+<p>where:</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+
+    & i_{IGBT}(\omega t) = m_{IGBT} (\omega t) \cdot \hat{i}_N \; sin(\omega t) \qquad (1) \newline
+    & i_{Diode}(\omega t) = m_{Diode} (\omega t) \cdot \hat{i}_N \; sin (\omega t)
+
+\end{align*}
+$$</script>
+<p>In case of Sine-triangle PWM modulation, modulation function $m = M \cdot sin(\omega t + \phi)$ with $M$ is modulation index.</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+  
+& m_{IGBT} - m_{Diode} = m \qquad (2) \\
+& m_{IGBT} + m_{Diode} = 1
+
+\end{align*}
+$$</script>
+<p>we have,</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+  
+&m_{IGBT} = \frac{1+m}{2} = \frac{1}{2} \left( 1 + M \cdot sin(\omega t) \right) \qquad (3) \\
+
+&m_{Diode} = \frac{1-m}{2} = \frac{1}{2} \left( 1 - M \cdot sin(\omega t) \right)
+
+\end{align*}
+$$</script>
+<p>Replace equation <code>(1)</code> by equation <code>(3)</code> we get,</p>
+<script type="math/tex;mode=display">$$
+    i_{IGBT} (\omega t) = \frac{1}{2}  \left[ 1 + M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t) \newline
+
+    i_{Diode} (\omega t) = \frac{1}{2}  \left[ 1 - M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t)
+$$</script>
+<p>Finally, we get the important formular for conduction losses.</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+
+    & P^{IGBT}_{C} = \frac{\hat{i_N} \cdot V_{CE,0}}{2 \pi} \left( 1 + \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{CE} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \newline
+    & P^{MOS}_C = \frac{R_{DS} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \qquad (V_{CE,0} = 0) \newline
+    & P^{Diode}_C = \frac{\hat{i_N} \cdot V_{F,0}}{2 \pi} \left( 1 - \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{F} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} - \frac{2M}{3} cos\phi)
+
+\end{align*}
+$$</script>
+<p>Since $R_{DS} \gg R_{CE}$, we could say that $P_C^{MOS}$ is not smaller than $P_C^{IBGT}$.</p>
+<h3 id="switching-losses"><a class="zola-anchor" href="#switching-losses" aria-label="Anchor link for: switching-losses">Switching losses</a></h3>
+<p>$$
+\begin{align*}
+&amp;  P_{SW,IGBT} = \frac{1}{\pi} f_{SW} (E_{on} + E_{off}) \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;  P_{SW,Diode} = \frac{1}{\pi} f_{SW} E_{rec} \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;  \text{ where } E_{rec} = \frac{1}{2} V_{rr} \times Q_{rr}
+\end{align*}
+$$</p>
+<h2 id="4-references"><a class="zola-anchor" href="#4-references" aria-label="Anchor link for: 4-references">4. References</a></h2>
+<div class="footnote-definition" id="fn1"><sup class="footnote-definition-label">1</sup>
+<p>David Perreault. <em>6.334 Power Electronics.</em> Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, <a rel="noopener" target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-334-power-electronics-spring-2007">https://ocw.mit.edu</a>. License: <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</a>.</p>
+</div>
+<div class="footnote-definition" id="simu"><sup class="footnote-definition-label">2</sup>
+<p><a rel="noopener" target="_blank" href="https://youtu.be/al6RyyJsOJo">Simulation of Bridge Inverter in LTspice</a></p>
+</div>
+<p><a rel="noopener" target="_blank" href="https://application-notes.digchip.com/070/70-41484.pdf">MOSFET Power Losses Calculation Using the DataSheet Parameters</a></p>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#getting-started">Getting started</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#1-full-brige-inverters">1. Full-brige inverters</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#1-1-biploar-pwm"><small>- 1.1. Biploar PWM</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#1-2-unipolar-pwm"><small>- 1.2. Unipolar PWM</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#1-3-hybrid-pwm"><small>- 1.3. Hybrid PWM</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#references"><small>- References</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#2-vector-space-and-three-phase-inverter">2. Vector space and three-phase inverter</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#3-power-losses-and-heating-design-of-an-dc-ac-inverter">3. Power losses and heating design of an DC-AC inverter</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#switching-losses"><small>- Switching losses</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dc-ac-inverter/#4-references">4. References</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

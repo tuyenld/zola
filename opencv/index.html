@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>OpenCV C++ getting started | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Getting started with OpenCV" />
+  <link rel="canonical" href="https://circuitlover.com/opencv/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/opencv/" />
+  <meta name="twitter:url" content="https://circuitlover.com/opencv/" />
+  <meta property="og:description" content="Getting started with OpenCV" />
+  <meta name="twitter:description" content="Getting started with OpenCV" />
+  <meta property="og:title" content="OpenCV C++ getting started | CircuitLover" />
+  <meta name="twitter:title" content="OpenCV C++ getting started | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2021-03-25" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/opencv/">OpenCV C++ getting started</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> March 25, 2021<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/open-cv/">Open-CV</a>] #<a href="https://circuitlover.com/tags/opencv/">opencv</a> </span>
+
+    <h2 id="install"><a class="zola-anchor" href="#install" aria-label="Anchor link for: install">Install</a></h2>
+<h3 id="download"><a class="zola-anchor" href="#download" aria-label="Anchor link for: download">Download</a></h3>
+<ul>
+<li>Microsoft Visual C++ 2019 <a rel="noopener" target="_blank" href="https://download.visualstudio.microsoft.com/download/pr/3a7354bc-d2e4-430f-92d0-9abd031b5ee5/d9fc228ea71a98adc7bc5f5d8e8800684c647e955601ed721fcb29f74ace7536/vs_Community.exe">Community</a></li>
+<li><a rel="noopener" target="_blank" href="https://nchc.dl.sourceforge.net/project/opencvlibrary/4.5.1/opencv-4.5.1-vc14_vc15.exe">opencv_4.5.1</a></li>
+<li><a rel="noopener" target="_blank" href="https://nchc.dl.sourceforge.net/project/opencvlibrary/3.4.13/opencv-3.4.13-vc14_vc15.exe">opencv_3.4.13</a></li>
+</ul>
+<h3 id="configure"><a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">Configure</a></h3>
+<p>https://acodary.wordpress.com/2018/07/24/opencv-cai-dat-opencv-visual-c-tren-windows/</p>
+<ul>
+<li>Project &gt; Property
+<ul>
+<li>Platform: x64</li>
+<li>Configuration Properties
+<ul>
+<li>C/C++ &gt; General: opencv\build\include</li>
+<li>Linker &gt; General: opencv\build\x64\vc15\lib</li>
+<li>Linker &gt; Input:
+<ul>
+<li>For openCV_4.5.1: <code>opencv_world451d.lib</code> OR <code>opencv_world451.lib</code> (d for debug)</li>
+<li>For opencv_3.4.13: <code>opencv_world3413d.lib</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Add <code>D:\tuyenld\dev\opencv_3.4.13\build\x64\vc15\bin</code> (remember to correct your path) to PATH environment</li>
+</ul>
+<h4 id="histogram-equalization-he"><a class="zola-anchor" href="#histogram-equalization-he" aria-label="Anchor link for: histogram-equalization-he">Histogram equalization (HE)</a></h4>
+<ul>
+<li>This is just a method, which may not give a flat full spectrum result.</li>
+<li>If the histogram of a problem is continuously changing, then the HE (automatic) method should be used. In other cases, a fixed histogram can be used and HE is not necessary.</li>
+</ul>
+<h3 id="learning-opencv-3-computer-vision-in-c-with-the-opencv-library-adrian-kaehler-and-gary-bradski"><a class="zola-anchor" href="#learning-opencv-3-computer-vision-in-c-with-the-opencv-library-adrian-kaehler-and-gary-bradski" aria-label="Anchor link for: learning-opencv-3-computer-vision-in-c-with-the-opencv-library-adrian-kaehler-and-gary-bradski">Learning OpenCV 3 Computer Vision in C++ with the OpenCV Library (Adrian Kaehler and Gary Bradski)</a></h3>
+<p>https://github.com/oreillymedia/Learning-OpenCV-3_examples</p>
+<h3 id="code"><a class="zola-anchor" href="#code" aria-label="Anchor link for: code">Code</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://docs.opencv.org/3.4.13">Online</a></li>
+</ul>
+<h3 id="distancetransform"><a class="zola-anchor" href="#distancetransform" aria-label="Anchor link for: distancetransform">distanceTransform</a></h3>
+<p><a rel="noopener" target="_blank" href="https://www.tutorialspoint.com/opencv/opencv_distance_transformation.htm">Ref1</a></p>
+<ul>
+<li>takes <strong>binary images</strong> as inputs.</li>
+<li>the <strong>gray level intensities</strong> of the points inside the foreground regions are changed to distance their respective distances from the closest 0 value (boundary)</li>
+</ul>
+<h3 id="type"><a class="zola-anchor" href="#type" aria-label="Anchor link for: type">Type</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="http://ninghang.blogspot.com/2012/11/list-of-mat-type-in-opencv.html">Ref1</a></li>
+<li><a rel="noopener" target="_blank" href="https://stackoverflow.com/questions/8377091/what-are-the-differences-between-cv-8u-and-cv-32f-and-what-should-i-worry-about/8377146">Ref2</a></li>
+</ul>
+<p>A Mapping of Type to Numbers in OpenCV</p>
+<table><thead><tr><th></th><th>C1</th><th>C2</th><th>C3</th><th>C4</th><th>Type</th><th>Bits</th><th>C++ type</th><th>Range</th></tr></thead><tbody>
+<tr><td>CV_8U</td><td>0</td><td>8</td><td>16</td><td>24</td><td>Unsigned</td><td>8bits</td><td>uchar</td><td>0~255</td></tr>
+<tr><td>CV_8S</td><td>1</td><td>9</td><td>17</td><td>25</td><td>Signed</td><td>8bits</td><td>char</td><td>-128~127</td></tr>
+<tr><td>CV_16U</td><td>2</td><td>10</td><td>18</td><td>26</td><td>Unsigned</td><td>16bits</td><td>ushort</td><td>0~65.535</td></tr>
+<tr><td>CV_16S</td><td>3</td><td>11</td><td>19</td><td>27</td><td>Signed</td><td>16bits</td><td>short</td><td>-32.768~32.767</td></tr>
+<tr><td>CV_32S</td><td>4</td><td>12</td><td>20</td><td>28</td><td>Signed</td><td>32bits</td><td>int</td><td>-2.147.483.648~2.147.483.647</td></tr>
+<tr><td>CV_32F</td><td>5</td><td>13</td><td>21</td><td>29</td><td>Float</td><td>32bits</td><td>float</td><td><strong>0~1.0</strong></td></tr>
+<tr><td>CV_64F</td><td>6</td><td>14</td><td>22</td><td>30</td><td>Double</td><td>64bits</td><td>double</td><td></td></tr>
+</tbody></table>
+<pre data-lang="cpp" class="language-cpp z-code"><code class="language-cpp" data-lang="cpp"><span class="z-source z-c++"><span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8U</span></span><span class="z-meta z-preprocessor z-macro z-c++">   <span class="z-constant z-numeric z-integer z-decimal z-c++">0</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8S</span></span><span class="z-meta z-preprocessor z-macro z-c++">   <span class="z-constant z-numeric z-integer z-decimal z-c++">1</span> </span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_16U</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-constant z-numeric z-integer z-decimal z-c++">2</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_16S</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-constant z-numeric z-integer z-decimal z-c++">3</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_32S</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-constant z-numeric z-integer z-decimal z-c++">4</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_32F</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-constant z-numeric z-integer z-decimal z-c++">5</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_64F</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-constant z-numeric z-integer z-decimal z-c++">6</span></span>
+
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8UC1</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-constant z-numeric z-integer z-decimal z-c++">1</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8UC2</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-constant z-numeric z-integer z-decimal z-c++">2</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8UC3</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-constant z-numeric z-integer z-decimal z-c++">3</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8UC4</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-constant z-numeric z-integer z-decimal z-c++">4</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-function z-preprocessor z-c++">CV_8UC</span></span><span class="z-meta z-preprocessor z-macro z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-variable z-parameter z-c++">n</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span>n<span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_CN_SHIFT</span></span><span class="z-meta z-preprocessor z-macro z-c++">   <span class="z-constant z-numeric z-integer z-decimal z-c++">3</span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_DEPTH_MAX</span></span><span class="z-meta z-preprocessor z-macro z-c++">  <span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-constant z-numeric z-integer z-decimal z-c++">1</span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> CV_CN_SHIFT<span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span>
+
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_MAT_DEPTH_MASK</span></span><span class="z-meta z-preprocessor z-macro z-c++">       <span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span>CV_DEPTH_MAX <span class="z-keyword z-operator z-arithmetic z-c">-</span> <span class="z-constant z-numeric z-integer z-decimal z-c++">1</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span>
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-function z-preprocessor z-c++">CV_MAT_DEPTH</span></span><span class="z-meta z-preprocessor z-macro z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-variable z-parameter z-c++">flags</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-meta z-preprocessor z-macro z-c++">     <span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span>flags<span class="z-punctuation z-section z-group z-end z-c++">)</span></span> <span class="z-keyword z-operator z-c">&amp;</span> CV_MAT_DEPTH_MASK<span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span>
+
+<span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-function z-preprocessor z-c++">CV_MAKETYPE</span></span><span class="z-meta z-preprocessor z-macro z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-variable z-parameter z-c++">depth</span><span class="z-punctuation z-separator z-c++">,</span><span class="z-variable z-parameter z-c++">cn</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAT_DEPTH</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">depth</span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span> <span class="z-keyword z-operator z-arithmetic z-c">+</span> <span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span>cn<span class="z-punctuation z-section z-group z-end z-c++">)</span></span><span class="z-keyword z-operator z-arithmetic z-c">-</span><span class="z-constant z-numeric z-integer z-decimal z-c++">1</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> CV_CN_SHIFT<span class="z-punctuation z-section z-group z-end z-c++">)</span></span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span>
+
+<span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> For example: 
+</span><span class="z-meta z-preprocessor z-macro z-c++"><span class="z-keyword z-control z-import z-define z-c++">#define</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-entity z-name z-constant z-preprocessor z-c++">CV_8UC4</span></span><span class="z-meta z-preprocessor z-macro z-c++"> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">CV_MAKETYPE</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">CV_8U<span class="z-punctuation z-separator z-c++">,</span><span class="z-constant z-numeric z-integer z-decimal z-c++">4</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span>
+<span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> has type: 0+((4-1) &lt;&lt; 3) == 24
+</span></span></code></pre>
+<ul>
+<li>1 is the default number of channels (<code>CV_8U = CV_8UC1 = 0</code>)</li>
+<li>CV_32F defines the depth of each element of the matrix</li>
+<li>CV_32FC1 defines both the depth of each element and the number of channels.</li>
+</ul>
+<h3 id="scalar"><a class="zola-anchor" href="#scalar" aria-label="Anchor link for: scalar">Scalar</a></h3>
+<p>Template class for a 4-element vector derived from Vec.
+Being derived from <code>Vec&lt;Tp, 4&gt;</code>
+Scalar can be used just as typical 4-element vectors.
+The type Scalar is widely used in OpenCV to pass pixel values.</p>
+<pre data-lang="cpp" class="language-cpp z-code"><code class="language-cpp" data-lang="cpp"><span class="z-source z-c++">cv<span class="z-punctuation z-accessor z-double-colon z-c++">::</span>Scalar <span class="z-meta z-function z-c++"><span class="z-meta z-toc-list z-full-identifier z-c++"><span class="z-entity z-name z-function z-c++">myWhite</span></span></span><span class="z-meta z-function z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-constant z-numeric z-integer z-decimal z-c++">255</span><span class="z-punctuation z-separator z-c++">,</span> <span class="z-constant z-numeric z-integer z-decimal z-c++">255</span><span class="z-punctuation z-separator z-c++">,</span> <span class="z-constant z-numeric z-integer z-decimal z-c++">500</span><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-punctuation z-terminator z-c++">;</span>
+cout <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> <span class="z-string z-quoted z-double z-c"><span class="z-punctuation z-definition z-string z-begin z-c">&quot;</span>Scala0: <span class="z-punctuation z-definition z-string z-end z-c">&quot;</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> myWhite<span class="z-meta z-brackets z-c++"><span class="z-punctuation z-section z-brackets z-begin z-c++">[</span><span class="z-constant z-numeric z-integer z-decimal z-c++">0</span><span class="z-punctuation z-section z-brackets z-end z-c++">]</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> <span class="z-string z-quoted z-double z-c"><span class="z-punctuation z-definition z-string z-begin z-c">&quot;</span>; Scala1: <span class="z-punctuation z-definition z-string z-end z-c">&quot;</span></span> 
+     <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> myWhite<span class="z-meta z-brackets z-c++"><span class="z-punctuation z-section z-brackets z-begin z-c++">[</span><span class="z-constant z-numeric z-integer z-decimal z-c++">1</span><span class="z-punctuation z-section z-brackets z-end z-c++">]</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> <span class="z-string z-quoted z-double z-c"><span class="z-punctuation z-definition z-string z-begin z-c">&quot;</span>; Scala2: <span class="z-punctuation z-definition z-string z-end z-c">&quot;</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> myWhite<span class="z-meta z-brackets z-c++"><span class="z-punctuation z-section z-brackets z-begin z-c++">[</span><span class="z-constant z-numeric z-integer z-decimal z-c++">2</span><span class="z-punctuation z-section z-brackets z-end z-c++">]</span></span> <span class="z-keyword z-operator z-arithmetic z-c">&lt;&lt;</span> endl<span class="z-punctuation z-terminator z-c++">;</span>
+
+<span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> Scala0: 255; Scala1: 255; Scala2: 500
+</span></span></code></pre>
+<h3 id="differences-of-using-const-cv-mat-cv-mat-cv-mat-or-const-cv-mat-as-function-parameters"><a class="zola-anchor" href="#differences-of-using-const-cv-mat-cv-mat-cv-mat-or-const-cv-mat-as-function-parameters" aria-label="Anchor link for: differences-of-using-const-cv-mat-cv-mat-cv-mat-or-const-cv-mat-as-function-parameters">Differences of using “const cv::Mat &amp;”, “cv::Mat &amp;”, “cv::Mat” or “const cv::Mat” as function parameters?</a></h3>
+<p>https://stackoverflow.com/a/23486280</p>
+<blockquote>
+<p>OpenCV handles all the memory <a rel="noopener" target="_blank" href="https://docs.opencv.org/2.4/modules/core/doc/intro.html#automatic-memory-management">automatically</a>.
+First of all, std::vector, Mat, and other data structures used by the functions and methods have destructors that deallocate the underlying memory buffers when needed. This means that the destructors do not always deallocate the buffers as in case of Mat. They take into account possible data sharing. A destructor decrements the reference counter associated with the matrix data buffer. The buffer is deallocated if and only if the reference counter reaches zero, that is, when no other structures refer to the same buffer. Similarly, when a Mat instance is copied, no actual data is really copied. Instead, the reference counter is incremented to memorize that there is another owner of the same data. There is also the Mat::clone method that creates a full copy of the matrix data.</p>
+</blockquote>
+<h3 id="linear-vs-non-linear-filter"><a class="zola-anchor" href="#linear-vs-non-linear-filter" aria-label="Anchor link for: linear-vs-non-linear-filter">Linear vs non-linear filter</a></h3>
+<p><a rel="noopener" target="_blank" href="https://www.embeddedcomputing.com/technology/analog-and-power/comparing-linear-versus-nonlinear-filters-in-image-processing">Ref</a></p>
+<ul>
+<li>In cases where the input data contains a large amount of noise but the magnitude is low, a linear low-pass filter may suffice.</li>
+<li>Conversely, if an image contains a low amount of noise but with relatively high magnitude, then a median filter may be more appropriate.</li>
+<li>In either case, the filter process changes the overall frequency content of the image.</li>
+</ul>
+<h3 id="but-what-is-the-fourier-transform-a-visual-introduction"><a class="zola-anchor" href="#but-what-is-the-fourier-transform-a-visual-introduction" aria-label="Anchor link for: but-what-is-the-fourier-transform-a-visual-introduction">But what is the Fourier Transform? A visual introduction</a></h3>
+<p>https://youtu.be/spUNpyF58BY</p>
+<ul>
+<li>Fourier Series &gt; Periodic function of a continuous variable</li>
+<li>Fourier Transform &gt; Not periodic function</li>
+</ul>
+<h3 id="clahe"><a class="zola-anchor" href="#clahe" aria-label="Anchor link for: clahe">CLAHE</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://web.archive.org/web/20120113220509/http://radonc.ucsf.edu/research_group/jpouliot/tutorial/HU/Lesson7.htm">Contrast Limited Adaptative Histogram Equalization (CLAHE)</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/erich666/GraphicsGems/blob/master/gemsiv/clahe.c">clahe.c</a></li>
+<li><a rel="noopener" target="_blank" href="http://cas.xav.free.fr/Graphics%20Gems%204%20-%20Paul%20S.%20Heckbert.pdf">Contrast Limited Adaptive Histogram Equalization. Graphics Gems IV p482/579</a></li>
+</ul>
+<blockquote>
+<p>Division of the image into 8x8 contextual regions usually gives good results; this implies 64 contextual regions of size 64x64 when AHE is performed on a 512x512 image</p>
+</blockquote>
+<p>??</p>
+<blockquote>
+<p>To avoid visibility of region boundaries, a <a rel="noopener" target="_blank" href="https://theailearner.com/2018/12/29/image-processing-bilinear-interpolation/">bilinear interpolation</a> scheme is used (see Fig.2)</p>
+</blockquote>
+<h3 id="laplacian-laplacian-of-gaussian"><a class="zola-anchor" href="#laplacian-laplacian-of-gaussian" aria-label="Anchor link for: laplacian-laplacian-of-gaussian">Laplacian/Laplacian of Gaussian</a></h3>
+<ul>
+<li>
+<p>https://homepages.inf.ed.ac.uk/rbf/HIPR2/log.htm</p>
+</li>
+<li>
+<p>https://hcimage.com/help/Content/Quantitation/Measurements/Processing%20and%20Analysis/Enhance/Enhance%20Operations.htm</p>
+</li>
+<li>
+<p>https://softwarebydefault.com/2013/05/11/image-edge-detection/</p>
+</li>
+<li>
+<p><a rel="noopener" target="_blank" href="https://youtu.be/Iz6C1ny-F2Q">The Two-Dimensional Discrete Fourier Transform</a></p>
+</li>
+<li>
+<p><a rel="noopener" target="_blank" href="https://youtu.be/YYGltoYEmKo">2-Dimensional Discrete-Space Fourier Transform</a></p>
+</li>
+</ul>
+<p>edge preserving filter in image processing opencv</p>
+<h3 id="wavelet"><a class="zola-anchor" href="#wavelet" aria-label="Anchor link for: wavelet">Wavelet</a></h3>
+<p>http://www.nsl.hcmus.edu.vn/greenstone/collect/tiensifu/index/assoc/HASH01f6.dir/2.pdf
+<a rel="noopener" target="_blank" href="https://blancosilva.wordpress.com/teaching/mathematical-imaging/denoising-wavelet-thresholding/">Denoising: wavelet thresholding</a>
+<a rel="noopener" target="_blank" href="https://vdocuments.mx/download/ung-dung-phep-bien-doi-wavelet-trong-xu-ly-anh">Ứng dụng phép biến đổi wavelet trong xử lý ảnh PTIT</a></p>
+<h3 id="mean-vs-median-filter"><a class="zola-anchor" href="#mean-vs-median-filter" aria-label="Anchor link for: mean-vs-median-filter">Mean vs Median filter</a></h3>
+<p>The &quot;mean&quot; is the &quot;average&quot; you're used to, where you add up all the numbers and then divide by the number of numbers.
+The &quot;median&quot; is the &quot;middle&quot; value in the list of numbers.</p>
+<ul>
+<li>Median filter: suitable for grayscale image, don't use with binary image</li>
+</ul>
+<h3 id="point2f-sub-pixel-coordinate-origin"><a class="zola-anchor" href="#point2f-sub-pixel-coordinate-origin" aria-label="Anchor link for: point2f-sub-pixel-coordinate-origin">Point2f, sub-pixel coordinate origin</a></h3>
+<ul>
+<li>
+<p>References:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://answers.opencv.org/question/87923/sub-pixel-coordinate-origin/">Sub-pixel coordinate origin</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/opencv/opencv/issues/10130">Absent documentation for sub-pixel coordinate system</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Conclusion</strong></p>
+<ul>
+<li>According to results above it seems that <code>cv2.remap</code> uses coordinate system with pixel centers aligned to their integer indexes.</li>
+<li><code>top-left pixel center</code> coordinate is <code>(0,0)</code></li>
+<li>top left pixel spans from (-0.5,-0.5) to (+0.5,+0.5)</li>
+<li>whole image spans from (-0.5,-0.5) to (W-0.5, H-0.5)
+<img src="https://circuitlover.com/opencv/images/point2f-coordinate.png" alt="Point2f coordinate" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="understanding-and-evaluating-template-matching-methods"><a class="zola-anchor" href="#understanding-and-evaluating-template-matching-methods" aria-label="Anchor link for: understanding-and-evaluating-template-matching-methods">Understanding and evaluating template matching methods</a></h3>
+<p><a rel="noopener" target="_blank" href="https://stackoverflow.com/a/58160295">alkasm's anwser</a></p>
+<p>TM_SQDIFF_NORMED, TM_CCORR_NORMED, TM_CCOEFF_NORMED
+TM_SQDIFF, TM_CCORR, TM_CCOEFF</p>
+<table><thead><tr><th>TM_CCOEFF_NORMED</th><th>TM_CCORR_NORMED</th><th>TM_SQDIFF_NORMED</th></tr></thead><tbody>
+<tr><td>[-1, 1] (mean shifted)</td><td>[0, 1]</td><td>[0, 1]</td></tr>
+</tbody></table>
+<h3 id="understanding-moments-function-in-opencv"><a class="zola-anchor" href="#understanding-moments-function-in-opencv" aria-label="Anchor link for: understanding-moments-function-in-opencv">Understanding Moments function in opencv</a></h3>
+<p><a rel="noopener" target="_blank" href="https://stackoverflow.com/a/22472044">Michael Burdinov's answer</a></p>
+<p>Definition of moments in image processing is borrowed from physics. Assume that each pixel in image has weight that is equal to its intensity. Then the point you defined is centroid (a.k.a. center of mass) of image.</p>
+<p>Assume that <code>I(x,y)</code> is the intensity of pixel <code>(x,y)</code> in image. Then <code>m(i,j)</code> is the sum for all possible x and y of: <code>I(x,y) * (x^i) * (y^j)</code>.</p>
+<p>And <a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Image_moment">here</a> you can read a wiki article about all kinds of image moments (raw moments, central moments, scale/rotation invariant moments and so on). It is pretty good one and I recommend reading it.</p>
+<p>Adapting this to scalar (greyscale) image with pixel intensities I(x,y), raw image moments Mij are calculated by:</p>
+<script type="math/tex;mode=display">$$
+{\displaystyle M_{ij} = \sum_{x}\sum_{y}x^{i}y^{j}I(x,y)\,\!}M_{{ij}}=\sum _{x}\sum_{y}x^{i}y^{j}I(x,y)
+$$</script>
+<p>Centroid: ${\displaystyle {{\bar {x}},\ {\bar {y}}}=\left{{\frac {M_{10}}{M_{00}}},{\frac {M_{01}}{M_{00}}}\right}}{\displaystyle {{\bar {x}},\ {\bar {y}}}=\left{{\frac {M_{10}}{M_{00}}},{\frac {M_{01}}{M_{00}}}\right}}$</p>
+<h2 id="clone-all-fiji-source-code"><a class="zola-anchor" href="#clone-all-fiji-source-code" aria-label="Anchor link for: clone-all-fiji-source-code">Clone all Fiji source code</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://forum.image.sc/t/getting-the-source-code-for-fiji-without-using-maven/31964/6</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install maven</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install libxml2-utils</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> clone git://github.com/fiji/fiji</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> fiji/bin</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wget</span></span><span class="z-meta z-function-call z-arguments z-shell"> https://github.com/scijava/scijava-scripts/raw/master/melting-pot.sh</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bin/melt.sh</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span></span>
+</span></code></pre>
+<h2 id="findcontours"><a class="zola-anchor" href="#findcontours" aria-label="Anchor link for: findcontours">findContours()</a></h2>
+<p>Reference:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="http://amroamroamro.github.io/mexopencv/opencv/contours_hierarchy_demo.html">mexopencv</a></li>
+<li><a rel="noopener" target="_blank" href="https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a">group__imgproc__shape</a></li>
+</ul>
+<p>Remember:</p>
+<ul>
+<li>In OpenCV, object to be found should be white and background should be black.</li>
+</ul>
+<pre data-lang="cpp" class="language-cpp z-code"><code class="language-cpp" data-lang="cpp"><span class="z-source z-c++"><span class="z-storage z-type z-c">void</span> <span class="z-meta z-function z-c++"><span class="z-meta z-toc-list z-full-identifier z-c++">cv<span class="z-punctuation z-accessor z-double-colon z-c++">::</span><span class="z-entity z-name z-function z-c++">findContours</span>
+    </span></span><span class="z-meta z-function z-parameters z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function z-parameters z-c++"><span class="z-meta z-group z-c++">   InputOutputArray    <span class="z-variable z-parameter z-c++">image</span><span class="z-punctuation z-separator z-c++">,</span>
+        OutputArrayOfArrays <span class="z-variable z-parameter z-c++">contours</span><span class="z-punctuation z-separator z-c++">,</span>
+        OutputArray         <span class="z-variable z-parameter z-c++">hierarchy</span><span class="z-punctuation z-separator z-c++">,</span>
+        <span class="z-storage z-type z-c">int</span>                 <span class="z-variable z-parameter z-c++">mode</span><span class="z-punctuation z-separator z-c++">,</span>
+        <span class="z-storage z-type z-c">int</span>                 <span class="z-variable z-parameter z-c++">method</span><span class="z-punctuation z-separator z-c++">,</span>
+        Point               <span class="z-variable z-parameter z-c++">offset</span> <span class="z-keyword z-operator z-assignment z-c++">=</span> <span class="z-meta z-function-call z-c++"><span class="z-variable z-function z-c++">Point</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span> 
+    <span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-meta z-function z-c++"> 
+
+<span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> Note: absolute value of an area is used because
+</span><span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> area may be positive or negative - in accordance with the
+</span><span class="z-comment z-line z-double-slash z-c"><span class="z-punctuation z-definition z-comment z-c">//</span> contour orientation
+</span></span><span class="z-storage z-type z-c">double</span> i <span class="z-keyword z-operator z-assignment z-c">=</span> <span class="z-meta z-function-call z-c++">std<span class="z-punctuation z-accessor z-double-colon z-c++">::</span><span class="z-support z-function z-C99 z-c">fabs</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-meta z-function-call z-c++">cv<span class="z-punctuation z-accessor z-double-colon z-c++">::</span><span class="z-variable z-function z-c++">contourArea</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-meta z-function-call z-c++">cv<span class="z-punctuation z-accessor z-double-colon z-c++">::</span><span class="z-variable z-function z-c++">Mat</span><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-begin z-c++">(</span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++">contour1</span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span></span></span><span class="z-meta z-function-call z-c++"><span class="z-meta z-group z-c++"><span class="z-punctuation z-section z-group z-end z-c++">)</span></span></span><span class="z-punctuation z-terminator z-c++">;</span>
+</span></code></pre>
+<p>What is <strong>Contour Approximation Method</strong>?</p>
+<p>CHAIN_APPROX_NONE vs CHAIN_APPROX_SIMPLE</p>
+<p><img src="https://circuitlover.com/opencv/images/findcontours-method.png" alt="findcontours-method" /></p>
+<p>What is <strong>Contours Hierarchy</strong>?</p>
+<p><img src="https://circuitlover.com/opencv/images/find-contours-hierarchy.png" alt="find-contours-hierarchy" /></p>
+<ul>
+<li>Contour <strong>0,1,2</strong> are the same hierachy level</li>
+<li><em>child</em>(2) = 2a; <em>parent</em>(2a) = 2</li>
+</ul>
+<h2 id="watershed-algorithm"><a class="zola-anchor" href="#watershed-algorithm" aria-label="Anchor link for: watershed-algorithm">Watershed algorithm</a></h2>
+<p>Each pixel on the image was categozied as one of three type:</p>
+<p><img src="https://circuitlover.com/opencv/images/khai-niem-co-ban.png" alt="three type of pixel" /></p>
+<ul>
+<li>regional minimum: the bottom of the cone.</li>
+<li>catchment basin: the region from the bottom of the cone to <code>watershed line</code></li>
+<li>watershed lines: the border of <code>catchment basin</code></li>
+</ul>
+<p>The algorithm will find these points.</p>
+<h3 id="how-it-works"><a class="zola-anchor" href="#how-it-works" aria-label="Anchor link for: how-it-works">How it works</a></h3>
+<ol>
+<li>Find <code>regional minimum</code></li>
+<li>From <code>regional minimum</code>, pull the water into <code>catchment basin</code></li>
+<li>Keeping to pull water into <code>catchment basin</code> until <code>catchment basin</code> overlap. This is <code>watershed lines</code> point.</li>
+</ol>
+<h3 id="reference"><a class="zola-anchor" href="#reference" aria-label="Anchor link for: reference">Reference</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://cecas.clemson.edu/~stb/ece847/internal/lectures/lecture04-segmentation.ppt">cecas.clemson.edu ece847 lecture04-segmentation.ppt</a></li>
+<li><a rel="noopener" target="_blank" href="http://www.math.tau.ac.il/~turkel/notes/watershed_Segmentation.ppt">tau.ac.il turkel watershed_Segmentation.ppt</a></li>
+</ul>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/opencv/#install">Install</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#download"><small>- Download</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#configure"><small>- Configure</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#learning-opencv-3-computer-vision-in-c-with-the-opencv-library-adrian-kaehler-and-gary-bradski"><small>- Learning OpenCV 3 Computer Vision in C++ with the OpenCV Library (Adrian Kaehler and Gary Bradski)</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#code"><small>- Code</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#distancetransform"><small>- distanceTransform</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#type"><small>- Type</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#scalar"><small>- Scalar</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#differences-of-using-const-cv-mat-cv-mat-cv-mat-or-const-cv-mat-as-function-parameters"><small>- Differences of using “const cv::Mat &amp;”, “cv::Mat &amp;”, “cv::Mat” or “const cv::Mat” as function parameters?</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#linear-vs-non-linear-filter"><small>- Linear vs non-linear filter</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#but-what-is-the-fourier-transform-a-visual-introduction"><small>- But what is the Fourier Transform? A visual introduction</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#clahe"><small>- CLAHE</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#laplacian-laplacian-of-gaussian"><small>- Laplacian&#x2F;Laplacian of Gaussian</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#wavelet"><small>- Wavelet</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#mean-vs-median-filter"><small>- Mean vs Median filter</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#point2f-sub-pixel-coordinate-origin"><small>- Point2f, sub-pixel coordinate origin</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#understanding-and-evaluating-template-matching-methods"><small>- Understanding and evaluating template matching methods</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#understanding-moments-function-in-opencv"><small>- Understanding Moments function in opencv</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/opencv/#clone-all-fiji-source-code">Clone all Fiji source code</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/opencv/#findcontours">findContours()</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/opencv/#watershed-algorithm">Watershed algorithm</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#how-it-works"><small>- How it works</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/opencv/#reference"><small>- Reference</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

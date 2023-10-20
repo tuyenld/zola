@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Linux configurations | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Some useful command lines for your day-to-day tasks" />
+  <link rel="canonical" href="https://circuitlover.com/linux-configs/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/linux-configs/" />
+  <meta name="twitter:url" content="https://circuitlover.com/linux-configs/" />
+  <meta property="og:description" content="Some useful command lines for your day-to-day tasks" />
+  <meta name="twitter:description" content="Some useful command lines for your day-to-day tasks" />
+  <meta property="og:title" content="Linux configurations | CircuitLover" />
+  <meta name="twitter:title" content="Linux configurations | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-08-31" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/linux-configs/">Linux configurations</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> August 31, 2023<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/server/">Server</a>] #<a href="https://circuitlover.com/tags/linux/">Linux</a> </span>
+
+    <h1 id="basic-setup"><a class="zola-anchor" href="#basic-setup" aria-label="Anchor link for: basic-setup">Basic setup</a></h1>
+<h2 id="changing-colors-for-user-host-directory-information-in-terminal"><a class="zola-anchor" href="#changing-colors-for-user-host-directory-information-in-terminal" aria-label="Anchor link for: changing-colors-for-user-host-directory-information-in-terminal">Changing colors for user, host, directory information in terminal</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://askubuntu.com/a/123306/613914</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">nano</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.bashrc</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">force_color_prompt=yes		&gt;&gt; 		force_color_prompt=yes</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">PS1</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ <span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span>
+</span></code></pre>
+<h2 id="for-loop"><a class="zola-anchor" href="#for-loop" aria-label="Anchor link for: for-loop">For loop</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-loop z-for z-shell">for</span><span class="z-meta z-group z-for z-shell"> f <span class="z-keyword z-control z-in z-shell">in</span> <span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span>.txt</span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-keyword z-control z-loop z-do z-shell">do</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-end-of-options z-shell"> --</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">f</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">basename</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-end-of-options z-shell"> --</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">f</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> .txt</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span>.text<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-keyword z-control z-loop z-end z-shell">done</span>
+</span></code></pre>
+<h2 id="ping-show-timeout"><a class="zola-anchor" href="#ping-show-timeout" aria-label="Anchor link for: ping-show-timeout">Ping show timeout</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ping6</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>D</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>O</span> google.com</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> [1566958425.967709] 64 bytes from 2404::8b: icmp_seq=23 ttl=49 time=84.6 ms</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> [1566958427.820728] no answer yet for icmp_seq=24</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> [1566958427.993347] 64 bytes from 2404::8b: icmp_seq=25 ttl=49 time=81.9 ms</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></code></pre>
+<h2 id="danish-characters-input"><a class="zola-anchor" href="#danish-characters-input" aria-label="Anchor link for: danish-characters-input">Danish characters input</a></h2>
+<p>Answered from <a rel="noopener" target="_blank" href="https://askubuntu.com/a/1286045">stackOverflow</a>
+If you map CapsLock to the Compose key (you can do it through Settings → Keyboard → Layouts → Options, look for &quot;Position of Compose key&quot;), they will be accessible through Composeaa (å), Composeae (æ), and Composeo/ (ø). Note those are three keypresses in a sequence, not a combination to press at once. Use uppercase letters to get the uppercase variant.</p>
+<h2 id="show-all-process"><a class="zola-anchor" href="#show-all-process" aria-label="Anchor link for: show-all-process">Show all process</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ps</span></span><span class="z-meta z-function-call z-arguments z-shell"> aux</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> sh</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Long line output, no wrap</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ps</span></span><span class="z-meta z-function-call z-arguments z-shell"> auxww</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> dhcp</span>
+</span></code></pre>
+<h2 id="install-open-ssh"><a class="zola-anchor" href="#install-open-ssh" aria-label="Anchor link for: install-open-ssh">Install Open SSH</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install openssh-server</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> systemctl status ssh</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> systemctl enable ssh</span>
+</span></code></pre>
+<h2 id="disable-auto-sleep-16-04"><a class="zola-anchor" href="#disable-auto-sleep-16-04" aria-label="Anchor link for: disable-auto-sleep-16-04">Disable auto sleep 16.04</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</span>
+</span></code></pre>
+<h2 id="good-calculator"><a class="zola-anchor" href="#good-calculator" aria-label="Anchor link for: good-calculator">Good calculator</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Qalculate</span></span>
+</span></code></pre>
+<h2 id="change-timezone-time-date"><a class="zola-anchor" href="#change-timezone-time-date" aria-label="Anchor link for: change-timezone-time-date">Change Timezone time/date</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> List timezone</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">timedatectl</span></span><span class="z-meta z-function-call z-arguments z-shell"> list-timezones</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> New</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Change time/date setting to USA</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> timedatectl set-timezone America/New_York</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> localectl set-locale LC_TIME=en_US.utf8</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> reboot</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">date</span></span><span class="z-meta z-function-call z-arguments z-shell"> +<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">F_</span></span><span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">H</span></span>-<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">M</span></span>-<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">S</span></span></span>
+</span></code></pre>
+<h2 id="find-grep-search"><a class="zola-anchor" href="#find-grep-search" aria-label="Anchor link for: find-grep-search">Find, grep, search</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; find</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Find file have changed in 10 minute</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">find</span></span><span class="z-meta z-function-call z-arguments z-shell"> /path/to/dir<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>mmin</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>10</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">find</span></span><span class="z-meta z-function-call z-arguments z-shell"> .<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>name</span> <span class="z-constant z-character z-escape z-shell">\*</span>.xls<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>exec</span> cp <span class="z-meta z-group z-expansion z-brace z-shell"><span class="z-punctuation z-section z-expansion z-brace z-begin z-shell">{</span><span class="z-punctuation z-section z-expansion z-brace z-end z-shell">}</span></span> newDir <span class="z-constant z-character z-escape z-shell">\;</span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Smaller than 4G</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">find</span></span><span class="z-meta z-function-call z-arguments z-shell"> .<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>type</span> f<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>size</span> +3c<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>exec</span> cp <span class="z-meta z-group z-expansion z-brace z-shell"><span class="z-punctuation z-section z-expansion z-brace z-begin z-shell">{</span><span class="z-punctuation z-section z-expansion z-brace z-end z-shell">}</span></span> newDir <span class="z-constant z-character z-escape z-shell">\;</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> c for bytes</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> w for two-byte words</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> k for Kilobytes</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> M for Megabytes</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> G for Gigabytes</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Ignore case sensitive</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">find</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>iname</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>keyword<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; ag</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ag</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>stdint\.h<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ag</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>G</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>\.java$<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>ftp<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> .</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ag</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>G</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>\.h$<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>lnode<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> .</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; grep</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Use grep --exclude/--include syntax to not grep through certain files</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> -r, --recursive</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> -n, --line-number </span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> someStrangeVariable<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>rn</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>stdint\.h<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>req-&gt;pobj-&gt;get&lt;const char<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>rn</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>include</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span><span class="z-constant z-character z-escape z-shell">\*</span>Wrt.cpp</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"> someStrangeVariable<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>rn</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>exclude</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span><span class="z-constant z-character z-escape z-shell">\*</span>.<span class="z-meta z-group z-expansion z-brace z-shell"><span class="z-punctuation z-section z-expansion z-brace z-begin z-shell">{</span>js<span class="z-punctuation z-separator z-shell">,</span>html<span class="z-punctuation z-section z-expansion z-brace z-end z-shell">}</span></span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> extract the text between, let&#39;s say, bbb and ddd.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sed</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>s/^.*bbb //; s/ddd.*$//<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> <span class="z-keyword z-operator z-herestring z-shell">&lt;&lt;&lt;</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>aaa bbb ccc ddd eee<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> </span>
+
+</span></code></pre>
+<h2 id="view-csv-data-from-the-command-line"><a class="zola-anchor" href="#view-csv-data-from-the-command-line" aria-label="Anchor link for: view-csv-data-from-the-command-line">View CSV Data from the Command Line</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cat</span></span><span class="z-meta z-function-call z-arguments z-shell"> file.csv</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sed</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>s/,,/, ,/g<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">column</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span>,<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>t</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">less</span></span><span class="z-meta z-function-call z-arguments z-shell"> -#5<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>N</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>S</span></span>
+</span></code></pre>
+<h2 id="redirect-output-to-file"><a class="zola-anchor" href="#redirect-output-to-file" aria-label="Anchor link for: redirect-output-to-file">Redirect output to file</a></h2>
+<p><a rel="noopener" target="_blank" href="https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file">How do I save terminal output to a file?</a></p>
+<pre class="z-code"><code><span class="z-text z-plain">          || visible in terminal ||   visible in file   || existing
+  Syntax  ||  StdOut  |  StdErr  ||  StdOut  |  StdErr  ||   file   
+==========++==========+==========++==========+==========++===========
+    &gt;     ||    no    |   yes    ||   yes    |    no    || overwrite
+    &gt;&gt;    ||    no    |   yes    ||   yes    |    no    ||  append
+          ||          |          ||          |          ||
+   2&gt;     ||   yes    |    no    ||    no    |   yes    || overwrite
+   2&gt;&gt;    ||   yes    |    no    ||    no    |   yes    ||  append
+          ||          |          ||          |          ||
+   &amp;&gt;     ||    no    |    no    ||   yes    |   yes    || overwrite
+   &amp;&gt;&gt;    ||    no    |    no    ||   yes    |   yes    ||  append
+          ||          |          ||          |          ||
+ | tee    ||   yes    |   yes    ||   yes    |    no    || overwrite
+ | tee -a ||   yes    |   yes    ||   yes    |    no    ||  append
+          ||          |          ||          |          ||
+ n.e. (*) ||   yes    |   yes    ||    no    |   yes    || overwrite
+ n.e. (*) ||   yes    |   yes    ||    no    |   yes    ||  append
+          ||          |          ||          |          ||
+|&amp; tee    ||   yes    |   yes    ||   yes    |   yes    || overwrite
+|&amp; tee -a ||   yes    |   yes    ||   yes    |   yes    ||  append
+
+
+E.g: 
+	command &gt; output.txt
+	command &amp;&gt; output.txt &amp;
+</span></code></pre>
+<h2 id="what-do-the-fields-in-ls-al-output-mean"><a class="zola-anchor" href="#what-do-the-fields-in-ls-al-output-mean" aria-label="Anchor link for: what-do-the-fields-in-ls-al-output-mean">What do the fields in ls -al output mean</a></h2>
+<pre class="z-code"><code><span class="z-text z-plain">-rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
+?UUUGGGOOOS   00  UUUUUU GGGGGG ####    ^-- date stamp and file name are obvious ;-)
+^ ^  ^  ^ ^    ^      ^      ^    ^
+| |  |  | |    |      |      |    \--- File Size
+| |  |  | |    |      |      \-------- Group Name (for example, Users, Administrators, etc)
+| |  |  | |    |      \--------------- Owner Acct
+| |  |  | |    \---------------------- Link count (what constitutes a &quot;link&quot; here varies)
+| |  |  | \--------------------------- Alternative Access (blank means none defined, anything else varies)
+| \--\--\----------------------------- Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
+\------------------------------------- File type flag
+</span></code></pre>
+<h2 id="user-group"><a class="zola-anchor" href="#user-group" aria-label="Anchor link for: user-group">User, group</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Adding/Remove a user to a group:</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> adduser user group</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> deluser user group</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">groups</span></span><span class="z-meta z-function-call z-arguments z-shell"> USERNAME 	<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> To show groups with spec user</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">groups 				<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> show all groups</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> list all users with their UID</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">awk</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>F</span>: <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>/\/home/ {printf &quot;%s:%s\n&quot;,$1,$3}<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> /etc/passwd</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Add user with specific user ID</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> useradd sambausr<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>u</span> 1003 		</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Add user without user ID</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> adduser ldtuyen</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> usermod<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>aG</span> sudo ldtuyen</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Create default home directory for existing user in terminal						</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> mkhomedir_helper username 						</span>
+</span></code></pre>
+<h2 id="vim"><a class="zola-anchor" href="#vim" aria-label="Anchor link for: vim">Vim</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> vi <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.bashrc</span>
+<span class="z-meta z-function-call z-shell"><span class="z-storage z-modifier z-shell">export</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">TERM</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">xterm-256color</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> vim <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.vimrc</span>
+
+<span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">TERM</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> == <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>xterm-256color<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+  <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-set z-shell">set</span></span><span class="z-meta z-function-call z-arguments z-shell"> t_Co=256</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">endif</span></span>
+
+<span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">has</span></span><span class="z-meta z-function-call z-arguments z-shell">(<span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>gui_running<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span><span class="z-meta z-function-call z-shell"></span>)
+	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-set z-shell">set</span></span><span class="z-meta z-function-call z-arguments z-shell"> background=light</span>
+<span class="z-keyword z-control z-conditional z-else z-shell">else</span>
+	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-set z-shell">set</span></span><span class="z-meta z-function-call z-arguments z-shell"> background=dark</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">endif</span></span>
+</span></code></pre>
+<h2 id="grub"><a class="zola-anchor" href="#grub" aria-label="Anchor link for: grub">Grub</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> grep menuentry /boot/grub/grub.cfg</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> sudo vi /etc/default/grub</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Start from 0</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">GRUB_DEFAULT</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">3</span> 
+<span class="z-variable z-other z-readwrite z-assignment z-shell">GRUB_TIMEOUT</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">3</span> 
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> sudo update-grub</span>
+</span></code></pre>
+<h2 id="nginx"><a class="zola-anchor" href="#nginx" aria-label="Anchor link for: nginx">nginx</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">nginx</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>t</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> /etc/nginx/nginx.conf</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> tail<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>n</span> 20 /var/log/nginx/error.log</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> status nginx.service</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> restart nginx.service</span>
+</span></code></pre>
+<h2 id="enable-ip-forwarding-between-interfaces"><a class="zola-anchor" href="#enable-ip-forwarding-between-interfaces" aria-label="Anchor link for: enable-ip-forwarding-between-interfaces">Enable IP forwarding between interfaces</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable IP Forwarding on the fly</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">---------------------------------------</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sysctl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>w</span> net.ipv4.ip_forward=1</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> OR</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> /proc/sys/net/ipv4/ip_forward</span>
+
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Permanent setting using /etc/sysctl.conf</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">---------------------------------------</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cat</span></span><span class="z-meta z-function-call z-arguments z-shell"> /etc/sysctl.conf</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[...]</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">net.ipv4.ip_forward</span></span><span class="z-meta z-function-call z-arguments z-shell"> = 1</span>
+</span></code></pre>
+<h2 id="kvm"><a class="zola-anchor" href="#kvm" aria-label="Anchor link for: kvm">KVM</a></h2>
+<ul>
+<li>Install</li>
+</ul>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> adduser ldtuyen libvirtd</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> virsh<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>c</span> qemu:///system list</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">reboot</span></span>
+</span></code></pre>
+<ul>
+<li>Enable remote desktop via SSH</li>
+</ul>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Window &gt; Install Xming from: http://sourceforge.net/projects/xming.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable Remote/X11 forwarding</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> SecureCRT: Session Option &gt; Port Forwarding &gt; Remote/X11 </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Checked Forwarded X11 Packet and Enfore X11 Authen</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sed</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>s/X11Forwarding no/X11Forwarding yes/<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> /etc/ssh/sshd_config </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">service</span></span><span class="z-meta z-function-call z-arguments z-shell"> sshd restart</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virt-manager</span></span>
+</span></code></pre>
+<ul>
+<li>List all KVM</li>
+</ul>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> list<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>all</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> start ubuntu16.04</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Domain</span></span><span class="z-meta z-function-call z-arguments z-shell"> ubuntu16.04 started</span>
+</span></code></pre>
+<ul>
+<li>Clone a machine</li>
+</ul>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> virt-clone<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>original</span> ubuntu-box1<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>auto-clone</span></span>
+</span></code></pre>
+<ul>
+<li>Correct way to move kvm vm</li>
+</ul>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> copy the VM&#39;s disks to the same dir on dest host</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> /var/lib/libvirt/images</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> copy this xml to the dest host</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> dumpxml win7 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> win7.xml</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> copy xml file and import configuration on the dest host</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> define win7.xml</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> If the disk location differs, you need to edit the xml&#39;s devices/disk node </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> to point to the image on the destination host</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> If the VM is attached to custom defined networks, </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> you&#39;ll need to either edit them out of the xml on the destination host </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> or redefine them as well </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-dumpxml <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> netxml.xml </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-define netxml.xml </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-start NETNAME </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">virsh</span></span><span class="z-meta z-function-call z-arguments z-shell"> net-autostart NETNAME</span>
+</span></code></pre>
+<ul>
+<li>
+<p>Share network on kvm</p>
+</li>
+<li>
+<p><code>br0</code> work as a swith</p>
+</li>
+<li>
+<p><code>eno1</code> is only physical port</p>
+</li>
+<li>
+<p>any machine which use <code>br0</code> network will see <code>eno1</code></p>
+</li>
+</ul>
+<pre class="z-code"><code><span class="z-text z-plain">  +---------+    +---------+
+  |  VM1    |    |   VM2   |
+  |         |    |         |
+  |         |    |         |
+  +----+----+    +---+-----+
+       |             |
++----------------------------------------+
+|      |             |                   |
+|      |             |       Host machine|
+|      |             |                   |
+|   +--+-------------+----------+        |
+|   |br0 (switch)               |        |
+|   +---------------------------+        |
+|                        |---|           |
++----------------------------------------+
+                           |
+                           |eno1
+                           |
+                           +
+</span></code></pre>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; On boot</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">/etc/network/interfaces</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">auto</span></span><span class="z-meta z-function-call z-arguments z-shell"> br0</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iface</span></span><span class="z-meta z-function-call z-arguments z-shell"> br0 inet static</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">address</span></span><span class="z-meta z-function-call z-arguments z-shell"> 172.16.10.2</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">netmask</span></span><span class="z-meta z-function-call z-arguments z-shell"> 255.255.255.0</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">network</span></span><span class="z-meta z-function-call z-arguments z-shell"> 172.16.10.0</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">broadcast</span></span><span class="z-meta z-function-call z-arguments z-shell"> 172.16.10.255</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gateway</span></span><span class="z-meta z-function-call z-arguments z-shell"> 192.168.1.1</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bridge_ports</span></span><span class="z-meta z-function-call z-arguments z-shell"> eno1</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bridge_stp</span></span><span class="z-meta z-function-call z-arguments z-shell"> on</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bridge_maxwait</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">up</span></span><span class="z-meta z-function-call z-arguments z-shell"> ip route add 10.0.0.0/24 via 172.16.10.5</span>
+      <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">up</span></span><span class="z-meta z-function-call z-arguments z-shell"> ip route add 10.10.10.0/24 via 172.16.10.25</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iface</span></span><span class="z-meta z-function-call z-arguments z-shell"> br0 inet6 static</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">address</span></span><span class="z-meta z-function-call z-arguments z-shell"> 3001::20</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">netmask</span></span><span class="z-meta z-function-call z-arguments z-shell"> 64</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gateway</span></span><span class="z-meta z-function-call z-arguments z-shell"> fe80::1</span>
+        <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">autoconf</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; Manually</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://help.ubuntu.com/community/NetworkConnectionBridge</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ifconfig</span></span><span class="z-meta z-function-call z-arguments z-shell"> enx00e04c68014a</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> enx00e04c68014a Link encap:Ethernet  HWaddr 00:e0:4c:ff:ff:ff  </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">           inet addr:192.168.0.17  Bcast:192.168.0.255  Mask:255.255.255.0</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">           inet6 addr: fe80::e782:ffff:ffff:ffff/64 Scope:Link</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ip</span></span><span class="z-meta z-function-call z-arguments z-shell"> addr flush dev enx00e04c68014a</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ip</span></span><span class="z-meta z-function-call z-arguments z-shell"> addr flush dev <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>interface <span class="z-constant z-numeric z-integer z-decimal z-file-descriptor z-shell">2</span><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> brctl addbr br0</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> brctl addif br0 enx00e04c68014a <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>interface <span class="z-constant z-numeric z-integer z-decimal z-file-descriptor z-shell">2</span><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ip link set dev br0 up</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dhclient br0<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>v</span></span>
+</span></code></pre>
+<h2 id="fast-copy-copy-certain-file-extension-file-size-capacity"><a class="zola-anchor" href="#fast-copy-copy-certain-file-extension-file-size-capacity" aria-label="Anchor link for: fast-copy-copy-certain-file-extension-file-size-capacity">Fast copy, copy certain file extension, file size, capacity</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tar</span></span><span class="z-meta z-function-call z-arguments z-shell"> c sourceDirectory</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pv</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tar</span></span><span class="z-meta z-function-call z-arguments z-shell"> x<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>C</span> destinationDirectory</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tar</span></span><span class="z-meta z-function-call z-arguments z-shell"> cf - sourceDirectory</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pv</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-punctuation z-definition z-compound z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> backup</span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tar</span></span><span class="z-meta z-function-call z-arguments z-shell"> xvf -</span><span class="z-punctuation z-definition z-compound z-end z-shell">)</span>
+</span></code></pre>
+<h2 id="java-jre-jdk"><a class="zola-anchor" href="#java-jre-jdk" aria-label="Anchor link for: java-jre-jdk">Java, JRE, JDK</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> add-apt-repository ppa:openjdk-r/ppa <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span></span><span class="z-keyword z-operator z-logical z-and z-shell">&amp;&amp;</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get update<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span></span><span class="z-keyword z-operator z-logical z-and z-shell">&amp;&amp;</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span> openjdk-11-jdk</span>
+</span></code></pre>
+<h2 id="remove-ppa-linux-repo-list"><a class="zola-anchor" href="#remove-ppa-linux-repo-list" aria-label="Anchor link for: remove-ppa-linux-repo-list">Remove PPA (Linux repo list)</a></h2>
+<p><a rel="noopener" target="_blank" href="https://askubuntu.com/a/173209">How can PPAs be removed?</a></p>
+<p>Alternately, as ppas are stored in /etc/apt/sources.list.d you can find the one you want to remove by entering:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ls</span></span><span class="z-meta z-function-call z-arguments z-shell"> /etc/apt/sources.list.d</span>
+</span></code></pre>
+<p>Then when you have noted the name of that offending ppa (e.g. myppa.list), you can enter:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> rm<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> /etc/apt/sources.list.d/myppa.list</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> For example:</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> rm<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> /etc/apt/sources.list.d/inkscape_dev-ubuntu-stable-hirsute.list</span>
+</span></code></pre>
+<h2 id="inkscape"><a class="zola-anchor" href="#inkscape" aria-label="Anchor link for: inkscape">inkscape</a></h2>
+<ul>
+<li><a rel="noopener" target="_blank" href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Paths-Combining.html">Path operations</a></li>
+</ul>
+<h2 id="screen-gnu"><a class="zola-anchor" href="#screen-gnu" aria-label="Anchor link for: screen-gnu">screen GNU</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; sending text input to a detached screen</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://unix.stackexchange.com/a/13961/265821</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> /scripts/sync_code.sh</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">screen</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>S</span> sync_code<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> 0<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>X</span> stuff <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>scripts/sync_code.sh &amp; ^M<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+
+</span></code></pre>
+<h2 id="rename"><a class="zola-anchor" href="#rename" aria-label="Anchor link for: rename">Rename</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Rename all *.txt to *.text</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-keyword z-control z-loop z-for z-shell">for</span><span class="z-meta z-group z-for z-shell"> f <span class="z-keyword z-control z-in z-shell">in</span> <span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span>.php</span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-keyword z-control z-loop z-do z-shell">do</span> 
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-end-of-options z-shell"> --</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">f</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">f<span class="z-keyword z-operator z-expansion z-shell">%</span></span></span><span class="z-meta z-group z-expansion z-parameter z-shell">.txt</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span>.html<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+
+<span class="z-keyword z-control z-loop z-end z-shell">done</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Rename old string to new string</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-keyword z-control z-loop z-for z-shell">for</span><span class="z-meta z-group z-for z-shell"> f <span class="z-keyword z-control z-in z-shell">in</span> <span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-keyword z-control z-loop z-do z-shell">do</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">f</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">f</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-keyword z-operator z-substitution z-shell">/</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-parameter z-switch z-shell">/</span></span><span class="z-meta z-group z-expansion z-parameter z-shell">old_string<span class="z-keyword z-operator z-substitution z-shell">/</span></span><span class="z-meta z-group z-expansion z-parameter z-shell">new_string</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span><span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-keyword z-control z-loop z-end z-shell">done</span>
+
+</span></code></pre>
+<h2 id="curl"><a class="zola-anchor" href="#curl" aria-label="Anchor link for: curl">curl</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://www.keycdn.com/support/popular-curl-examples</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>request</span> DELETE https://yourwebsite.com/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>request</span> DEBUG http://192.168.0.1</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>request</span> POST https://yourwebsite.com/</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 5) Generating Additional Information</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>H</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>X-Header: Value<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> https://www.keycdn.com/<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>v</span> </span>
+</span></code></pre>
+<h2 id="tcpdump"><a class="zola-anchor" href="#tcpdump" aria-label="Anchor link for: tcpdump">tcpdump</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcpdump</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> wanbridge<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>vvvv</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> 0 <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>(port 547 or port 546)<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcpdump</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> em0<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>vvvv</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> 0 <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>(port 547 or port 546)<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • unreachable: 1</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • too-big: 2</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • time-exceeded: 3</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • echo-request: 128</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • echo-reply: 129</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • router-solicitation: 133</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • router-advertisement: 134</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • neighbor-solicitation: 135</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> • neighbor-advertisement: 136</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcpdump</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> wanbridge<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>vvvv</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> 0 <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>icmp6 &amp;&amp; ip6[40] == 134<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcpdump</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> gif0<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>vvvv</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> 0 <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>icmp6 &amp;&amp; ip6 host 2001::fe<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> filter vlan 100</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> tcpdump<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> br0<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>n</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>e</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>(vlan 100)<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"># Show full packet</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tcpdump</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> wanbridge<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>en</span> icmp<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>vv</span></span>
+
+</span></code></pre>
+<h2 id="coredump"><a class="zola-anchor" href="#coredump" aria-label="Anchor link for: coredump">coredump</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> cat /proc/sys/kernel/core_pattern</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">core</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; The core dump is written in the current directory of the process </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &gt;&gt; at the time of the crash.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> to enable core dumps</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-ulimit z-shell">ulimit</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">-</span>c</span> unlimited </span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> where $pid is the process ID of the process. </span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> That link will point to the current working directory of that process.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ls</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>l</span> /proc/186/cwd </span>
+
+
+</span></code></pre>
+<h2 id="python"><a class="zola-anchor" href="#python" aria-label="Anchor link for: python">python</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> find python package command installed by pip</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> python3<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">  -</span>m</span> site<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>user-base</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">/home/ldtuyen/.local</span></span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">/home/ldtuyen/.local/bin/cld</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>help</span></span>
+</span></code></pre>
+<h2 id="regx"><a class="zola-anchor" href="#regx" aria-label="Anchor link for: regx">regx</a></h2>
+<pre data-lang="py" class="language-py z-code"><code class="language-py" data-lang="py"><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Find string between two string
+</span><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> https://regexr.com/397dr
+</span><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> href=&quot;/uploads/file/PDF Week 1 Day 1a.pdf&quot; align
+</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">patent</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">uploads(.*?)<span class="z-constant z-character z-escape z-python">\&quot;</span><span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span></code></pre>
+<h2 id="resize-image-keep-ratio"><a class="zola-anchor" href="#resize-image-keep-ratio" aria-label="Anchor link for: resize-image-keep-ratio">Resize image keep ratio</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://askubuntu.com/a/135489</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 1654x is width pixel</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> need to install</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install imagemagick</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>*.png[1654x]<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> resized<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-constant z-numeric z-integer z-decimal z-job z-shell">03</span></span>d.png</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> you can maintain the filename by using -set option. Ex:</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>images/*.jpg[250x]<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>set</span> filename:base <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>%[basename]<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>new_%[filename:base].jpg<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+</span></code></pre>
+<h2 id="crop-cut-image-to-one-center-part"><a class="zola-anchor" href="#crop-cut-image-to-one-center-part" aria-label="Anchor link for: crop-cut-image-to-one-center-part">Crop, cut image to one center part</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://stackoverflow.com/a/41403898</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> input.png<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>gravity</span> center<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>crop</span> WxH+0+0 +repage output.png</span>
+</span></code></pre>
+<h2 id="image-to-pdf"><a class="zola-anchor" href="#image-to-pdf" aria-label="Anchor link for: image-to-pdf">image to pdf</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Need to install</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install imagemagick</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Reduce quality if the output file is too big</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>*.{png,jpeg}<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>quality</span> 100 outfile.pdf</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Keep same image size</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://unix.stackexchange.com/a/74976</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>resized*.{png}<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>quality</span> 100<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>units</span> PixelsPerInch<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>density</span> 150x150 multipage.pdf</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> convert images to pdf: How to make PDF Pages same size</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://unix.stackexchange.com/a/20057</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">i</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">150</span><span class="z-meta z-function-call z-shell"></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">convert</span></span><span class="z-meta z-function-call z-arguments z-shell"> a.png b.png<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>compress</span> jpeg<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>quality</span> 70 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">      -</span>density</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">i</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span>x<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">i</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>units</span> PixelsPerInch <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">      -</span>resize</span> <span class="z-meta z-group z-expansion z-arithmetic z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">((</span>i<span class="z-keyword z-operator z-arithmetic z-shell">*</span><span class="z-constant z-numeric z-integer z-decimal z-shell">827</span><span class="z-keyword z-operator z-arithmetic z-shell">/</span><span class="z-constant z-numeric z-integer z-decimal z-shell">100</span><span class="z-punctuation z-section z-parens z-end z-shell">))</span></span>x<span class="z-meta z-group z-expansion z-arithmetic z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">((</span>i<span class="z-keyword z-operator z-arithmetic z-shell">*</span><span class="z-constant z-numeric z-integer z-decimal z-shell">1169</span><span class="z-keyword z-operator z-arithmetic z-shell">/</span><span class="z-constant z-numeric z-integer z-decimal z-shell">100</span><span class="z-punctuation z-section z-parens z-end z-shell">))</span></span> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">      -</span>repage</span> <span class="z-meta z-group z-expansion z-arithmetic z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">((</span>i<span class="z-keyword z-operator z-arithmetic z-shell">*</span><span class="z-constant z-numeric z-integer z-decimal z-shell">827</span><span class="z-keyword z-operator z-arithmetic z-shell">/</span><span class="z-constant z-numeric z-integer z-decimal z-shell">100</span><span class="z-punctuation z-section z-parens z-end z-shell">))</span></span>x<span class="z-meta z-group z-expansion z-arithmetic z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">((</span>i<span class="z-keyword z-operator z-arithmetic z-shell">*</span><span class="z-constant z-numeric z-integer z-decimal z-shell">1169</span><span class="z-keyword z-operator z-arithmetic z-shell">/</span><span class="z-constant z-numeric z-integer z-decimal z-shell">100</span><span class="z-punctuation z-section z-parens z-end z-shell">))</span></span> multipage.pdf</span>
+
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Fix error: convert-im6.q16: attempt to perform an operation not allowed by the security policy `PDF&#39; @ error/constitute.c/IsCoderAuthorized/408.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> vi /etc/ImageMagick-6/policy.xml</span>
+
+  <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>policy <span class="z-variable z-other z-readwrite z-assignment z-shell">domain</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>coder<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-variable z-other z-readwrite z-assignment z-shell">rights</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>read | write<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-variable z-other z-readwrite z-assignment z-shell">pattern</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>PDF<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">/</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>
+</span><span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>/policymap<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>
+
+</span></code></pre>
+<h2 id="remove-pdf-secure-password"><a class="zola-anchor" href="#remove-pdf-secure-password" aria-label="Anchor link for: remove-pdf-secure-password">Remove pdf secure (password)</a></h2>
+<p>https://superuser.com/a/584710</p>
+<p>Assuming it's simply a 'rights' (owner) password that restricts things like editing, printing, and copying (i.e. the password does not need to be entered to open the file) the following will remove the restrictions:</p>
+<ol>
+<li>Grab https://github.com/qpdf/qpdf/releases</li>
+<li>Unzip/Install and navigate to the bin folder that holds qpdf.exe (or similar for your platform)</li>
+<li>Place the PDF you wish to work on in the same folder</li>
+<li>Run: <code>qpdf --decrypt InputFile.pdf OutputFile.pdf</code> (use &quot;s if the file name has spaces).</li>
+<li>Do what you like with the OutputFile.</li>
+</ol>
+<p>If your PDF file is user password protected, change step 4 to <code>qpdf --decrypt --password=yourpassword InputFile OutputFile</code></p>
+<h2 id="shrinkpdf-shrink-pdf-files-with-ghostscript-reduce-pdf-size"><a class="zola-anchor" href="#shrinkpdf-shrink-pdf-files-with-ghostscript-reduce-pdf-size" aria-label="Anchor link for: shrinkpdf-shrink-pdf-files-with-ghostscript-reduce-pdf-size">Shrinkpdf: shrink PDF files with Ghostscript (reduce pdf size)</a></h2>
+<p><a rel="noopener" target="_blank" href="https://askubuntu.com/a/113547">How can I reduce the file size of a scanned PDF file?</a></p>
+<p>Method 1:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">http://www.alfredklomp.com/programming/shrinkpdf/</span></span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 150 dpi</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">./shrinkpdf.sh</span></span><span class="z-meta z-function-call z-arguments z-shell"> file.pdf out.pdf 150</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 120 dpi</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">./shrinkpdf.sh</span></span><span class="z-meta z-function-call z-arguments z-shell"> file.pdf out.pdf 120</span>
+
+</span></code></pre>
+<p>Method 2:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">I</span></span><span class="z-meta z-function-call z-arguments z-shell"> use LibreOffice Draw to open the pdf.</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">I</span></span><span class="z-meta z-function-call z-arguments z-shell"> then <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>export as pdf<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">And</span></span><span class="z-meta z-function-call z-arguments z-shell"> set <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>jpeg compression quality<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> to 10<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span></span> and <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>image resolution<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> to 150 dpi</span>
+
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">my-document.pdf</span></span><span class="z-meta z-function-call z-arguments z-shell"> from 36 MB to 2.6 MB</span>
+</span></code></pre>
+<h2 id="how-to-resize-page-to-fit-drawing-contents-in-open-office-libre-office-draw"><a class="zola-anchor" href="#how-to-resize-page-to-fit-drawing-contents-in-open-office-libre-office-draw" aria-label="Anchor link for: how-to-resize-page-to-fit-drawing-contents-in-open-office-libre-office-draw">How to resize page to fit drawing contents in Open office/Libre Office Draw</a></h2>
+<ol>
+<li>Press <code>Ctrl-A</code> to select everything.</li>
+<li>Under <code>Format&gt;Position and Size</code> you can see the exact size of the selection. It's helpful to copy the value of Width and Height to an editor (or a piece of paper). Click Cancel.</li>
+<li>Open <code>Format&gt;Page</code>: Set Width and Height according to the size of the selection. Set all Margins to zero. Click OK.</li>
+<li>Open <code>Format&gt;Position and Size</code> again: Set both Position X an Position Y to zero. </li>
+<li>Click OK.</li>
+</ol>
+<h2 id="edit-pdf-on-linux"><a class="zola-anchor" href="#edit-pdf-on-linux" aria-label="Anchor link for: edit-pdf-on-linux">Edit pdf on Linux</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Libre</span></span><span class="z-meta z-function-call z-arguments z-shell"> Office 7.1 (Draw</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> Open <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> PDF <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">File</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">You</span></span><span class="z-meta z-function-call z-arguments z-shell"> also need to show panel: View <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> Page Pane</span>
+
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> DEBS/</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> dpkg<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>i</span> <span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span>.deb</span>
+</span></code></pre>
+<h2 id="extract-img-from-pdf"><a class="zola-anchor" href="#extract-img-from-pdf" aria-label="Anchor link for: extract-img-from-pdf">extract-img-from-pdf</a></h2>
+<pre data-lang="python" class="language-python z-code"><code class="language-python" data-lang="python"><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> https://stackoverflow.com/a/47877930
+</span>
+<span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> need to install library
+</span>
+<span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> pip3 install --upgrade pip
+</span><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> pip3 install PyMuPDF
+</span>
+<span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> python3 extract-img-from-pdf.py
+</span><span class="z-meta z-statement z-import z-python"><span class="z-keyword z-control z-import z-python">import</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">fitz</span></span></span>
+<span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">doc</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">fitz</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">open</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">file.pdf<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+<span class="z-meta z-statement z-loop z-for z-python"><span class="z-keyword z-control z-loop z-for z-python">for</span> <span class="z-meta z-generic-name z-python">i</span> <span class="z-keyword z-control z-loop z-for z-in z-python">in</span></span><span class="z-meta z-statement z-loop z-for z-python"> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-support z-function z-builtin z-python">range</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-support z-function z-builtin z-python">len</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">doc</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span></span><span class="z-meta z-statement z-loop z-for z-python"><span class="z-punctuation z-section z-block z-loop z-for z-python">:</span></span>
+    <span class="z-meta z-statement z-loop z-for z-python"><span class="z-keyword z-control z-loop z-for z-python">for</span> <span class="z-meta z-generic-name z-python">img</span> <span class="z-keyword z-control z-loop z-for z-in z-python">in</span></span><span class="z-meta z-statement z-loop z-for z-python"> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">doc</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">getPageImageList</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">i</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span></span><span class="z-meta z-statement z-loop z-for z-python"><span class="z-punctuation z-section z-block z-loop z-for z-python">:</span></span>
+        <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">xref</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-item-access z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">img</span></span></span><span class="z-meta z-item-access z-python"><span class="z-punctuation z-section z-brackets z-begin z-python">[</span></span><span class="z-meta z-item-access z-arguments z-python"><span class="z-constant z-numeric z-integer z-decimal z-python">0</span></span><span class="z-meta z-item-access z-python"><span class="z-punctuation z-section z-brackets z-end z-python">]</span></span>
+        <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">fitz</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Pixmap</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">doc</span></span><span class="z-punctuation z-separator z-arguments z-python">,</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">xref</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+        <span class="z-meta z-statement z-conditional z-if z-python"><span class="z-keyword z-control z-conditional z-if z-python">if</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">n</span></span> <span class="z-keyword z-operator z-comparison z-python">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-python">5</span><span class="z-punctuation z-section z-block z-conditional z-if z-python">:</span></span>       <span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> this is GRAY or RGB
+</span>            <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">writePNG</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">p<span class="z-constant z-other z-placeholder z-python">%s</span>-<span class="z-constant z-other z-placeholder z-python">%s</span>.png<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span> <span class="z-keyword z-operator z-arithmetic z-python">%</span> <span class="z-meta z-sequence z-tuple z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">i</span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">xref</span></span><span class="z-punctuation z-section z-sequence z-end z-python">)</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+        <span class="z-meta z-statement z-conditional z-else z-python"><span class="z-keyword z-control z-conditional z-else z-python">else</span><span class="z-punctuation z-section z-block z-conditional z-else z-python">:</span></span>               <span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> CMYK: convert to RGB first
+</span>            <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix1</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">fitz</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Pixmap</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">fitz</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">csRGB</span></span><span class="z-punctuation z-separator z-arguments z-python">,</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+            <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix1</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">writePNG</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">p<span class="z-constant z-other z-placeholder z-python">%s</span>-<span class="z-constant z-other z-placeholder z-python">%s</span>.png<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span> <span class="z-keyword z-operator z-arithmetic z-python">%</span> <span class="z-meta z-sequence z-tuple z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">i</span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">xref</span></span><span class="z-punctuation z-section z-sequence z-end z-python">)</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+            <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix1</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-constant z-language z-python">None</span>
+        <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">pix</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-constant z-language z-python">None</span>
+</span></code></pre>
+<h2 id="merge-convert-multiple-pdf-files-into-one-pdf"><a class="zola-anchor" href="#merge-convert-multiple-pdf-files-into-one-pdf" aria-label="Anchor link for: merge-convert-multiple-pdf-files-into-one-pdf">Merge / convert multiple PDF files into one PDF</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://stackoverflow.com/a/19358402</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gs</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>dBATCH</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>dNOPAUSE</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>sDEVICE</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>pdfwrite<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>sOutputFile</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>merged.pdf mine1.pdf mine2.pdf</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> size(output) = size(file1) + size(file2)</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pdftk</span></span><span class="z-meta z-function-call z-arguments z-shell"> file1.pdf file2.pdf cat output output.pdf</span>
+</span></code></pre>
+<h2 id="remove-pdf-title-file-metadate"><a class="zola-anchor" href="#remove-pdf-title-file-metadate" aria-label="Anchor link for: remove-pdf-title-file-metadate">Remove pdf title, file metadate</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install libimage-exiftool-perl</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://askubuntu.com/a/391142</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">exiftool</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>all</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span> inputfile</span>
+
+</span></code></pre>
+<h2 id="split-one-pdf-page-into-two-pages"><a class="zola-anchor" href="#split-one-pdf-page-into-two-pages" aria-label="Anchor link for: split-one-pdf-page-into-two-pages">Split one pdf page into two pages</a></h2>
+<p>E.g. <img src="https://circuitlover.com/linux-configs/images/split-onepage-pdf.png" alt="" /></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://askubuntu.com/a/698307</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install mupdf-tools</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mutool</span></span><span class="z-meta z-function-call z-arguments z-shell"> poster<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>x</span> 2 input.pdf output.pdf</span>
+</span></code></pre>
+<h2 id="make-a-sound-once-process-is-complete"><a class="zola-anchor" href="#make-a-sound-once-process-is-complete" aria-label="Anchor link for: make-a-sound-once-process-is-complete">Make a sound once process is complete</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">make</span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">spd-say</span></span><span class="z-meta z-function-call z-arguments z-shell"> done</span>
+</span></code></pre>
+<h2 id="npm"><a class="zola-anchor" href="#npm" aria-label="Anchor link for: npm">NPM</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> https://github.com/nodesource/distributions</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> install Node.js v10.x:</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Using Ubuntu</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>sL</span> https://deb.nodesource.com/setup_10.x</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>E</span> bash -</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get install<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span> nodejs</span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Using Debian, as root</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">curl</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>sL</span> https://deb.nodesource.com/setup_10.x</span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">bash</span></span><span class="z-meta z-function-call z-arguments z-shell"> -</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">apt-get</span></span><span class="z-meta z-function-call z-arguments z-shell"> install<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span> nodejs</span>
+
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">clean slate install.</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rm</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>rf</span> node_modules</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">npm</span></span><span class="z-meta z-function-call z-arguments z-shell"> cache clean </span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">npm</span></span><span class="z-meta z-function-call z-arguments z-shell"> install node-sass</span>
+</span></code></pre>
+<h2 id="find-usb-version-is-using-on-some-port"><a class="zola-anchor" href="#find-usb-version-is-using-on-some-port" aria-label="Anchor link for: find-usb-version-is-using-on-some-port">Find USB version is using on some port</a></h2>
+<pre data-lang="markdown" class="language-markdown z-code"><code class="language-markdown" data-lang="markdown"><span class="z-text z-html z-markdown"><span class="z-meta z-block-level z-markdown"><span class="z-markup z-heading z-1 z-markdown"><span class="z-punctuation z-definition z-heading z-begin z-markdown">#</span> </span><span class="z-markup z-heading z-1 z-markdown"><span class="z-entity z-name z-section z-markdown">Method 1</span><span class="z-meta z-whitespace z-newline z-markdown">
+</span></span></span><span class="z-meta z-paragraph z-markdown">sudo apt-get install  lshw
+sudo lshw
+
+</span><span class="z-meta z-block-level z-markdown"><span class="z-markup z-raw z-block z-markdown">    USB 2.0 will use the ehci_hcd module
+</span></span><span class="z-meta z-block-level z-markdown"><span class="z-markup z-raw z-block z-markdown">    USB 1.x will use either ohci_hcd or uhci_hcd modules.
+</span></span>
+
+<span class="z-meta z-paragraph z-markdown"><span class="z-markup z-italic z-markdown"><span class="z-punctuation z-definition z-italic z-begin z-markdown">*</span>-usb:0
+description: Video
+product: Show-me-webcam Pi Webcam
+vendor: Show-me-webcam Project
+physical id: 3
+bus info: usb@1:1.3
+version: 1.00
+serial: 100000000d2386db
+<span class="z-markup z-bold z-markdown"><span class="z-punctuation z-definition z-bold z-begin z-markdown">**</span>capabilities: usb-2.00<span class="z-punctuation z-definition z-bold z-end z-markdown">**</span></span>
+configuration: <span class="z-markup z-bold z-markdown"><span class="z-punctuation z-definition z-bold z-begin z-markdown">**</span>driver=cdc_acm<span class="z-punctuation z-definition z-bold z-end z-markdown">**</span></span> maxpower=500mA speed=480Mbit/s
+*-usb:1
+description: Generic USB device
+product: USB-Serial Controller
+vendor: Prolific Technology Inc.
+physical id: 4
+bus info: usb@1:1.4
+version: 3.00
+<span class="z-markup z-bold z-markdown"><span class="z-punctuation z-definition z-bold z-begin z-markdown">**</span>capabilities: usb-1.10<span class="z-punctuation z-definition z-bold z-end z-markdown">**</span></span>
+configuration: driver=pl2303 maxpower=100mA speed=12Mbit/s
+<span class="z-invalid z-illegal z-non-terminated z-bold-italic z-markdown">
+</span></span></span><span class="z-meta z-block-level z-markdown"><span class="z-markup z-heading z-2 z-markdown"><span class="z-punctuation z-definition z-heading z-begin z-markdown">##</span> </span><span class="z-markup z-heading z-2 z-markdown"><span class="z-entity z-name z-section z-markdown">Method 2</span><span class="z-meta z-whitespace z-newline z-markdown">
+</span></span></span><span class="z-meta z-block-level z-markdown"><span class="z-meta z-table z-header z-markdown-gfm">$ sudo dmesg <span class="z-punctuation z-separator z-table-cell z-markdown">|</span> grep usb
+</span><span class="z-meta z-table z-header-separator z-markdown-gfm">[ 2478.011868] usb 1<span class="z-punctuation z-section z-table-header z-markdown">-</span>1.3<span class="z-punctuation z-definition z-table-cell-alignment z-markdown">:</span> device descriptor read/64, error <span class="z-punctuation z-section z-table-header z-markdown">-</span>71
+</span><span class="z-meta z-table z-markdown-gfm">[ 2484.103738] usb 1-1.3: device descriptor read/64, error -71
+[ 2484.291754] usb 1-1.3: new high-speed USB device number 6 using ehci-pci
+[ 2484.409365] usb 1-1.3: New USB device found, idVendor=1d6b, idProduct=0104, bcdDevice= 1.00
+[ 2484.409370] usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 2484.409373] usb 1-1.3: Product: Show-me-webcam Pi Webcam
+[ 2484.409375] usb 1-1.3: Manufacturer: Show-me-webcam Project
+[ 2484.409378] usb 1-1.3: SerialNumber: 100000000d2386db
+</span></span>
+<span class="z-meta z-paragraph z-markdown">cat /sys/bus/usb/devices/1-1.3/version
+    2.00
+</span></span></code></pre>
+<h2 id="how-to-download-all-dependencies-and-packages-to-directory"><a class="zola-anchor" href="#how-to-download-all-dependencies-and-packages-to-directory" aria-label="Anchor link for: how-to-download-all-dependencies-and-packages-to-directory">How to download all dependencies and packages to directory</a></h2>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Khong phu thuoc vao viec package da duoc cai tren he thong hay chua</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> aptitude  va synaptic thi phu thuoc vao package he thong nen se cho et qua khong dung</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install apt-rdepends</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-get download <span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt-rdepends <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>package<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span></span><span class="z-keyword z-operator z-logical z-pipe z-shell">|</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>v</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>^ <span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span>
+
+</span></code></pre>
+<h3 id="find-package-ubuntu-and-othes-linux-distribute"><a class="zola-anchor" href="#find-package-ubuntu-and-othes-linux-distribute" aria-label="Anchor link for: find-package-ubuntu-and-othes-linux-distribute">Find package Ubuntu and Othes Linux Distribute</a></h3>
+<p><a rel="noopener" target="_blank" href="https://pkgs.org/">pkgs.org/</a></p>
+<h3 id="script-to-ignore-unknow-package"><a class="zola-anchor" href="#script-to-ignore-unknow-package" aria-label="Anchor link for: script-to-ignore-unknow-package">Script to ignore unknow package</a></h3>
+<pre class="z-code"><code><span class="z-text z-plain"># Source: https://superuser.com/questions/1112525/ignore-apt-get-download-errors/1137335#1137335
+#
+# Run: ./getdepends.sh [package name]
+ #!/bin/bash
+ export MAXPARAMETERS=255
+
+ function array_contains_find_index() {
+     local n=$#
+     local i=0
+     local value=${!n}
+
+     for (( i=1; i &lt; n; i++ )) {
+         if [ &quot;${!i}&quot; == &quot;${value}&quot; ]; then
+             echo &quot;REMOVING $i: ${!i} = ${value}&quot;
+             return $i
+         fi
+     }
+     return $MAXPARAMETERS
+ }
+
+ LIST=( $( apt-rdepends $1 | grep -v &quot;^ &quot; ) )
+ echo ${LIST[*]}
+ read -n1 -r -p &quot;... Packages that will be downloaded (Continue or CTRL+C) ...&quot;
+
+ RESULTS=( $( apt-get download ${LIST[*]} |&amp; cut -d&#39; &#39; -f 8 ) )
+ LISTLEN=${#LIST[@]}
+
+ while [ ${#RESULTS[@]} -gt 0 ]; do
+     for (( i=0; i &lt; $LISTLEN; i++ )); do
+         array_contains_find_index ${RESULTS[@]} ${LIST[$i]}
+         ret=$?
+
+         if (( $ret != $MAXPARAMETERS )); then
+             unset LIST[$i]
+         fi
+     done
+
+     FULLRESULTS=$( apt-get download ${LIST[*]} 2&gt;&amp;1  )
+     RESULTS=( $( echo $FULLRESULTS |&amp; cut -d&#39; &#39; -f 11 | sed -r &quot;s/&#39;(.*?):(.*$)/\1/g&quot; ) )
+ done
+
+ apt-get download ${LIST[*]}
+</span></code></pre>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#basic-setup">Basic setup</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#changing-colors-for-user-host-directory-information-in-terminal"><small>- Changing colors for user, host, directory information in terminal</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#for-loop"><small>- For loop</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#ping-show-timeout"><small>- Ping show timeout</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#danish-characters-input"><small>- Danish characters input</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#show-all-process"><small>- Show all process</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#install-open-ssh"><small>- Install Open SSH</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#disable-auto-sleep-16-04"><small>- Disable auto sleep 16.04</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#good-calculator"><small>- Good calculator</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#change-timezone-time-date"><small>- Change Timezone time&#x2F;date</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#find-grep-search"><small>- Find, grep, search</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#view-csv-data-from-the-command-line"><small>- View CSV Data from the Command Line</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#redirect-output-to-file"><small>- Redirect output to file</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#what-do-the-fields-in-ls-al-output-mean"><small>- What do the fields in ls -al output mean</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#user-group"><small>- User, group</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#vim"><small>- Vim</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#grub"><small>- Grub</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#nginx"><small>- nginx</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#enable-ip-forwarding-between-interfaces"><small>- Enable IP forwarding between interfaces</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#kvm"><small>- KVM</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#fast-copy-copy-certain-file-extension-file-size-capacity"><small>- Fast copy, copy certain file extension, file size, capacity</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#java-jre-jdk"><small>- Java, JRE, JDK</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#remove-ppa-linux-repo-list"><small>- Remove PPA (Linux repo list)</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#inkscape"><small>- inkscape</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#screen-gnu"><small>- screen GNU</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#rename"><small>- Rename</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#curl"><small>- curl</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#tcpdump"><small>- tcpdump</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#coredump"><small>- coredump</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#python"><small>- python</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#regx"><small>- regx</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#resize-image-keep-ratio"><small>- Resize image keep ratio</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#crop-cut-image-to-one-center-part"><small>- Crop, cut image to one center part</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#image-to-pdf"><small>- image to pdf</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#remove-pdf-secure-password"><small>- Remove pdf secure (password)</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#shrinkpdf-shrink-pdf-files-with-ghostscript-reduce-pdf-size"><small>- Shrinkpdf: shrink PDF files with Ghostscript (reduce pdf size)</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#how-to-resize-page-to-fit-drawing-contents-in-open-office-libre-office-draw"><small>- How to resize page to fit drawing contents in Open office&#x2F;Libre Office Draw</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#edit-pdf-on-linux"><small>- Edit pdf on Linux</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#extract-img-from-pdf"><small>- extract-img-from-pdf</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#merge-convert-multiple-pdf-files-into-one-pdf"><small>- Merge &#x2F; convert multiple PDF files into one PDF</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#remove-pdf-title-file-metadate"><small>- Remove pdf title, file metadate</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#split-one-pdf-page-into-two-pages"><small>- Split one pdf page into two pages</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#make-a-sound-once-process-is-complete"><small>- Make a sound once process is complete</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#npm"><small>- NPM</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#find-usb-version-is-using-on-some-port"><small>- Find USB version is using on some port</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/linux-configs/#how-to-download-all-dependencies-and-packages-to-directory"><small>- How to download all dependencies and packages to directory</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

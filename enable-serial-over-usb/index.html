@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Serial protocol through USB on Raspberry Pi | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Quick way to enable serial protocol through USB connection." />
+  <link rel="canonical" href="https://circuitlover.com/enable-serial-over-usb/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/enable-serial-over-usb/" />
+  <meta name="twitter:url" content="https://circuitlover.com/enable-serial-over-usb/" />
+  <meta property="og:description" content="Quick way to enable serial protocol through USB connection." />
+  <meta name="twitter:description" content="Quick way to enable serial protocol through USB connection." />
+  <meta property="og:title" content="Serial protocol through USB on Raspberry Pi | CircuitLover" />
+  <meta name="twitter:title" content="Serial protocol through USB on Raspberry Pi | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2022-03-02" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/enable-serial-over-usb/">Serial protocol through USB on Raspberry Pi</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> March 02, 2022<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/raspberry-pi/">Raspberry-Pi</a>] #<a href="https://circuitlover.com/tags/pi-zero/">Pi-Zero</a> </span>
+
+    <h2 id="1-download-raspberry-pi-os"><a class="zola-anchor" href="#1-download-raspberry-pi-os" aria-label="Anchor link for: 1-download-raspberry-pi-os">1. Download Raspberry Pi OS</a></h2>
+<p>I am using the lite version at <a rel="noopener" target="_blank" href="https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2022-01-28/2022-01-28-raspios-bullseye-armhf-lite.zip">2022-01-28-raspios-bullseye-armhf-lite image</a></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cat</span></span><span class="z-meta z-function-call z-arguments z-shell"> /boot/config.txt</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[all]</span></span>
+<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable UART via PIN IO</span><span class="z-comment z-line z-number-sign z-shell">
+</span><span class="z-variable z-other z-readwrite z-assignment z-shell">enable_uart</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">1</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">dtoverlay</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">dwc2</span>
+</span></code></pre>
+<h2 id="2-raspberry-pi-settings"><a class="zola-anchor" href="#2-raspberry-pi-settings" aria-label="Anchor link for: 2-raspberry-pi-settings">2. Raspberry Pi settings</a></h2>
+<p>You need to change <code>/boot/cmdline.txt</code> file as follows.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> cat /boot/cmdline.txt</span>
+<span class="z-variable z-other z-readwrite z-assignment z-shell">console</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">serial0,115200</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">console</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">tty1</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">root</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">PARTUUID=22e47bc0-02</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">rootfstype</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">ext4</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">fsck.repair</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">yes</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rootwait</span></span><span class="z-meta z-function-call z-arguments z-shell"> modules-load=dwc2,g_serial</span>
+</span></code></pre>
+<p>Default username/password: <code>pi/raspberrypi</code>. Entering sudo mode <code>sudo su</code></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> enable getty@ttyGS0.service</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> start getty@ttyGS0.service</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> is-active getty@ttyGS0.service</span>
+</span></code></pre>
+<p>Reboot your Raspberry Pi to apply these settings.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">reboot</span></span>
+</span></code></pre>
+<p>If everything is good, we'll see a new <code>USB Serial Device</code> under <strong>Ports (COM &amp; LPT)</strong> as following picture.</p>
+<p><img src="https://circuitlover.com/enable-serial-over-usb/images/usb-serial-devices-device-maneger.png" alt="usb-serial-devices-device-maneger" /></p>
+<p>Teraterm login via USB.</p>
+<p><img src="https://circuitlover.com/enable-serial-over-usb/images/Tera-term-login-via-USB.png" alt="Teraterm login via USB" /></p>
+<h2 id="3-references"><a class="zola-anchor" href="#3-references" aria-label="Anchor link for: 3-references">3. References</a></h2>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://mike632t.wordpress.com/2020/03/30/configuring-the-pi-zero-usb-port-as-a-serial-device/">Configuring the Pi Zero USB port as a serial device - mike632t</a></li>
+<li><a rel="noopener" target="_blank" href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/serial-gadget">Serial Gadget - adafruit</a></li>
+</ul>
+
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/enable-serial-over-usb/#1-download-raspberry-pi-os">1. Download Raspberry Pi OS</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/enable-serial-over-usb/#2-raspberry-pi-settings">2. Raspberry Pi settings</a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/enable-serial-over-usb/#3-references">3. References</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

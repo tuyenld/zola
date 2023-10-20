@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Migrating from Dokuwiki to Bookstack | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Converting posts in Dokuwiki format to Bookstack format." />
+  <link rel="canonical" href="https://circuitlover.com/dokuwiki-to-bookstack/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/dokuwiki-to-bookstack/" />
+  <meta name="twitter:url" content="https://circuitlover.com/dokuwiki-to-bookstack/" />
+  <meta property="og:description" content="Converting posts in Dokuwiki format to Bookstack format." />
+  <meta name="twitter:description" content="Converting posts in Dokuwiki format to Bookstack format." />
+  <meta property="og:title" content="Migrating from Dokuwiki to Bookstack | CircuitLover" />
+  <meta name="twitter:title" content="Migrating from Dokuwiki to Bookstack | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2023-08-04" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/dokuwiki-to-bookstack/">Migrating from Dokuwiki to Bookstack</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> August 04, 2023<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/server/">Server</a>] #<a href="https://circuitlover.com/tags/dokuwiki/">dokuwiki</a>  #<a href="https://circuitlover.com/tags/bookstack/">Bookstack</a> </span>
+
+    <h1 id="recipe"><a class="zola-anchor" href="#recipe" aria-label="Anchor link for: recipe">Recipe</a></h1>
+<ul>
+<li>Install Dokuwiki extension <a rel="noopener" target="_blank" href="https://www.dokuwiki.org/plugin:siteexport">Site Export Plugin</a></li>
+<li>Manually change image URI on the output html</li>
+<li>Create a new page and upload all images in the output directory from Site Export Plugin.</li>
+</ul>
+<h2 id="install-dokuwiki-extension"><a class="zola-anchor" href="#install-dokuwiki-extension" aria-label="Anchor link for: install-dokuwiki-extension">Install Dokuwiki extension</a></h2>
+<p>Go to the Admin site, then search and install Site Export Plugin.
+<img src="https://circuitlover.com/dokuwiki-to-bookstack/images/install-export-extension.jpg" alt="" /></p>
+<p>After successfully install the plugin, the will be a new menu.
+<img src="https://circuitlover.com/dokuwiki-to-bookstack/images/new-menu.jpg" alt="" /></p>
+<p>Click to <code>Export Page to HTML/PDF</code>, a zip file will be download on your computer. The zip file contains a HTML file which will be modified and a folder has all of the images on the post/page.</p>
+<h2 id="change-images-uri"><a class="zola-anchor" href="#change-images-uri" aria-label="Anchor link for: change-images-uri">Change images URI</a></h2>
+<p>I used Visual Studio Code to manipulate the output html file. You can use your own preference editor.</p>
+<p>Remove unnessary <code>href</code> field
+<img src="https://circuitlover.com/dokuwiki-to-bookstack/images/remove-href.jpg" alt="" /></p>
+<p>Remember to click to <code>.*</code> meaning <strong>Use regular expression</strong>. You can test your own expression at <a rel="noopener" target="_blank" href="https://regexr.com">https://regexr.com</a>. In this case, I used <code>href=&quot;.+detail\.html&quot;</code> to remove the href.</p>
+<p>You would like to change the source of these images as well. Doing it by using replace tool of VSCode. For example,</p>
+<ul>
+<li>find: <code>src=&quot;</code></li>
+<li>replace by: <code>src=&quot;circuitlover.com/upload/</code></li>
+</ul>
+<p><img src="https://circuitlover.com/dokuwiki-to-bookstack/images/change-src.jpg" alt="" /></p>
+<h2 id="create-a-new-page-and-upload-all-images"><a class="zola-anchor" href="#create-a-new-page-and-upload-all-images" aria-label="Anchor link for: create-a-new-page-and-upload-all-images">Create a new page and upload all images</a></h2>
+<p>Change to the source code mode and paste the edited HTML code here.
+<img src="https://circuitlover.com/dokuwiki-to-bookstack/images/paste-html-code.jpg" alt="" /></p>
+<p>Now you can upload images generated by <strong>Site Export Plugin</strong>
+<img src="https://circuitlover.com/dokuwiki-to-bookstack/images/upload-images.jpg" alt="" /></p>
+<h1 id="notes"><a class="zola-anchor" href="#notes" aria-label="Anchor link for: notes">Notes</a></h1>
+<p>Unfortunatelly, there hasn't any official way to convert from Dokuwiki to Bookstack yet. So I need to repeat the whole process  until all the posts/pages are moved to Bookstack.</p>
+
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dokuwiki-to-bookstack/#recipe">Recipe</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dokuwiki-to-bookstack/#install-dokuwiki-extension"><small>- Install Dokuwiki extension</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dokuwiki-to-bookstack/#change-images-uri"><small>- Change images URI</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/dokuwiki-to-bookstack/#create-a-new-page-and-upload-all-images"><small>- Create a new page and upload all images</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/dokuwiki-to-bookstack/#notes">Notes</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

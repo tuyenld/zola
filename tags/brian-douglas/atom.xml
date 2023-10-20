@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - Brian-Douglas</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/brian-douglas/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-04-30T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/brian-douglas/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Classical Control Theory</title>
+		<published>2022-04-30T09:19:42+01:00</published>
+		<updated>2022-04-30T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/classical-control-theory/" type="text/html"/>
+		<id>https://circuitlover.com/classical-control-theory/</id>
+		<content type="html">&lt;h2 id=&quot;1-background&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-background&quot; aria-label=&quot;Anchor link for: 1-background&quot;&gt;1. Background&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-1-step-function&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-step-function&quot; aria-label=&quot;Anchor link for: 1-1-step-function&quot;&gt;1.1. Step function&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;step-function.jpg&quot; alt=&quot;step-function&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+    u(t)={
+        \begin{cases}
+        1&amp;{\text{if }}t \ge 0 \newline  
+        0&amp;{\text{if }}t \lt 0 \newline
+        \end{cases}}
+    \qquad
+    u[n]={
+        \begin{cases}
+        1&amp;{\text{if }}n \ge 0 \newline
+        0&amp;{\text{if }}n \lt 0 \newline
+        \end{cases}}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;h3 id=&quot;1-2-impulse-unit-function-in-descrete-domain&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-impulse-unit-function-in-descrete-domain&quot; aria-label=&quot;Anchor link for: 1-2-impulse-unit-function-in-descrete-domain&quot;&gt;1.2. Impulse unit function (in descrete domain)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;impulse-function.jpg&quot; alt=&quot;Impulse function&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+    &amp; \delta[n]={
+        \begin{cases}
+        1&amp;{\text{if }}n = 0 \newline
+        0&amp;{\text{if }}n \ne 0 \newline
+        \end{cases}} \newline
+    &amp; u[n] = \sum_{k = 0}^{\infty} \delta[n-k] \qquad \text{for step function} \newline
+    &amp; x[n] = \sum_{k = - \infty}^{\infty} x[k] \delta[n-k] \qquad \text{for arbitrary function}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;We will use this relation later on.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-3-linear-and-time-invariance-lti-systems&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-linear-and-time-invariance-lti-systems&quot; aria-label=&quot;Anchor link for: 1-3-linear-and-time-invariance-lti-systems&quot;&gt;1.3. &amp;quot;Linear and Time Invariance&amp;quot; (LTI) systems&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;LTI-system.jpg&quot; alt=&quot;LTI system&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;An example of LTI system.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;LTI-example.jpg&quot; alt=&quot;LTI example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-4-laplace-transformation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-4-laplace-transformation&quot; aria-label=&quot;Anchor link for: 1-4-laplace-transformation&quot;&gt;1.4. Laplace transformation&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;Laplace-transform.png&quot; alt=&quot;Laplace transformation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-transfer-function&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-transfer-function&quot; aria-label=&quot;Anchor link for: 2-transfer-function&quot;&gt;2. Transfer function&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Q. What is impulse response $h[n]$ of a system?&lt;br &#x2F;&gt;
+A. When the input is a impulse unit function $\delta [n]$ (see &amp;quot;Impulse unit function&amp;quot; section above)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;impulse-response.jpg&quot; alt=&quot;impulse responses&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+    &amp; \delta [n]\overset L \longrightarrow h[n] \qquad \text{ OR } \qquad y[n] = T\{x[n]\} \newline
+    &amp; x[n] = \sum_{k = - \infty}^{\infty} x[k] \delta[n-k] \newline
+    &amp; \Rightarrow y[n]=T \{ \sum_{k = - \infty}^{\infty} x[k] \delta[n-k] \} \overset {LTI} \longrightarrow  \sum_{k = - \infty}^{\infty} x[k] L \{\delta[n-k] \} \newline
+    &amp; \Rightarrow y[n] = \sum_{k = - \infty}^{\infty} x[k]  h[n-k] := x[n]*h[n] \quad \text{(This is convolution)}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Now, if we take a &lt;code&gt;Laplace&lt;&#x2F;code&gt; transformation of $y[n]$, we have.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+    &amp; x [n]\overset L \longrightarrow X[s] \newline
+    &amp; h [n]\overset L \longrightarrow H[s] \qquad \text{(where h[n] is the impulse response of the system)} \newline
+    &amp; y [n] = x[n]*h[n] \overset L \longrightarrow Y[s] = X[s] . H[s]
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;We call $H[s]$ is the &lt;strong&gt;transfer function&lt;&#x2F;strong&gt; of the system.&lt;&#x2F;p&gt;
+&lt;p&gt;An example of using impulse response in the system.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;impulse-response-example.jpg&quot; alt=&quot;impulse responses example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;From convolution to transfer function.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;convolution-to-transfer-function.jpg&quot; alt=&quot;convolution-to-transfer-function&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;impulse-response-example-2.jpg&quot; alt=&quot;impulse responses example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Let take a step back to understand this picture. In this case, $u(t)$ is input, and $x(t)$ is output. If we take $u(t)=\delta (t)$, we should have $x(t)=X(t)$ at the output. Taking &lt;strong&gt;Laplace&lt;&#x2F;strong&gt; transformation both side of the equation, $X(s)$ becomes &lt;strong&gt;Transfer function&lt;&#x2F;strong&gt; of the system.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;impulse-response-example-explain.jpg&quot; alt=&quot;impulse responses example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3-fourier-transformation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-fourier-transformation&quot; aria-label=&quot;Anchor link for: 3-fourier-transformation&quot;&gt;3. Fourier transformation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;Fourier-transform.png&quot; alt=&quot;Fourier transform&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Q. Why sinusoidal?&lt;br &#x2F;&gt;
+A. Because its shape is the same in the &lt;code&gt;LTI&lt;&#x2F;code&gt; system. We only need to care about amplitude $A$ (i.e. &lt;strong&gt;Gain&lt;&#x2F;strong&gt;) and phase $\Phi$.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;Fourier-why-sin.png&quot; alt=&quot;Fourier use sinusoidal&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;No phase information included.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;Fourier-no-phase.png&quot; alt=&quot;Fourier no phase included&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Using complex number to include phase information into account.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;classical-control-theory&#x2F;images&#x2F;Fourier-complex.png&quot; alt=&quot;Fourier complex number&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+    &amp; F(v) = \cfrac{\sqrt{2}}{2} + \cfrac{\sqrt{2}}{2} j = e^{j \pi&#x2F;4} \newline
+    &amp; F(v)e^{2 \pi j v t} = e^{j \pi&#x2F;4} e^{2 \pi j v t}
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;h2 id=&quot;4-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-references&quot; aria-label=&quot;Anchor link for: 4-references&quot;&gt;4. References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Brian Douglas Youtube &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;user&#x2F;ControlLectures&quot;&gt;channel&lt;&#x2F;a&gt;, &amp;quot;Classical Control Theory&amp;quot; &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk&quot;&gt;series&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Dang Quang Hieu, Digital Signal Processing lecture note&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

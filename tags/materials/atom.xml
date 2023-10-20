@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - Materials</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/materials/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-05-11T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/materials/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Materials, Reliability and Failure Analysis</title>
+		<published>2022-05-11T09:19:42+01:00</published>
+		<updated>2022-05-11T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/materials-reliability-and-failure-analysis/" type="text/html"/>
+		<id>https://circuitlover.com/materials-reliability-and-failure-analysis/</id>
+		<content type="html">&lt;p&gt;Kinetic thermal energy
+$$
+K_{kin} = \frac{m}{2}v_{th}^2 = \frac{3}{2}kT
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;When an electric field $E$ is applied, each carrier (i.e. electrons and holes) experiences a force $± q \times E$ and is accelerated. These velocities caused by the external electrical field $E$ are called &lt;strong&gt;drift velocities&lt;&#x2F;strong&gt; &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-drift&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The current density $J$, or the current flow of electrons per unit volume, is given by the following:&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\begin{align*}
+J_n &amp;amp;= nqv_d \newline
+J_n &amp;amp;= nq\dfrac{1}{2} \dfrac{q\tau}{m^{2}}E
+\end{align*}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Electron mobility $\mu_n$ is the ratio of drift velocity to the electric field strength.&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\mu_n = \dfrac{\nu_d}{E} = \dfrac{q \tau}{m^*}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hight-voltage-shottky-diode&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#hight-voltage-shottky-diode&quot; aria-label=&quot;Anchor link for: hight-voltage-shottky-diode&quot;&gt;Hight voltage Shottky diode&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anisotropic: Sic, GaN. Mobility are different in parallel $\mu_{\parallel}$ and perpendicular $\mu_{\perp}$ direction.&lt;&#x2F;li&gt;
+&lt;li&gt;Phonons: lattice vibration&lt;&#x2F;li&gt;
+&lt;li&gt;Scattering: small amount of things spread over an area.&lt;&#x2F;li&gt;
+&lt;li&gt;More dopping --&amp;gt; more phonons --&amp;gt; $\mu_{n} \downarrow$ and desisty $\downarrow$. However, in combination with thickness and doping density --&amp;gt; Wide Bandgap semiconductors have lower conduction losses.&lt;&#x2F;li&gt;
+&lt;li&gt;Shottky diode: $E_{max}$ at the contact semiconductor and metal or P-N junction.
+&lt;ul&gt;
+&lt;li&gt;Merged PiN Schottky Diodes (MPS) structure: reduce electrical field stress&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&amp;quot;Trench Oxide Pin Schottky&amp;quot; (TOPS): reduce contact between metal and semiconductor --&amp;gt; prevent the migration of carriers at the anode (metal). The rest of structure is the same as MPS &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-luz&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Soft recovery. Soft factor $s = \cfrac{t_f}{t_s} \gt 0.8$&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;materials-reliability-and-failure-analysis&#x2F;images&#x2F;Cross-section-of-a-merged-pin-Schottky-diode-in-SiC.png&quot; alt=&quot;Cross section of a merged pin Schottky diode in SiC&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Cross section of a merged pin Schottky diode in SiC &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn-ayalew&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-drift&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eng.libretexts.org&#x2F;Bookshelves&#x2F;Materials_Science&#x2F;Supplemental_Modules_(Materials_Science)&#x2F;Solar_Basics&#x2F;C._Semiconductors_and_Solar_Interactions&#x2F;II._Conduction_in_Semiconductors&#x2F;4:_Carrier_Drift_and_Mobility&quot;&gt;4: Carrier Drift and Mobility&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-luz&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;Lutz, J., Schlangenotto, H., Scheuermann, U. and De Doncker, R., 2011. Semiconductor power devices. Physics, characteristics, reliability, 2.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn-ayalew&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.iue.tuwien.ac.at&#x2F;phd&#x2F;ayalew&#x2F;&quot;&gt;SiC Semiconductor Devices Technology, Modeling, and Simulation&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+</feed>

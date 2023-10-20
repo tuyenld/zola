@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - misc</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/misc/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-05-19T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/misc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Miscellaneous</title>
+		<published>2022-05-19T09:19:42+01:00</published>
+		<updated>2022-05-19T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/miscellaneous/" type="text/html"/>
+		<id>https://circuitlover.com/miscellaneous/</id>
+		<content type="html">&lt;h1 id=&quot;general-information&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#general-information&quot; aria-label=&quot;Anchor link for: general-information&quot;&gt;General information&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;connector&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#connector&quot; aria-label=&quot;Anchor link for: connector&quot;&gt;Connector&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Blade connectors (lower half of photo). Ring and spade terminals (upper half). Bullet terminals, male and female (right-center, with blue wires)&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;blade-connectors.jpg&quot; alt=&quot;blade-connector&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Blade connector&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;split_ring_contacts.jpg&quot; alt=&quot;Split-ring terminals&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Split-ring or lugs terminals for 2.5 mm² wire.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Banana_Jack_Connector.jpg&quot; alt=&quot;Banana jack connector &quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Banana jack connector&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Using crimping tool to join wire to the connector.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;crimping_tool.jpg&quot; alt=&quot;Crimping tool&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Crimping tool&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;rj45-pinout-and-connection&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rj45-pinout-and-connection&quot; aria-label=&quot;Anchor link for: rj45-pinout-and-connection&quot;&gt;RJ45 pinout and connection&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Refer to &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.practicalnetworking.net&#x2F;stand-alone&#x2F;ethernet-wiring&#x2F;&quot;&gt;Ethernet Wiring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Only two couple wires 1-2,3-6 are enough for 100 Mb&#x2F;s transmission.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;power-factor&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#power-factor&quot; aria-label=&quot;Anchor link for: power-factor&quot;&gt;Power factor&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Decreased_power_factor.jpg&quot; alt=&quot;Decreased_power_factor&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;Apparent power, reactive power and real power&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;The picture shows the relationship between &amp;quot;Apparent Power&amp;quot;, &amp;quot;Reactive Power&amp;quot; and &amp;quot;Real Power&amp;quot;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reactive power is an AC power flow through the operation of the inductors and capacitors. This kind of power doesn&#x27;t contribute to the&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;See more at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;askscience&#x2F;comments&#x2F;90q7i7&#x2F;comment&#x2F;e2sc27o&#x2F;?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;What is the role of reactive power in transmission networks?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;interfacing-matlab-simulink-with-plexim-plecs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#interfacing-matlab-simulink-with-plexim-plecs&quot; aria-label=&quot;Anchor link for: interfacing-matlab-simulink-with-plexim-plecs&quot;&gt;Interfacing Matlab Simulink with Plexim PLECS&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;{{&amp;lt; youtube JnEJ63qEOqc &amp;gt;}}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;potentiometers&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#potentiometers&quot; aria-label=&quot;Anchor link for: potentiometers&quot;&gt;Potentiometers&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.mouser.dk&#x2F;ProductDetail&#x2F;Vishay-Sfernice&#x2F;P16NP504KAB15?qs=sGAEpiMZZMtC25l1F4XBU4GDvGXyUw%2BkUqAGoVe0N3c%3D&quot;&gt;P16NP504KAB15 Vishay &#x2F; Sfernice | Mouser Denmark&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s a &lt;em&gt;LOT&lt;&#x2F;em&gt; of files on the official LTwiki.&lt;&#x2F;p&gt;
+&lt;p&gt;For potentiometers look in (&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.eevblog.com&#x2F;forum&#x2F;eda&#x2F;is-there-an-updated-massive-open-source-style-library-for-ltspice&#x2F;&quot;&gt;source&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;lib&#x2F;sym&#x2F;Pot&amp;amp;Sw&#x2F; for the symbols, and&lt;&#x2F;li&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;lib&#x2F;sub&#x2F;Pote.lib is the associated library, (including both potentiometer_standard.lib and potentiometer_tapped.lib with documentation and sample files at&lt;&#x2F;li&gt;
+&lt;li&gt;http:&#x2F;&#x2F;ltwiki.org&#x2F;files&#x2F;LTspiceIV&#x2F;examples&#x2F;LtSpicePlus&#x2F;Discretos&#x2F;Sw&amp;amp;Pote&#x2F;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;mosfet&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#mosfet&quot; aria-label=&quot;Anchor link for: mosfet&quot;&gt;MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;n-channel-mosfet&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#n-channel-mosfet&quot; aria-label=&quot;Anchor link for: n-channel-mosfet&quot;&gt;N-channel MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;physical-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#physical-view&quot; aria-label=&quot;Anchor link for: physical-view&quot;&gt;Physical view&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Current flows between diffusion terminals if the voltage on the &lt;code&gt;Gate&lt;&#x2F;code&gt; large enough to create a &lt;strong&gt;conducting channel&lt;&#x2F;strong&gt;, otherwise the MOSFET is off and the diffusion terminals are not connected. &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;nmosfet-physical-view.png&quot; alt=&quot;physical view&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;electrical-view&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#electrical-view&quot; aria-label=&quot;Anchor link for: electrical-view&quot;&gt;Electrical view&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The four terminals of a Field Effect Transitor are &lt;code&gt;Gate&lt;&#x2F;code&gt;, &lt;code&gt;Source&lt;&#x2F;code&gt;, &lt;code&gt;Drain&lt;&#x2F;code&gt; and &lt;code&gt;Bulk&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;nmosfet-electrical-view.png&quot; alt=&quot;electrical view&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;circuit-symbol&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#circuit-symbol&quot; aria-label=&quot;Anchor link for: circuit-symbol&quot;&gt;Circuit symbol&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;MOSFET and JFET circuit symbols&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;P-channel&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;JFET_P-Channel_Labelled.svg&quot; alt=&quot;s&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Enh_Labelled.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Enh_Labelled_simplified.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Mosfet_P-Ch_Sedra.svg&quot; alt=&quot;f&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_P-Ch_Dep_Labelled.svg&quot; alt=&quot;f&quot; &#x2F;&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;N-channel&lt;&#x2F;strong&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;JFET_N-Channel_Labelled.svg&quot; alt=&quot;d&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Enh_Labelled.svg&quot; alt=&quot;e&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Enh_Labelled_simplified.svg&quot; alt=&quot;e&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Mosfet_N-Ch_Sedra.svg&quot; alt=&quot;r&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;IGFET_N-Ch_Dep_Labelled.svg&quot; alt=&quot;r&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;JFET (they are only in depletion mode)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode (no bulk)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;MOSFET enhancement mode (no bulk)&lt;&#x2F;td&gt;&lt;td&gt;MOSFET depletion mode (switched on)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;{% include tldr.html box=&amp;quot;TRICK&amp;quot; tldr=&amp;quot;The arrow forms the pn junction from the &#x27;buck&#x27; to the &#x27;gate&#x27; in the symbol of MOSFET&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;When a channel exists in a MOSFET, current can flow from source to drain as well as from drain to source - it&#x27;s just a matter of how the device is connected in the circuit &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. Conventional current flows from Drain to Source in an N Channel MOSFET.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;n-channel-mosfet-1&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#n-channel-mosfet-1&quot; aria-label=&quot;Anchor link for: n-channel-mosfet-1&quot;&gt;N-channel MOSFET&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;When a channel exists in a MOSFET, current can flow from &lt;strong&gt;drain to source&lt;&#x2F;strong&gt; &lt;em&gt;or&lt;&#x2F;em&gt; from &lt;strong&gt;source to drain&lt;&#x2F;strong&gt; - it&#x27;s a function of how the device is connected in the circuit. The conduction channel has no intrinsic polarity - it&#x27;s kind of like a resistor in that regard.&lt;&#x2F;p&gt;
+&lt;p&gt;The intrinsic body diode inside the MOSFET is in parallel with the conduction channel, however. When the conduction channel is present, the diode is shunted and current flows through the path of least resistance (the channel). When the channel is off, the diode is in circuit and will either conduct or block depending on the drain-source current polarity.&lt;&#x2F;p&gt;
+&lt;p&gt;As your picture shows, there are both N-channel and P-channel devices, as well as enhancement mode and depletion mode devices. In all of these cases, current can flow from &lt;strong&gt;source to drain&lt;&#x2F;strong&gt; as well as from &lt;strong&gt;drain to source&lt;&#x2F;strong&gt; - it&#x27;s just a matter of how the device is connected in the circuit.&lt;&#x2F;p&gt;
+&lt;p&gt;Your picture does &lt;em&gt;not&lt;&#x2F;em&gt; show the intrinsic diode in the devices - the arrow point towards or away from the gate is an indication of the channel type (N-channel points towards the gate, P-channel points away from the gate).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;n-channel-MOSFET.png&quot; alt=&quot;n-channel enhancement MOSFET&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This symbol shows you the inherent diode between drain and source.&lt;&#x2F;p&gt;
+&lt;p&gt;N-channel enhancement devices need a voltage on the gate &lt;em&gt;higher&lt;&#x2F;em&gt; than the source in order to create a conduction channel. (Enhancement devices don&#x27;t have a channel automatically, and need gate voltage to create one - because it&#x27;s N-channel Vgate&amp;gt;Vsource for this to happen.)&lt;&#x2F;p&gt;
+&lt;p&gt;P-channel enhancement devices need a voltage on the gate &lt;em&gt;lower&lt;&#x2F;em&gt; than the source in order to create a conduction channel. (Enhancement devices don&#x27;t have a channel automatically, and need gate voltage to create one - because it&#x27;s P-channel Vgate&amp;lt;Vsource for this to happen.)&lt;&#x2F;p&gt;
+&lt;p&gt;N-channel delpetion devices have a channel by default, and need a voltage on the gate &lt;em&gt;lower&lt;&#x2F;em&gt; than the source in order to turn the channel &lt;em&gt;off&lt;&#x2F;em&gt;. The channel can be widened to a certain extent by increasing the gate-to-source voltage above 0.&lt;&#x2F;p&gt;
+&lt;p&gt;P-channel depletion devices also have a channel by default, and need a voltage on the gate &lt;em&gt;higher&lt;&#x2F;em&gt; than the source in order to turn the channel &lt;em&gt;off&lt;&#x2F;em&gt;. The channel can be widened to a certain extent by decreasing the gate-to-source voltage below 0.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;ref1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Chris Terman. &lt;em&gt;6.004 Computation Structures.&lt;&#x2F;em&gt; Spring 2017. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-004-computation-structures-spring-2017&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
+&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#ref2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;users&#x2F;1293&#x2F;adam-lawrence&quot;&gt;Adam Lawrence&lt;&#x2F;a&gt;, In an NMOS, does current flow from source to drain or vice-versa?, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;q&#x2F;48671&quot;&gt;URL&lt;&#x2F;a&gt; (version: 2012-11-11)&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;magnetic-core&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#magnetic-core&quot; aria-label=&quot;Anchor link for: magnetic-core&quot;&gt;Magnetic core&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Ferrite Power Materials Summary&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;F&lt;&#x2F;th&gt;&lt;th&gt;P&lt;&#x2F;th&gt;&lt;th&gt;R&lt;&#x2F;th&gt;&lt;th&gt;J&lt;&#x2F;th&gt;&lt;th&gt;W+&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;µi (20 gauss)&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;3,000&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;td&gt;2,300&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;10,000&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;µp (2000 gauss)&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;4,600&lt;&#x2F;td&gt;&lt;td&gt;6,500&lt;&#x2F;td&gt;&lt;td&gt;6,500&lt;&#x2F;td&gt;&lt;td&gt;5,500&lt;&#x2F;td&gt;&lt;td&gt;12,000&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Saturation Flux Density ($B_{max}$ Gauss)&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;4,900&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;5,000&lt;&#x2F;td&gt;&lt;td&gt;4,300&lt;&#x2F;td&gt;&lt;td&gt;4,300&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;3,700&lt;&#x2F;td&gt;&lt;td&gt;3,900&lt;&#x2F;td&gt;&lt;td&gt;3,700&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;td&gt;2,500&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Core Loss (mw&#x2F;cm3)&lt;br&gt;(Typical)&lt;br&gt;@100 kHz, 1000 Gauss&lt;&#x2F;td&gt;&lt;td&gt;25˚C&lt;&#x2F;td&gt;&lt;td&gt;100&lt;&#x2F;td&gt;&lt;td&gt;125&lt;&#x2F;td&gt;&lt;td&gt;140&lt;&#x2F;td&gt;&lt;td&gt;low-level power transf.&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;60˚C&lt;&#x2F;td&gt;&lt;td&gt;180&lt;&#x2F;td&gt;&lt;td&gt;80*&lt;&#x2F;td&gt;&lt;td&gt;100&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;100˚C&lt;&#x2F;td&gt;&lt;td&gt;225&lt;&#x2F;td&gt;&lt;td&gt;125&lt;&#x2F;td&gt;&lt;td&gt;70&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Core Geometries&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Core Geometries&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;Core Geometries&lt;&#x2F;th&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Classical E&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;E_core.png&quot; alt=&quot;RM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;ETD&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;ETD_core.png&quot; alt=&quot;ETD core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;EFD&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;EFD_core.png&quot; alt=&quot;EFD core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;EP&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;EP_core.png&quot; alt=&quot;EP core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Pot core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;POT_CORE.jpg&quot; alt=&quot;Pot core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;RM core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;rm_core.jpg&quot; alt=&quot;RM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;PQ core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;PQ_core.png&quot; alt=&quot;PQ core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;td&gt;PM core&lt;&#x2F;td&gt;&lt;td&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;PM_core.png&quot; alt=&quot;PM core&quot; &#x2F;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;core-selection&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#core-selection&quot; aria-label=&quot;Anchor link for: core-selection&quot;&gt;Core selection&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+A_p = A_E A_W = \frac{P_{out}}{K_c K_t B_{max} F_{SW} J} 10^4
+$$&lt;&#x2F;script&gt;
+&lt;ul&gt;
+&lt;li&gt;$A_P$: product of window area and core area, $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$A_E$: effective cross section of the core, $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;$A_W$: window area (or winding area), $cm^2$&lt;&#x2F;li&gt;
+&lt;li&gt;At: surface area of the transformer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;miscellaneous&#x2F;images&#x2F;Ae-Aw.png&quot; alt=&quot;calculate Wa and Ac&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; A_e = 20 \times 27.4 = 540 \; mm^2 \\
+&amp; A_W \text{ (often referred in datasheets as )} A_N = 4.35 \; cm^2\\
+&amp; A_P = A_E × A_W = 5.4 \times 3.24 = 5.4 × 4.35 = 23.5 \; cm^4
+\end{align*}
+
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;References&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Magnetic_core&lt;&#x2F;li&gt;
+&lt;li&gt;https:&#x2F;&#x2F;e-magnetica.pl&#x2F;list_of_ferrite_core_types&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;users&#x2F;73158&#x2F;transistor&quot;&gt;Transistor&lt;&#x2F;a&gt;, SMPS Transformer Area of Product, URL (version: 2020-06-11): https:&#x2F;&#x2F;electronics.stackexchange.com&#x2F;q&#x2F;504104&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

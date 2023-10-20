@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Complex number and its application in AC analysist | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="How to use complex number to simplify the AC circuit analysist" />
+  <link rel="canonical" href="https://circuitlover.com/sinusoidal-and-complex-number/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/sinusoidal-and-complex-number/" />
+  <meta name="twitter:url" content="https://circuitlover.com/sinusoidal-and-complex-number/" />
+  <meta property="og:description" content="How to use complex number to simplify the AC circuit analysist" />
+  <meta name="twitter:description" content="How to use complex number to simplify the AC circuit analysist" />
+  <meta property="og:title" content="Complex number and its application in AC analysist | CircuitLover" />
+  <meta name="twitter:title" content="Complex number and its application in AC analysist | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2022-02-10" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/sinusoidal-and-complex-number/">Complex number and its application in AC analysist</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> February 10, 2022<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/power-electronics/">Power-Electronics</a>] #<a href="https://circuitlover.com/tags/utility/">Utility</a> </span>
+
+    <h2 id="1-sinusoidal-time-functions-and-complex-number"><a class="zola-anchor" href="#1-sinusoidal-time-functions-and-complex-number" aria-label="Anchor link for: 1-sinusoidal-time-functions-and-complex-number">1. Sinusoidal time functions and complex number</a></h2>
+<h3 id="1-1-complex-number-recap"><a class="zola-anchor" href="#1-1-complex-number-recap" aria-label="Anchor link for: 1-1-complex-number-recap">1.1. Complex number recap</a></h3>
+<p><img src="https://circuitlover.com/sinusoidal-and-complex-number/images/representation-of-the-complex-number.png" alt="represenation of the complex number" /></p>
+<p>Magnitude and phase angle of the complex number $\vec{z}$ is <sup class="footnote-reference"><a href="#ref1">1</a></sup></p>
+<p>⚠️ Note:⚠️ The author was used $\underline{z}$ to denote a vector. However, I am using $\vec{z}$ to do this because of my personal preference.</p>
+<script type="math/tex;mode=display">$$
+|\vec{z}|=\sqrt{x^{2}+y^{2}} \qquad
+\phi=\arctan \left(\frac{y}{x}\right)
+$$</script>
+<p><code>Euler</code> relation</p>
+<script type="math/tex;mode=display">$$
+e^{j \phi}=\cos (\phi)+j \sin (\phi) \qquad
+\vec{z}=x+j y=|\vec{z}| e^{j \phi}
+$$</script>
+<p>The product and the ratio of two complex numbers are</p>
+<script type="math/tex;mode=display">$$
+\vec{z}_{1}=\left|\vec{z}_{1}\right| e^{j \phi_{1}} \qquad
+\vec{z}_{2}=\left|\vec{z}_{2}\right| e^{j \phi_{2}}
+\qquad
+\vec{z}_{1} \vec{z}_{2}=\left|\vec{z}_{1}\right|\left|\vec{z}_{2}\right| e^{j\left(\phi_{1}+\phi_{2}\right)}
+\qquad
+\frac{\vec{z}_{1}}{\vec{z}_{2}}=\frac{\left|\vec{z}_{1}\right|}{\left|\vec{z}_{2}\right|} e^{j\left(\phi_{1}-\phi_{2}\right)}
+$$</script>
+<p>The complex conjugate of a complex number is given by</p>
+<script type="math/tex;mode=display">$$
+% <!-- markdownlint-disable-next-line MD049 -->
+\vec{z}=x+j y \quad \vec{z}^{*}=x-j y \qquad
+\vec{z}+\vec{z}^{*}=2 \operatorname{Re}(\vec{z})=2 x \qquad
+\vec{z}-\vec{z}^{*}=2 j \operatorname{Im}(\vec{z})=2 j y
+$$</script>
+<h3 id="1-2-sinusoidal-time-functions"><a class="zola-anchor" href="#1-2-sinusoidal-time-functions" aria-label="Anchor link for: 1-2-sinusoidal-time-functions">1.2. Sinusoidal Time Functions</a></h3>
+<p>A sinusoidal function of time might be written in three ways</p>
+<script type="math/tex;mode=display">$$
+f(t)=A \cos (\omega t+\phi) \qquad (1) \\
+f(t)=B \cos (\omega t)+C \sin (\omega t) \qquad (2) \\
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \qquad (3)
+$$</script>
+<p>Equation <code>(3)</code> makes sure that that the resulting function is real. Now, let find out the relationship between equation <code>(1) and (3)</code>.</p>
+<p>Let say</p>
+<script type="math/tex;mode=display">$$
+\vec{X}=|\vec{X}| e^{j \psi}
+$$</script>
+<p>then</p>
+<script type="math/tex;mode=display">$$
+% <!-- markdownlint-disable-next-line MD049 -->
+f(t) =|\vec{X}| e^{j \psi} e^{j \omega t}+|\vec{X}|^{*} e^{-j \psi} e^{-j \omega t} =|\vec{X}| e^{j(\psi+\omega t)}+|\vec{X}|^{*} e^{-j(\psi+\omega t)} \\
+f(t)=2|\vec{X}| \cos (\omega t+\psi)
+$$</script>
+<p>so we have</p>
+<script type="math/tex;mode=display">$$
+|\vec{X}| =\frac{A}{2} \qquad \psi =\phi
+$$</script>
+<p>Next, finding the relationship between equation <code>(2) and (3)</code>.</p>
+<p>Alternatively, we could write</p>
+<script type="math/tex;mode=display">$$
+\vec{X}=x+j y
+\qquad \text{where} \quad
+x=|\vec{X}| \cos (\psi)
+\qquad
+y=|\vec{X}| \sin (\psi)
+$$</script>
+<p>thus</p>
+<script type="math/tex;mode=display">$$
+f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} = x\left(e^{j \omega t}+e^{-j \omega t}\right)+j y\left(e^{j \omega t}-e^{-j \omega t}\right) \\
+f(t) =2 x \cos (\omega t)-2 y \sin (\omega t)
+$$</script>
+<p>Finally, we get</p>
+<script type="math/tex;mode=display">$$
+B = 2x \qquad C = -2y \qquad \vec{X} = \frac{B}{2} - j \frac{C}{2}
+$$</script>
+<h3 id="1-3-summary"><a class="zola-anchor" href="#1-3-summary" aria-label="Anchor link for: 1-3-summary">1.3. Summary</a></h3>
+<p>Since</p>
+<script type="math/tex;mode=display">$$
+% <!-- markdownlint-disable-next-line MD049 -->
+(\vec{X} e^{j \omega t})^{*} = \vec{X}^{*} e^{-j \omega t}
+$$</script>
+<p>expression <code>(3) and (4)</code> are equivalent. It is advantageous to use one or the other of them, according to circumstances.<br />
+It's easy to notice that $\vec{X}$ is time-independent. This conclusion is used when forming the relationship between voltage and current of inductor and capacitor elements.</p>
+<table><thead><tr><th>Sinusoidal form</th><th>Complex number form</th><th>$\vec{X}$</th></tr></thead><tbody>
+<tr><td>$f(t)=A \cos (\omega t+\phi)$</td><td>$f(t)=\vec{X} e^{j \omega t}+\vec{X}^{*} e^{-j \omega t} \quad (3)$</td><td>$\vec{X}={A}/{2} \angle \phi$</td></tr>
+<tr><td>$f(t)=B \cos (\omega t)+C \sin (\omega t)$</td><td>$f(t)=Re(2\vec{X} e^{j \omega t}) = Re(A e^{j \phi} e^{j \omega t})\quad (4)$</td><td>$\vec{X} = {B}/{2} - j {C}/{2}$</td></tr>
+</tbody></table>
+<p><strong>Strategy</strong>:</p>
+<ol>
+<li>Transform the input <code>In</code> into complex polar form $In \angle \phi$</li>
+<li>Calculate impedance complex number $Z$</li>
+<li>Transform output <code>Out</code> into polar form $O \angle \alpha$</li>
+<li>Using expression <code>(4)</code> to find out $Out(t)$</li>
+</ol>
+<h2 id="2-impedance"><a class="zola-anchor" href="#2-impedance" aria-label="Anchor link for: 2-impedance">2. Impedance</a></h2>
+<p>Consider two elements, inductances and capacitances.</p>
+<table><thead><tr><th>Inducatance    (L)</th><th>Capacitance (C)</th></tr></thead><tbody>
+<tr><td><img src="https://circuitlover.com/sinusoidal-and-complex-number/images/Leading_lagging.jpg" alt="inductor" /></td><td><img src="https://circuitlover.com/sinusoidal-and-complex-number/images/Leading_lagging.jpg" alt="capacitor" /></td></tr>
+<tr><td>Current is <code>lagging</code> voltage. (<code>L</code> means <em>Lower</em> :arrow_lower_right:)</td><td>Current is <code>leading</code> voltage</td></tr>
+<tr><td>$v_L = L {di}/{dt}$</td><td>$i = C ; {dV_C}/{dt}$</td></tr>
+<tr><td>$v = \vec{V}e^{j \omega t} + \vec{V}^{*} e^{-j \omega t}$</td><td>$i = \vec{I}e^{j \omega t} + \vec{I}^{*} e^{-j \omega t}$</td></tr>
+<tr><td>$\vec{V}=j \omega L \vec{I} = \vec{Z}_L ; \vec{I} \quad \text{where } \vec{Z}_L = j \omega L$</td><td>$\vec{I}=j \omega C \vec{V} = \vec{V} / \vec{Z}_C \quad \text{where } \vec{Z}_C = 1 / (j \omega C)$</td></tr>
+</tbody></table>
+<p>The inverse of impedance is <strong>admittance</strong></p>
+<script type="math/tex;mode=display">$$
+\vec{Y} = 1/ \vec{Z}
+$$</script>
+<h3 id="example"><a class="zola-anchor" href="#example" aria-label="Anchor link for: example">Example</a></h3>
+<p>Suppose we are to find the voltage $v(t)$ in the network, in which $i(t) = I cos(\omega t)$
+<img src="https://circuitlover.com/sinusoidal-and-complex-number/images/complex-circuit-ex.png" alt="complex number in circuit example" /></p>
+<p><code>Step 1.</code> Transform the input <code>In</code> into complex polar form $In \angle \phi$</p>
+<script type="math/tex;mode=display">$$
+i(t) = Re(I e^{\omega t})
+$$</script>
+<p><code>Step 2.</code> Calculate impedance complex number
+$$
+Z _| = \frac{R j \omega L}{R + j \omega L} = \frac{R \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$</p>
+<p><img src="https://circuitlover.com/sinusoidal-and-complex-number/images/complex-circuit-ex-phasor.jpg" alt="phasor" /></p>
+<p><code>Step 3.</code> We found the output voltage in the polar-exponential form</p>
+<p>$$
+V = Z_| I = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} \angle (arctan \frac{R}{\omega L})
+$$</p>
+<p><code>Step 4.</code> Using expression <code>(4)</code> to find out $v(t)$</p>
+<p>$$
+v(t) = \frac{IR \omega L}{\sqrt{R^2 + (\omega L)^2}} cos ( \omega t + arctan \frac{R}{\omega L})
+$$</p>
+<h2 id="references"><a class="zola-anchor" href="#references" aria-label="Anchor link for: references">References</a></h2>
+<div class="footnote-definition" id="ref1"><sup class="footnote-definition-label">1</sup>
+<p>James Kirtley Jr.. <em>6.061 Introduction to Electric Power Systems.</em> Spring 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, <a rel="noopener" target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-061-introduction-to-electric-power-systems-spring-2011">https://ocw.mit.edu</a>. License: <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</a>.</p>
+</div>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#1-sinusoidal-time-functions-and-complex-number">1. Sinusoidal time functions and complex number</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#1-1-complex-number-recap"><small>- 1.1. Complex number recap</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#1-2-sinusoidal-time-functions"><small>- 1.2. Sinusoidal Time Functions</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#1-3-summary"><small>- 1.3. Summary</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#2-impedance">2. Impedance</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#example"><small>- Example</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/sinusoidal-and-complex-number/#references">References</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>CircuitLover - DC-AC</title>
+	<subtitle>Can&#x27;t stop questioning!</subtitle>
+	<link href="https://circuitlover.com/tags/dc-ac/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://circuitlover.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-13T09:19:42+01:00</updated>
+	<id>https://circuitlover.com/tags/dc-ac/atom.xml</id>
+	<entry xml:lang="en">
+		<title>The fundamental of DC-AC inverter</title>
+		<published>2022-01-13T09:19:42+01:00</published>
+		<updated>2022-01-13T09:19:42+01:00</updated>
+		<link rel="alternate" href="https://circuitlover.com/dc-ac-inverter/" type="text/html"/>
+		<id>https://circuitlover.com/dc-ac-inverter/</id>
+		<content type="html">&lt;p&gt;Refer &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for more details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#getting-started&quot; aria-label=&quot;Anchor link for: getting-started&quot;&gt;Getting started&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Switch utilization&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+\frac{P_o}{P_T} = \frac{V_{o1,max} \times I_{o1,max}}{q \times V_T \times I_T}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Where&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$V_{o1,max}, I_{o1,max}$ are the maximum rated output voltage and current.&lt;&#x2F;li&gt;
+&lt;li&gt;$V_T, I_T$ are the peak voltage rating and peak current rating of a switching device.&lt;&#x2F;li&gt;
+&lt;li&gt;$q$ is the number of switches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;1-full-brige-inverters&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-full-brige-inverters&quot; aria-label=&quot;Anchor link for: 1-full-brige-inverters&quot;&gt;1. Full-brige inverters&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;TL;DR&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unipolar by definition: having or oriented in respect to a single pole.&lt;&#x2F;li&gt;
+&lt;li&gt;Bipolar by definiton: having or involving the use of two poles or polarities.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+&amp; \text{Control signal: } V_{control}(t) = 𝑀 \times sin(\omega t) \\
+&amp; \text{Carrier signal: } V_{tri}(t) =
+\left\{\begin{matrix}
+\cfrac{4}{T_{sw} t} \qquad t \in [0,\cfrac{T_{sw}}{4}] \cup [\cfrac{3T_{sw}}{4},T_{sw}] \\
+-\cfrac{4}{T_{sw} t} +2 \qquad  t \in [\cfrac{T_{sw}}{4},\cfrac{3T_{sw}}{2}]
+\end{matrix}\right. \\
+&amp; \text{Output peak voltage } V_{out} = M \times V_{DC}
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Where:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$M$ is mudulation index.&lt;&#x2F;li&gt;
+&lt;li&gt;$\omega$ is fundamental frequency.&lt;&#x2F;li&gt;
+&lt;li&gt;$f_{sw} = 1 &#x2F; T_{sw}$ is switching frequency.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#simu&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; for LTspice simulation instruction.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-1-biploar-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-1-biploar-pwm&quot; aria-label=&quot;Anchor link for: 1-1-biploar-pwm&quot;&gt;1.1. Biploar PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;S1&lt;&#x2F;code&gt; and &lt;code&gt;S4&lt;&#x2F;code&gt; turn on and turn off at the same time.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;bipolar-PWM.png&quot; alt=&quot;bipolar-PWM&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Simulation result:
+&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;bipolar-PWM-waveform.png&quot; alt=&quot;bipolar-PWM-waveform&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-2-unipolar-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-2-unipolar-pwm&quot; aria-label=&quot;Anchor link for: 1-2-unipolar-pwm&quot;&gt;1.2. Unipolar PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The inverter output voltage switches between either between $0 \rightarrow +Vd$ during half cycle and $0 \rightarrow -Vd$ half cycle of the fundamental frequency thus this scheme is called unipolar modulation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;unipolar-PWM.png&quot; alt=&quot;Unipolar PWM schematic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;unipolar-PWM-waveform.png&quot; alt=&quot;Unipolar PWM waveform&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;1-3-hybrid-pwm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-3-hybrid-pwm&quot; aria-label=&quot;Anchor link for: 1-3-hybrid-pwm&quot;&gt;1.3. Hybrid PWM&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Refer to &lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#hpwm&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;References&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#hpwm&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;: Lai, R.S. and Ngo, K.D., 1995. A PWM method for reduction of switching loss in a full-bridge inverter. &lt;em&gt;IEEE Transactions on Power Electronics&lt;&#x2F;em&gt;, &lt;em&gt;10&lt;&#x2F;em&gt;(3), pp.326-332.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;2-vector-space-and-three-phase-inverter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-vector-space-and-three-phase-inverter&quot; aria-label=&quot;Anchor link for: 2-vector-space-and-three-phase-inverter&quot;&gt;2. Vector space and three-phase inverter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot; aria-label=&quot;Anchor link for: 3-power-losses-and-heating-design-of-an-dc-ac-inverter&quot;&gt;3. Power losses and heating design of an DC-AC inverter&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Power losses of an inverter is defined as&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+P_{Loss} = P_{in} - P_{out}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;We could measure the losses in two ways.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Direct&lt;&#x2F;strong&gt; measure $P_{in}$ and $P_{out}$. The stability of this method is difficult to achieve. A small variant in input or output could lead to a large error.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Indrect&lt;&#x2F;strong&gt; by using Calorimetric methos. Highest accuracy is achieved, but it is complicate to operate.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;A alternative of measuring the losses is &lt;strong&gt;deriving the losses&lt;&#x2F;strong&gt;. The losses can be calculated by estimate of 4 types of power losses.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Switching losses&lt;&#x2F;li&gt;
+&lt;li&gt;Conducting Losses&lt;&#x2F;li&gt;
+&lt;li&gt;Blocking losses (neglecgable)&lt;&#x2F;li&gt;
+&lt;li&gt;Driving losses (neglecable)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The rule of thumb for a good design is 50% of switching losses and 50% of conducting losses. Let take a closer look at the three-phase inverter.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;circuitlover.com&#x2F;dc-ac-inverter&#x2F;images&#x2F;three-phase-inverter.png&quot; alt=&quot;three phase inverter&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+P_{conduction} = \frac{1}{2 \pi} \int_{0}^{2 \pi} v (\omega t) i (\omega t) dt
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Power switch is only conducting for half of period.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+&amp; P_C^{IGBT} = \frac{1}{2 \pi} \int_{0}^{\pi} \left[ V_{CE,0} \cdot i_{IGBT}(\omega t) + R_{CE} \cdot i_{IGBT}^2 (\omega t) \right] dt \\
+  
+&amp; P_C^{MOSFET} = \frac{1}{2 \pi} \int_0^{\pi} \left [ r_{ds} \cdot i_{MOS}^2 (\omega t) \right ] dt \\
+
+&amp; P_C^{Diode} = \frac{1}{2 \pi} \int_0^{\pi} \left [ V_{Forward} \cdot i_{diode} (\omega t) + R_F \cdot i_{diode}^2 (\omega t) \right] dt
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;$$
+\text{Note: } V_{CE,0}, ; R_{CE}, ; R_{DS}, ;V_{F,0}, ; R_{F} \text{ are from the datasheets of Mosfet&#x2F;IGBT&#x2F;Diode.}
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;Using Kirchhoff&#x27;s current law, we have,&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+i_{IGBT} (\omega t) + i_{Diode} (\omega t) = \hat{i}_N ; sin(\omega t)
+$$&lt;&#x2F;p&gt;
+&lt;p&gt;where:&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+    &amp; i_{IGBT}(\omega t) = m_{IGBT} (\omega t) \cdot \hat{i}_N \; sin(\omega t) \qquad (1) \newline
+    &amp; i_{Diode}(\omega t) = m_{Diode} (\omega t) \cdot \hat{i}_N \; sin (\omega t)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;In case of Sine-triangle PWM modulation, modulation function $m = M \cdot sin(\omega t + \phi)$ with $M$ is modulation index.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  
+&amp; m_{IGBT} - m_{Diode} = m \qquad (2) \\
+&amp; m_{IGBT} + m_{Diode} = 1
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;we have,&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+  
+&amp;m_{IGBT} = \frac{1+m}{2} = \frac{1}{2} \left( 1 + M \cdot sin(\omega t) \right) \qquad (3) \\
+
+&amp;m_{Diode} = \frac{1-m}{2} = \frac{1}{2} \left( 1 - M \cdot sin(\omega t) \right)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Replace equation &lt;code&gt;(1)&lt;&#x2F;code&gt; by equation &lt;code&gt;(3)&lt;&#x2F;code&gt; we get,&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+    i_{IGBT} (\omega t) = \frac{1}{2}  \left[ 1 + M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t) \newline
+
+    i_{Diode} (\omega t) = \frac{1}{2}  \left[ 1 - M \cdot sin(\omega t) \right]  \hat{i}_N \; sin(\omega t)
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Finally, we get the important formular for conduction losses.&lt;&#x2F;p&gt;
+&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;$$
+\begin{align*}
+
+    &amp; P^{IGBT}_{C} = \frac{\hat{i_N} \cdot V_{CE,0}}{2 \pi} \left( 1 + \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{CE} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \newline
+    &amp; P^{MOS}_C = \frac{R_{DS} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} + \frac{2M}{3} cos\phi) \qquad (V_{CE,0} = 0) \newline
+    &amp; P^{Diode}_C = \frac{\hat{i_N} \cdot V_{F,0}}{2 \pi} \left( 1 - \frac{M \cdot \pi}{4} cos \phi \right) + \frac{R_{F} \cdot \hat{i_N}^2}{2 \pi} (\frac{\pi}{4} - \frac{2M}{3} cos\phi)
+
+\end{align*}
+$$&lt;&#x2F;script&gt;
+&lt;p&gt;Since $R_{DS} \gg R_{CE}$, we could say that $P_C^{MOS}$ is not smaller than $P_C^{IBGT}$.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;switching-losses&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#switching-losses&quot; aria-label=&quot;Anchor link for: switching-losses&quot;&gt;Switching losses&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;$$
+\begin{align*}
+&amp;amp;  P_{SW,IGBT} = \frac{1}{\pi} f_{SW} (E_{on} + E_{off}) \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;amp;  P_{SW,Diode} = \frac{1}{\pi} f_{SW} E_{rec} \frac{V_{DC}}{V_{ref}} \frac{\hat{i_N}}{i_{ref}} \
+&amp;amp;  \text{ where } E_{rec} = \frac{1}{2} V_{rr} \times Q_{rr}
+\end{align*}
+$$&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-references&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-references&quot; aria-label=&quot;Anchor link for: 4-references&quot;&gt;4. References&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;fn1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;David Perreault. &lt;em&gt;6.334 Power Electronics.&lt;&#x2F;em&gt; Spring 2007. Massachusetts Institute of Technology: MIT OpenCourseWare, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ocw.mit.edu&#x2F;courses&#x2F;electrical-engineering-and-computer-science&#x2F;6-334-power-electronics-spring-2007&quot;&gt;https:&#x2F;&#x2F;ocw.mit.edu&lt;&#x2F;a&gt;. License: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;&quot;&gt;Creative Commons BY-NC-SA&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;simu&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;al6RyyJsOJo&quot;&gt;Simulation of Bridge Inverter in LTspice&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;application-notes.digchip.com&#x2F;070&#x2F;70-41484.pdf&quot;&gt;MOSFET Power Losses Calculation Using the DataSheet Parameters&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

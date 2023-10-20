@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://circuitlover.com/theme.min.js" integrity="sha384-IpIaa84kOKgkF5EJ0fD/kBe2wtIIsIB60ANGmuJxeA0dz5bSRfwBwp2/QybtQpU2"></script>
+  <link rel="stylesheet" href="https://circuitlover.com/abridge-switcher.css?h=f1bdbc9aa7de801df19fa0e5893632ad2f5323b2ba8c76a9bc46190b52408029" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preload" as="style" class="preStyle" href="https://circuitlover.com/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" />
+  <script defer src="https://circuitlover.com/search_index.en.js?h=08379b6e70912d6089b216425f6587864f20d818f4724d08697e0d72b90ac933" integrity="sha384-aH+oQjvaesjCKRXoqhS2AwxchQBwQ/vzJ9lo+8ffdGXyXMywFWdu64jOSMXih97+"></script>
+  <script defer src="https://circuitlover.com/abridge-bundle-nofacade.min.js?h=9bcf621a2fcab7336017de3cc731a77109758d7d13284046b1403b0c26ade193" integrity="sha384-u8AROOUG6n2Xjk2+7pvkkfeSIqinjI1tmqeBpZRlZtc5KFO/8DyFfEir6fAE2wcq"></script>
+  <script defer src="https://circuitlover.com/katexbundle.min.js?h=a550ba0540c37778ffcb0ddcf7968ee7c5c991905ad4db41b445e3dc4187ac40" integrity="sha384-ddSpLWE2IN4NTX956m9zVX0cUonZmEeunMpVZPgEcwmGficsSB8WtHlbuWkGPf8d"></script>
+  <meta name="base" content="https://circuitlover.com" />
+  <link rel="alternate" type="application/atom+xml" title="Atom/RSS Feed" href="https://circuitlover.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Control of grid connected inverter | CircuitLover</title>
+  <meta name="author" content="Tuyen D. Le" />
+  <meta name="copyright" content="CircuitLover" />
+  <meta name="description" content="Fundamental of grid connected inverters." />
+  <link rel="canonical" href="https://circuitlover.com/control-of-grid-connected/" />
+  <meta name="keywords" content="Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" />
+  <meta property="og:url" content="https://circuitlover.com/control-of-grid-connected/" />
+  <meta name="twitter:url" content="https://circuitlover.com/control-of-grid-connected/" />
+  <meta property="og:description" content="Fundamental of grid connected inverters." />
+  <meta name="twitter:description" content="Fundamental of grid connected inverters." />
+  <meta property="og:title" content="Control of grid connected inverter | CircuitLover" />
+  <meta name="twitter:title" content="Control of grid connected inverter | CircuitLover" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:image" content="https://circuitlover.com/banner.png" />
+  <meta property="og:site_name" content="CircuitLover" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2022-02-24" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <meta name="msapplication-TileColor" content="#333333" />
+  <link rel="manifest" href="https://circuitlover.com/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://circuitlover.com/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://circuitlover.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://circuitlover.com/favicon-16x16.png" />
+  <noscript><link rel="stylesheet" href="https://circuitlover.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><h1><a href="https://circuitlover.com/"><font color="#f90">Circuit</font>Lover</a></h1></div>
+      <div>
+        <ul><li> <h2><a href="https://circuitlover.com/about/">About</a></h2> </li><li> <h2><a href="https://circuitlover.com/posts/">Posts</a></h2> </li><li> <h2><a href="https://circuitlover.com/categories/">Categories</a></h2> </li><li> <h2><a href="https://circuitlover.com/tags/">Tags</a></h2> </li><li class="js"><i type="reset" id="mode" class="svgs adjust"></i></li></ul>
+      </div>
+      <div>
+        <form autocomplete=off class="js" name="goSearch" id="searchbox">
+          <div class="searchd">
+            <input id="searchinput" type="text" placeholder="Search" title="Search" />
+            <button type="submit" title="Search"><i class="svgs search"></i></button>
+          </div>
+          <div><div id="suggestions"></div></div>
+        </form>
+      </div>
+    </nav>
+    <div>Can&#x27;t stop questioning!</div>
+    <hr />
+  </header>
+  <main>
+    <article>
+        <h1><a href="https://circuitlover.com/control-of-grid-connected/">Control of grid connected inverter</a></h1>
+        <span class="s95"> Tuyen D. Le<span class="hpad"> </span> February 24, 2022<span class="hpad"> </span> [<a href="https://circuitlover.com/categories/power-electronics/">Power-Electronics</a>] #<a href="https://circuitlover.com/tags/grid/">grid</a> </span>
+
+    <h2 id="1-fundamental-terminologies"><a class="zola-anchor" href="#1-fundamental-terminologies" aria-label="Anchor link for: 1-fundamental-terminologies">1. Fundamental terminologies</a></h2>
+<h3 id="1-1-power"><a class="zola-anchor" href="#1-1-power" aria-label="Anchor link for: 1-1-power">1.1. Power</a></h3>
+<p>The instantaneous electrical power P delivered to a component is given by</p>
+<script type="math/tex;mode=display">$$
+P(t)=I(t)\cdot V(t)
+$$</script>
+<p>where</p>
+<ul>
+<li>$P(t)$ is the instantaneous power, measured in watts (joules per second)</li>
+<li>$V(t)$ is the potential difference (or voltage drop) across the component, measured in volts</li>
+<li>$I(t)$ is the current through it, measured in amperes</li>
+</ul>
+<p>The average power is</p>
+<script type="math/tex;mode=display">$$
+P_{\mathrm {avg}} = {\frac {1}{T}}\int_{0}^{T}p(t)\mathrm {d} t
+$$</script>
+<h3 id="1-2-what-is-postitive-negative-and-zero-sequence"><a class="zola-anchor" href="#1-2-what-is-postitive-negative-and-zero-sequence" aria-label="Anchor link for: 1-2-what-is-postitive-negative-and-zero-sequence">1.2. What is postitive, negative and zero sequence?</a></h3>
+<p>These components are so-called <strong>symmetrical components</strong> <sup class="footnote-reference"><a href="#ref1">1</a></sup>.</p>
+<p>⚠️ Note:⚠️ The author was used $\underline{z}$ to denote a vector. However, I am using $\vec{z}$ to do this because of my personal preference.</p>
+<p>Symmetrical components allow unbalanced phase quantities such as currents and voltages to be replaced by three separate balanced symmetrical components</p>
+<p>The transformation is defined as:</p>
+<script type="math/tex;mode=display">$$
+\begin{bmatrix}
+\vec{V}_+  \\
+\vec{V}_-  \\
+\vec{V}_0  \\
+\end{bmatrix}
+
+= \frac{1}{3}
+
+\begin{bmatrix}
+1 & \vec{a} & \vec{a}^2  \\
+1 & \vec{a}^2 & \vec{a} \\
+1 & 1 & 1 \\
+\end{bmatrix}
+
+\begin{bmatrix}
+\vec{V}_a  \\
+\vec{V}_b  \\
+\vec{V}_c  \\
+\end{bmatrix}
+
+\qquad \text{ where } \vec{a} = e^{j 2 \pi /3}
+$$</script>
+<p>The invert transformation is:</p>
+<script type="math/tex;mode=display">$$
+\begin{bmatrix}
+\vec{V}_a  \\
+\vec{V}_b  \\
+\vec{V}_c  \\
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+1 & 1 & 1  \\
+\vec{a}^2 & \vec{a} & 1 \\
+\vec{a} & \vec{a}^2 & 1 \\
+\end{bmatrix}
+
+\begin{bmatrix}
+\vec{V}_+  \\
+\vec{V}_-  \\
+\vec{V}_0  \\
+\end{bmatrix}
+$$</script>
+<p>Let take an example. Obtain the symmetrical components of a set of unbalanced voltage.</p>
+<script type="math/tex;mode=display">$$
+\vec{V_a} = 5 \angle 53 ^{\circ} \qquad \vec{V_b} = 7 \angle -164 ^{\circ} \qquad \vec{V_c} = 7 \angle 105 ^{\circ}
+$$</script>
+<p>Run this Matlab script to get the result.</p>
+<pre data-lang="matlab" class="language-matlab z-code"><code class="language-matlab" data-lang="matlab"><span class="z-source z-matlab"><span class="z-meta z-classdef z-matlab"><span class="z-keyword z-other z-oop z-matlab">classdef</span> <span class="z-entity z-name z-class z-matlab">lib</span></span>
+    <span class="z-keyword z-other z-matlab">methods</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">Static</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-language z-matlab">true</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+        <span class="z-keyword z-other z-matlab">function</span> <span class="z-punctuation z-section z-brackets z-matlab">[</span><span class="z-variable z-parameter z-output z-function z-matlab">v_out_theta</span><span class="z-punctuation z-separator z-matlab">,</span> <span class="z-variable z-parameter z-output z-function z-matlab">v_out_rho</span><span class="z-punctuation z-section z-brackets z-matlab">]</span> <span class="z-meta z-function z-parameters z-matlab"><span class="z-keyword z-operator z-assignment z-matlab">=</span> <span class="z-entity z-name z-function z-matlab">sym_components_theory</span>  <span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-variable z-parameter z-input z-function z-matlab">va</span><span class="z-punctuation z-separator z-matlab">,</span> <span class="z-variable z-parameter z-input z-function z-matlab">vb</span><span class="z-punctuation z-separator z-matlab">,</span> <span class="z-variable z-parameter z-input z-function z-matlab">vc</span><span class="z-punctuation z-separator z-matlab">,</span> <span class="z-variable z-parameter z-input z-function z-matlab">isRadian</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+            <span class="z-comment z-double z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%%</span> Symmetrical Components Theory
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> va: Unbalanced phase A voltage
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> vb: Unbalanced phase B voltage
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> vc: Unbalanced phase C voltage
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span>
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> v_out_theta_d: Output theta in degree/radian (polar form)
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> v_out_rho: Output radius (polar form)
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> ┌─   ─┐       ┌─       ─┐ ┌─ ─┐
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> │V_pos│ = 1/3 │1 α   α^2│ │V_a│
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> │V_neg│       │1 α^2 α  │ │V_b│
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> │V_0  │       │1 1   1  │ │V_c│
+</span>            <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> └─   ─┘       └─       ─┘ └─ ─┘
+</span>            <span class="z-meta z-variable z-other z-valid z-matlab">arguments</span>
+                <span class="z-meta z-variable z-other z-valid z-matlab">va</span>
+                <span class="z-meta z-variable z-other z-valid z-matlab">vb</span>
+                <span class="z-meta z-variable z-other z-valid z-matlab">vc</span>
+                <span class="z-meta z-variable z-other z-valid z-matlab">isRadian</span> <span class="z-storage z-type z-matlab">uint8</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">0</span>
+            <span class="z-keyword z-control z-matlab">end</span>
+         
+            <span class="z-meta z-variable z-other z-valid z-matlab">rho</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">1</span>;
+            <span class="z-meta z-variable z-other z-valid z-matlab">theta</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">2</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-keyword z-operator z-symbols z-matlab"> /</span><span class="z-constant z-numeric z-matlab">3</span>;
+            <span class="z-support z-function z-graphics z-matlab">alpha</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">rho</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-variable z-other z-valid z-matlab">theta</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+            <span class="z-meta z-variable z-other z-valid z-matlab">a_tran</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">1</span><span class="z-keyword z-operator z-symbols z-matlab"> /</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-constant z-numeric z-matlab">1</span> <span class="z-support z-function z-graphics z-matlab">alpha</span> <span class="z-support z-function z-graphics z-matlab">alpha</span><span class="z-keyword z-operator z-symbols z-matlab">^</span><span class="z-constant z-numeric z-matlab">2</span>; <span class="z-constant z-numeric z-matlab">1</span> <span class="z-support z-function z-graphics z-matlab">alpha</span><span class="z-keyword z-operator z-symbols z-matlab">^</span><span class="z-constant z-numeric z-matlab">2</span> <span class="z-support z-function z-graphics z-matlab">alpha</span>; <span class="z-constant z-numeric z-matlab">1</span> <span class="z-constant z-numeric z-matlab">1</span> <span class="z-constant z-numeric z-matlab">1</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span>;
+
+            <span class="z-meta z-variable z-other z-valid z-matlab">v</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span>; <span class="z-meta z-variable z-other z-valid z-matlab">vb</span>; <span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span>;
+            <span class="z-meta z-variable z-other z-valid z-matlab">v_out</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">a_tran</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-variable z-other z-valid z-matlab">v</span>;
+            <span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta</span>, <span class="z-meta z-variable z-other z-valid z-matlab">v_out_rho</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-keyword z-mathematics z-matlab">cart2pol</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+            <span class="z-keyword z-control z-matlab">if</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">isRadian</span><span class="z-keyword z-operator z-symbols z-matlab"> == </span><span class="z-constant z-numeric z-matlab">0</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+                <span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">180</span><span class="z-keyword z-operator z-symbols z-matlab">* </span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta</span><span class="z-keyword z-operator z-symbols z-matlab"> / </span><span class="z-constant z-language z-matlab">pi</span>;
+            <span class="z-keyword z-control z-matlab">end</span>
+        <span class="z-keyword z-control z-matlab">end</span>
+    <span class="z-keyword z-control z-matlab">end</span>
+<span class="z-keyword z-control z-matlab">end</span>
+</span></code></pre>
+<pre data-lang="Matlab" class="language-Matlab z-code"><code class="language-Matlab" data-lang="Matlab"><span class="z-source z-matlab"><span class="z-comment z-double z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%%</span> symmetrical components
+</span><span class="z-keyword z-desktop z-matlab">clc</span>;
+<span class="z-keyword z-desktop z-matlab">clear</span>;
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> Input
+</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">5</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab">*</span><span class="z-constant z-numeric z-matlab">53</span><span class="z-keyword z-operator z-symbols z-matlab">/</span><span class="z-constant z-numeric z-matlab">180</span><span class="z-keyword z-operator z-symbols z-matlab">*</span><span class="z-constant z-language z-matlab">pi</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">vb</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">7</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab">* </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">164</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab">/</span><span class="z-constant z-numeric z-matlab">180</span><span class="z-keyword z-operator z-symbols z-matlab">*</span><span class="z-constant z-language z-matlab">pi</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">7</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab">* </span><span class="z-constant z-numeric z-matlab">105</span><span class="z-keyword z-operator z-symbols z-matlab">/</span><span class="z-constant z-numeric z-matlab">180</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> result is in Degree unit
+</span><span class="z-storage z-control z-matlab">fprintf</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-string z-quoted z-double z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&quot;</span>Output in V+ V- Vzero order. \n<span class="z-punctuation z-definition z-string z-end z-matlab">&quot;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta_d</span>, <span class="z-meta z-variable z-other z-valid z-matlab">v_out_rho</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span><span class="z-keyword z-operator z-symbols z-matlab"> = </span>lib<span class="z-punctuation z-accessor z-dot z-matlab">.</span>sym_components_theory  <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span>, <span class="z-meta z-variable z-other z-valid z-matlab">vb</span>, <span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-storage z-control z-matlab">fprintf</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-string z-quoted z-double z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&quot;</span>Radius: \n<span class="z-punctuation z-definition z-string z-end z-matlab">&quot;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>; <span class="z-keyword z-mathematics z-matlab">disp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_rho</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-storage z-control z-matlab">fprintf</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-string z-quoted z-double z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&quot;</span>Phase [Degree]: \n<span class="z-punctuation z-definition z-string z-end z-matlab">&quot;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>; <span class="z-keyword z-mathematics z-matlab">disp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta_d</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> Draw complex number
+</span><span class="z-meta z-variable z-other z-valid z-matlab">v_sym</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_rho</span><span class="z-keyword z-operator z-symbols z-matlab"> .* </span><span class="z-keyword z-mathematics z-matlab">exp</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-variable z-other z-valid z-matlab">v_out_theta_d</span><span class="z-keyword z-operator z-symbols z-matlab">/</span><span class="z-constant z-numeric z-matlab">180</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">v_zero</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">v_sym</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">v_pos</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">v_sym</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">v_neg</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">v_sym</span> <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+
+<span class="z-meta z-variable z-other z-valid z-matlab">t</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">tiledlayout</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">2</span>,<span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+t<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Padding<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>compact<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>;
+t<span class="z-punctuation z-accessor z-dot z-matlab">.</span>TileSpacing<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>compact<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>;
+
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> unbalanced voltage
+</span><span class="z-meta z-variable z-other z-valid z-matlab">z</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span>, <span class="z-meta z-variable z-other z-valid z-matlab">vb</span>, <span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">nxt</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">nexttile</span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">c</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-support z-function z-graphics z-matlab">compass</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>, <span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-support z-function z-graphics z-matlab">title</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>,<span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Unbalanced voltage<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+
+<span class="z-support z-function z-graphics z-matlab">text</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> + </span><span class="z-constant z-numeric z-matlab">0.5</span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">va</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> + </span><span class="z-constant z-numeric z-matlab">0.5</span>, <span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Va<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>, <span class="z-meta z-variable z-other z-valid z-matlab">Color</span><span class="z-keyword z-operator z-symbols z-matlab">=</span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>b<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+
+<span class="z-meta z-variable z-other z-valid z-matlab">c_b</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_b<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>g<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_b is green
+</span><span class="z-support z-function z-graphics z-matlab">text</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">vb</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> - </span><span class="z-constant z-numeric z-matlab">1.5</span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">vb</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> + </span><span class="z-constant z-numeric z-matlab">0.5</span>, <span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Vb<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>, <span class="z-meta z-variable z-other z-valid z-matlab">Color</span><span class="z-keyword z-operator z-symbols z-matlab">=</span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>g<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+<span class="z-meta z-variable z-other z-valid z-matlab">c_c</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_c<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>r<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_c is red
+</span><span class="z-support z-function z-graphics z-matlab">text</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> + </span><span class="z-constant z-numeric z-matlab">0.5</span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">vc</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> + </span><span class="z-constant z-numeric z-matlab">0.5</span>, <span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Vc<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>, <span class="z-meta z-variable z-other z-valid z-matlab">Color</span><span class="z-keyword z-operator z-symbols z-matlab">=</span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>r<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> positive voltage sequence
+</span><span class="z-meta z-variable z-other z-valid z-matlab">z_pos</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">v_pos</span>; <span class="z-meta z-variable z-other z-valid z-matlab">v_pos</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-keyword z-operator z-symbols z-matlab"> / </span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>; <span class="z-meta z-variable z-other z-valid z-matlab">v_pos</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">4</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-keyword z-operator z-symbols z-matlab"> / </span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">nxt</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">nexttile</span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">c_pos</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-support z-function z-graphics z-matlab">compass</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>, <span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z_pos</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z_pos</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-support z-function z-graphics z-matlab">title</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>,<span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Positive voltage sequences<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+<span class="z-meta z-variable z-other z-valid z-matlab">c_pos_b</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c_pos</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_pos_b<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>g<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_b is green
+</span><span class="z-meta z-variable z-other z-valid z-matlab">c_pos_c</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c_pos</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_pos_c<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>r<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_c is red
+</span>
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span>negative voltage sequency
+</span><span class="z-meta z-variable z-other z-valid z-matlab">z_neg</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">v_neg</span>; <span class="z-meta z-variable z-other z-valid z-matlab">v_neg</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">4</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-keyword z-operator z-symbols z-matlab"> / </span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>; <span class="z-meta z-variable z-other z-valid z-matlab">v_neg</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-constant z-language z-matlab">pi</span><span class="z-keyword z-operator z-symbols z-matlab"> / </span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">nxt</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">nexttile</span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">c_neg</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-support z-function z-graphics z-matlab">compass</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>, <span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z_neg</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">z_neg</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-support z-function z-graphics z-matlab">title</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>,<span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Negative voltage sequences<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+<span class="z-meta z-variable z-other z-valid z-matlab">c_neg_b</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c_neg</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_neg_b<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>g<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_b is green
+</span><span class="z-meta z-variable z-other z-valid z-matlab">c_neg_c</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">c_neg</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+c_neg_c<span class="z-punctuation z-accessor z-dot z-matlab">.</span>Color<span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>r<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span>; <span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> V_c is red
+</span>
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span> Zero sequences
+</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-meta z-variable z-other z-valid z-matlab">nexttile</span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">c_zero</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-support z-function z-graphics z-matlab">compass</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>, <span class="z-keyword z-mathematics z-matlab">real</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_zero</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>, <span class="z-keyword z-mathematics z-matlab">imag</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">v_zero</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-support z-function z-graphics z-matlab">title</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">nxt</span>,<span class="z-string z-quoted z-single z-matlab"><span class="z-punctuation z-definition z-string z-begin z-matlab">&#39;</span>Zero voltage sequences<span class="z-punctuation z-definition z-string z-end z-matlab">&#39;</span></span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+
+<span class="z-comment z-line z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%</span>----------------------------------------------------
+</span><span class="z-comment z-double z-percentage z-matlab"><span class="z-punctuation z-definition z-comment z-matlab">%%</span> Unbalanced current
+</span><span class="z-meta z-variable z-other z-valid z-matlab">ia</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">10</span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">ib</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">10</span><span class="z-keyword z-operator z-symbols z-matlab"> * </span><span class="z-keyword z-mathematics z-matlab">exp</span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-constant z-numeric z-matlab">1i</span><span class="z-keyword z-operator z-symbols z-matlab">* </span><span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-keyword z-operator z-symbols z-matlab">-</span><span class="z-constant z-numeric z-matlab">2</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span><span class="z-keyword z-operator z-symbols z-matlab">/</span><span class="z-constant z-numeric z-matlab">3</span><span class="z-keyword z-operator z-symbols z-matlab">*</span><span class="z-constant z-language z-matlab">pi</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>;
+<span class="z-meta z-variable z-other z-valid z-matlab">ic</span><span class="z-keyword z-operator z-symbols z-matlab"> = </span><span class="z-constant z-numeric z-matlab">0</span>;
+<span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">i_out_theta_d</span>, <span class="z-meta z-variable z-other z-valid z-matlab">i_out_rho</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span><span class="z-keyword z-operator z-symbols z-matlab"> = </span>lib<span class="z-punctuation z-accessor z-dot z-matlab">.</span>sym_components_theory  <span class="z-meta z-parens z-matlab"><span class="z-punctuation z-section z-parens z-begin z-matlab">(</span><span class="z-meta z-variable z-other z-valid z-matlab">ia</span>, <span class="z-meta z-variable z-other z-valid z-matlab">ib</span>, <span class="z-meta z-variable z-other z-valid z-matlab">ic</span>, <span class="z-constant z-numeric z-matlab">0</span><span class="z-punctuation z-section z-parens z-end z-matlab">)</span></span>
+</span></code></pre>
+<p><img src="https://circuitlover.com/control-of-grid-connected/images/symetrical-seq.svg" alt="symetrical sequences" /></p>
+<p>We get $V_+, V_-, V_0$ magnitude and phase accordingly.</p>
+<pre data-lang="matlab" class="language-matlab z-code"><code class="language-matlab" data-lang="matlab"><span class="z-source z-matlab"><span class="z-meta z-variable z-other z-valid z-matlab">Output</span> <span class="z-meta z-variable z-other z-valid z-matlab">in</span> <span class="z-meta z-variable z-other z-valid z-matlab">V</span><span class="z-keyword z-operator z-symbols z-matlab">+ </span><span class="z-meta z-variable z-other z-valid z-matlab">V</span><span class="z-keyword z-operator z-symbols z-matlab">- </span><span class="z-meta z-variable z-other z-valid z-matlab">Vzero</span> <span class="z-support z-function z-toolbox z-design z-matlab">order</span>. 
+<span class="z-meta z-variable z-other z-valid z-matlab">Radius</span><span class="z-keyword z-operator z-symbols z-matlab">: 
+</span>    <span class="z-constant z-numeric z-matlab">5.0156</span>
+    <span class="z-constant z-numeric z-matlab">1.9469</span>
+    <span class="z-constant z-numeric z-matlab">3.4718</span>
+
+<span class="z-meta z-variable z-other z-valid z-matlab">Phase</span> <span class="z-meta z-brackets z-matlab"><span class="z-punctuation z-section z-brackets z-begin z-matlab">[</span><span class="z-meta z-variable z-other z-valid z-matlab">Degree</span><span class="z-punctuation z-section z-brackets z-end z-matlab">]</span></span><span class="z-keyword z-operator z-symbols z-matlab">: 
+</span><span class="z-keyword z-operator z-symbols z-matlab">  -</span><span class="z-constant z-numeric z-matlab">10.2643</span>
+   <span class="z-constant z-numeric z-matlab">92.4259</span>
+  <span class="z-constant z-numeric z-matlab">122.0788</span>
+</span></code></pre>
+<p>or, it could be written in the time domain form.</p>
+<script type="math/tex;mode=display">$$
+\begin{align*}
+& v_a = 5.02 sin (\omega t - 10)      & &+ 1.95 sin (\omega t + 92)        & &+ 3.5 sin (\omega t + 122) \\
+& v_b = 5.02 sin (\omega t - 10 - 120) & &+ 1.95 sin (\omega t + 92 - 240) & &+ 3.5 sin (\omega t + 122) \\
+& v_c = \underbrace{5.02 sin (\omega t - 10 - 240)}_{\text{positive seq.}} & &+ \underbrace{ 1.95 sin (\omega t + 92 - 120)}_{\text{negative seq.}} & &+ \underbrace{3.5 sin (\omega t + 122)}_{\text{Zero seq.}} \\
+\end{align*}
+$$</script>
+<h3 id="1-3-differential-and-common-mode-signals"><a class="zola-anchor" href="#1-3-differential-and-common-mode-signals" aria-label="Anchor link for: 1-3-differential-and-common-mode-signals">1.3. Differential and Common Mode Signals</a></h3>
+<p><img src="https://circuitlover.com/control-of-grid-connected/images/common-mode-vs-differential-mode.jpg" alt="Differential mode and common mode" /></p>
+<p>An other example.</p>
+<p><img src="https://circuitlover.com/control-of-grid-connected/images/common-mode-vs-differential-mode-2.jpg" alt="Differential mode and common mode" /></p>
+<h3 id="1-4-references"><a class="zola-anchor" href="#1-4-references" aria-label="Anchor link for: 1-4-references">1.4. References</a></h3>
+<ul>
+<li><sup class="footnote-reference"><a href="#ref1">1</a></sup>: James Kirtley Jr.. <em>6.061 Introduction to Electric Power Systems.</em> Spring 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, <a rel="noopener" target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-061-introduction-to-electric-power-systems-spring-2011/readings/MIT6_061S11_ch4.pdf">https://ocw.mit.edu</a> License: <a rel="noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</a>.</li>
+<li><a rel="noopener" target="_blank" href="http://nazarovsky.ru/2015/02/25/powers-according-to-ieee1459/">Calculate Powers in Non-sinusoidal Conditions According to IEEE 1459</a></li>
+<li><a rel="noopener" target="_blank" href="https://youtu.be/s1_Siu3prRQ">Differential and Common Mode Signals</a></li>
+</ul>
+<h2 id="2-filter-design"><a class="zola-anchor" href="#2-filter-design" aria-label="Anchor link for: 2-filter-design">2. Filter design</a></h2>
+<h3 id="2-1-l-filter"><a class="zola-anchor" href="#2-1-l-filter" aria-label="Anchor link for: 2-1-l-filter">2.1. L filter</a></h3>
+<p><img src="https://circuitlover.com/control-of-grid-connected/images/L-filter.jpg" alt="L filter" /></p>
+<p><img src="https://circuitlover.com/control-of-grid-connected/images/current-ripple-L-filter.jpg" alt="L filter current ripple" /></p>
+<h3 id="2-2-references"><a class="zola-anchor" href="#2-2-references" aria-label="Anchor link for: 2-2-references">2.2. References</a></h3>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://nptel.ac.in/courses/108108034">AC filters for grid connected inverters</a> in Power electronic design.</li>
+<li><a rel="noopener" target="_blank" href="https://youtu.be/rE-goTuAIvk">Three-phase grid converter control: video 1 Grid tied inverters</a></li>
+</ul>
+<h2 id="3-phase-locked-loop"><a class="zola-anchor" href="#3-phase-locked-loop" aria-label="Anchor link for: 3-phase-locked-loop">3. Phase-locked loop</a></h2>
+<h3 id="references"><a class="zola-anchor" href="#references" aria-label="Anchor link for: references">References</a></h3>
+<ul>
+<li>https://dsp.stackexchange.com/q/75492</li>
+<li><a rel="noopener" target="_blank" href="https://bit.ly/3LiT8bH">Three-phase grid converter control: video 3 Phase lock loops</a></li>
+</ul>
+
+<p><b><a href="#">Back to top</a></b></p>
+    </article>
+    <div class="toc" aria-hidden="true">
+      <div class="toc-sticky">
+        <h3>Index</h3>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#1-fundamental-terminologies">1. Fundamental terminologies</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#1-1-power"><small>- 1.1. Power</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#1-2-what-is-postitive-negative-and-zero-sequence"><small>- 1.2. What is postitive, negative and zero sequence?</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#1-3-differential-and-common-mode-signals"><small>- 1.3. Differential and Common Mode Signals</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#1-4-references"><small>- 1.4. References</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#2-filter-design">2. Filter design</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#2-1-l-filter"><small>- 2.1. L filter</small></a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#2-2-references"><small>- 2.2. References</small></a>
+        </div>
+        <div class="toc-item">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#3-phase-locked-loop">3. Phase-locked loop</a>
+        </div>
+        <div class="toc-item-child">
+          <a class="subtext" href="https://circuitlover.com/control-of-grid-connected/#references"><small>- References</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav>
+        <ul><li><a href="https://circuitlover.com/atom.xml" target="_blank" title="Atom/RSS Feed"><i type="Button" class="svg rss" title="Atom/RSS Feed"></i></a></li><li class="js"><a class="m-protected" href="#dHV5ZW5sZEBjaXJjdWl0bG92ZXIuY29t" target="_blank" title="Mail"><i type="Button" class="svg mail" title="Mail"></i></a></li><li><a href="https://www.linkedin.com/in/tuyendl/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a></li><li><a href="https://github.com/tuyenld/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></li></ul>
+      </nav>
+      <p class="s90">Copyright &copy; 2023 CircuitLover</p>
+      <nav>
+        <ul><li class="s90"> <a href="https://circuitlover.com/about/"> About </a> </li><li class="s90"> <a href="https://circuitlover.com/contact/"> Contact </a> </li><li class="s90"> <a href="https://circuitlover.com/privacy/"> Privacy </a> </li><li class="s90"> <a href="https://circuitlover.com/sitemap.xml" target="_blank"> Sitemap </a> </li></ul>
+      </nav>
+      <p class="s90">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> and <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+<span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top"><i class="svgs svgh angu"></i></a>
+</span>
+</body>
+</html>
