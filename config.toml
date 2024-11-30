@@ -7,8 +7,8 @@ default_language = "en"
 output_dir = "public"
 compile_sass = true
 minify_html = false
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 #ignored_content = ["*.{graphml,xlsx}", "temp.*"]
 #hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
 taxonomies = [
@@ -76,16 +76,16 @@ headhr = true # show or hide horizontal rule below header
 foothr = true # show or hide horizontal rule above footer
 
 menu = [
-    {url = "/about/", name = "About", slash = true, blank = false},
-    {url = "/posts/", name = "Posts", slash = true, blank = false},
-    {url = "/categories/", name = "Categories", slash = true, blank = false},
-    {url = "/tags/", name = "Tags", slash = true, blank = false},
+    {url = "about", name = "About", slash = true, blank = false},
+    {url = "archive", name = "Posts", slash = true, blank = false},
+    {url = "categories", name = "Categories", slash = true, blank = false},
+    {url = "tags", name = "Tags", slash = true, blank = false},
 ]
 menu_footer = [
-    {url = "/about/", name = "About", slash = true, blank = false},
-    {url = "/contact/", name = "Contact", slash = true, blank = false},
-    {url = "/privacy/", name = "Privacy", slash = true, blank = false},
-    {url = "/sitemap.xml", name = "Sitemap", slash = false, blank = true},
+    {url = "about", name = "About", slash = true, blank = false},
+    {url = "contact", name = "Contact", slash = true, blank = false},
+    {url = "privacy", name = "Privacy", slash = true, blank = false},
+    {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true},
 ]
 
 # Security Headers should preferably be set by your webserver (Nginx, Apache) https://observatory.mozilla.org  https://csp-evaluator.withgoogle.com/
@@ -115,7 +115,8 @@ js_theme = "theme.min.js" # Separate Always, comment out if using -auto/-light/-
 js_themeButton = "theme_button.js"# Bundleable
 
 ########## Switcher ########## (comment this block out if NOT using switcher):
-stylesheets = [ "abridge-switcher.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
+# stylesheets = [ "abridge-switcher.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
+stylesheets = ["abridge.css"]
 #stylesheets = [ "abridge-blue-switcher.css" ] # Blue Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-blueshade-switcher.css" ] # BlueShade Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-switcher.css", "font.css" ] # include your own font!
@@ -183,12 +184,12 @@ math_auto_render = false
 #katex_autorender_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
 #mathtex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mathtex-script-type.min.js"
 
-katex_css = "katex.min.css" # Fonts - to load the css locally, you also need to have all the fonts.
-katex_js = "katex.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
-mathtex_js = "mathtex-script-type.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
-katex_autorender_js = "auto-render.min.js"
-katex_options = "katexoptions.js"
-katex_bundle = "katexbundle.min.js"
+# katex_css = "katex.min.css" # Fonts - to load the css locally, you also need to have all the fonts.
+# katex_js = "katex.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+# mathtex_js = "mathtex-script-type.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
+# katex_autorender_js = "auto-render.min.js"
+# katex_options = "katexoptions.js"
+# katex_bundle = "katexbundle.min.js"
 
 
 ##########################

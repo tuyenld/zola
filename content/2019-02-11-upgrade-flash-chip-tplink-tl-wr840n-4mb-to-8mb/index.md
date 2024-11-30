@@ -30,7 +30,7 @@ I will show you how to upgrade TP-Link flash chip on TP-Link from 4mb to 8mb.
 
 Hot air soldering station is ideally suited for desoldering flash. If you not, you can follow this video to do this.
 
-{{yt(id="nZGEtpECPQY")}}
+{{youtube(id="nZGEtpECPQY")}}
 
 ### 2.2 Program new flash chip
 
